@@ -126,7 +126,7 @@ p {
     line-height: normal;
 }
 
-.highlighted a {
+.highlighted .selected {
     background-color: #000;
     color: #FFF;
 }
