@@ -239,7 +239,7 @@ p {
 }
 
 .con23-sec2-cont {
-    width: 60%;
+    width: 60vw;
     display: grid;
     place-items: center;
 }
