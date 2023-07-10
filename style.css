@@ -4,39 +4,41 @@
     padding: 0;
     margin: 0;
     z-index: 0;
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    line-height: normal;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
 h1 {
-    font-family: 'Gothic A1', sans-serif;
     font-weight: 700;
     font-size: 40px;
-    font-style: normal;
-    line-height: normal;
 }
 
 h2 {
-    font-family: 'Gothic A1', sans-serif;
     font-weight: 700;
     font-size: 20px;
-    font-style: normal;
-    line-height: normal;
 }
 
 h3 {
-    font-family: 'Gothic A1', sans-serif;
     font-weight: 600;
     font-size: 18px;
-    font-style: normal;
-    line-height: normal;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 16px;
 }
 
 p {
-    font-family: 'Gothic A1', sans-serif;
     font-weight: 700;
     font-size: 20px;
-    font-style: normal;
-    line-height: normal;
 }
+
+/* navigation bar */
 
 .nav-bar {
     z-index: 100;
@@ -75,11 +77,8 @@ p {
     padding-right: 4px;
     border: 2px solid #000;
     border-right: none;
-    font-family: 'Gothic A1', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    font-style: normal;
-    line-height: normal;
 }
 
 .search-bar-input:focus {
@@ -119,11 +118,8 @@ p {
     border-radius: 6px;
     text-decoration: none;
     color: #707070;
-    font-family: 'Gothic A1', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    font-style: normal;
-    line-height: normal;
 }
 
 .highlighted .selected {
@@ -150,17 +146,20 @@ p {
 
 .nav-bar-link-cont:hover .submenu {
     display: block;
+    transition: 300ms;
 }
 
 .nav-bar-link-cont:hover  .dropdown {
     background-color: #707070;
     color: #FFF;
     border-radius: 6px 6px 0 0;
+    transition: 300ms;
 }
 
 .nav-bar-link-cont a:hover {
     background-color: #A0A0A0;
     color: #FFF;
+    transition: 300ms;
 }
 
 .filler {
@@ -173,6 +172,172 @@ p {
     }
 }
 
+/* footer */
+
+.footer {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.footer-cont {
+    width: 60vw;
+    display: grid;
+    place-items: center;
+}
+
+.footer-cont h4 {
+    color: #FFF;
+    text-align: center;
+}
+
+.footer-inner-cont1 {
+    width: 100%;
+    height: 44px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.footer-page-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer-page-links a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 40px;
+}
+
+.footer-page-links a:hover {
+    color: #888;
+    transition: 300ms;
+}
+
+.footer-social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer-social-links a {
+    height: 44px;
+    width: 44px;
+    display: grid;
+    place-items: center;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.footer-social-links a:hover {
+    cursor: pointer;
+}
+
+.social-white-bg {
+    background-color: #FFF;
+}
+
+.social-twitter-bg {
+    background-color: #00ACEE;
+}
+
+.social-icon-44 img {
+    height: 44px;
+    width: 44px;
+}
+
+.social-icon-32 img {
+    height: 32px;
+    width: 32px;
+}
+
+.footer-inner-cont2 {
+    height: 20px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.footer-address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer-contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer-contact-info h4 {
+    margin-left: 20px;
+}
+
+/* apna conference 2023 global css */
+
+.hori-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verti-center {
+    display: grid;
+    place-items: center;
+}
+
+.width60vw {
+    width: 60vw;
+}
+
+.con23-sec {
+    padding: 40px;
+}
+
+.black-bg {
+    background-color: #000;
+}
+
+.orange-btn {
+    padding: 14px 0px;
+    border-radius: 10px;
+    background-color: #FF8D24;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.orange-btn:hover {
+    cursor: pointer;
+}
+
+/* apna conference 2023 section 1 */
+
 .con23-sec1 {
     min-height: 30vw;
     padding: 5vw;
@@ -180,9 +345,6 @@ p {
     background-color: #182228;
     position: relative;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .con23-sec1 img {
@@ -198,7 +360,6 @@ p {
 }
 
 .con23-sec1-cont {
-    width: 60vw;
     position: relative;
 }
 
@@ -217,32 +378,9 @@ p {
     right: 0;
     bottom: 0;
     width: 35%;
-    background-color: #FF8D24;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    padding: 14px 0px;
-    text-align: center;
-    border-radius: 10px;
-    font-family: 'Gothic A1', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    font-style: normal;
-    line-height: normal;
-    color: #FFF;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
-.con23-sec2 {
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.con23-sec2-cont {
-    width: 60vw;
-    display: grid;
-    place-items: center;
-}
+/* apna conference 2023 section 2 */
 
 .keynote-speaker-cont {
     width: 100%;
@@ -285,19 +423,7 @@ p {
     text-align: justify;
 }
 
-.con23-sec3 {
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-}
-
-.con23-sec3-cont {
-    width: 60vw;
-    display: grid;
-    place-items: center;
-}
+/* apna conference 2023 section 3 */
 
 .sec3-list-cont {
     width: 80%;
@@ -305,11 +431,8 @@ p {
 }
 
 .con23-sec3-cont li {
-    font-family: 'Gothic A1', sans-serif;
     font-weight: 700;
     font-size: 20px;
-    font-style: normal;
-    line-height: normal;
 }
 
 .con23-sec3-cont h1, .con23-sec3-cont p, .con23-sec3-cont li {
@@ -323,4 +446,109 @@ p {
 
 .con23-sec3-cont h2, .con23-sec3-cont h3 {
     color: #FFF;
+}
+
+/* apna conference 2023 section 4 */
+
+.con23-sec4-cont h1 {
+    margin-bottom: 20px;
+}
+
+.con23-sec4-cont h1, .con23-sec4-cont p {
+    text-align: justify;
+}
+
+/* apna conference 2023 section 5 */
+
+.con23-sec5-cont h1, .con23-sec5-cont p {
+    color: #FFF;
+    text-align: justify;
+}
+
+.con23-sec5-cont p {
+    margin-top: 20px;
+}
+
+.sec5-left-cont {
+    margin-right: 40px;
+}
+
+.sec5-right-cont {
+    display: grid;
+}
+
+.sec5-right-cont img {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.con23-sec5-btn {
+    width: 100%;
+}
+
+/* carousel */
+
+.con23-carousel-cont {
+    width: 60vw;
+    height: 30vw;
+    position: relative;
+    margin: 20px 0;
+}
+
+.con23-carousel-cont ul {
+    list-style: none;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+}
+
+.slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: .5rem;
+}
+
+.slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+}
+
+.carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.carousel-button:hover {
+    color: #FFF;
+    background-color: rgba(0, 0, 0, .8);
+    transition: 300ms;
+}
+
+.carousel-button.prev {
+    left: 1rem;
+}
+
+.carousel-button.next {
+    right: 1rem;
 }
