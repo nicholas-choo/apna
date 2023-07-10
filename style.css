@@ -14,6 +14,22 @@ h1 {
     line-height: normal;
 }
 
+h2 {
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+}
+
+h3 {
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+}
+
 p {
     font-family: 'Gothic A1', sans-serif;
     font-weight: 700;
@@ -151,7 +167,7 @@ p {
     height: 139px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1590px) {
     .filler {
         height: 174px;
     }
@@ -186,7 +202,7 @@ p {
     position: relative;
 }
 
-.con23-sec1 h1, p {
+.con23-sec1 h1, .con23-sec1 p {
     color: #FFF;
     text-shadow: 0 4px 4px #000;
 }
@@ -213,4 +229,58 @@ p {
     line-height: normal;
     color: #FFF;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.con23-sec2 {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con23-sec2-cont {
+    width: 60%;
+    display: grid;
+    place-items: center;
+}
+
+.keynote-speaker-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.portrait-cont {
+    display: grid;
+    place-items: center;
+    margin-right: 40px;
+}
+
+.portrait-image-cont {
+    height: 370px;
+    width: 280px;
+    margin-bottom: 10px;
+}
+
+.portrait-image-cont img {
+    height: 360px;
+    width: 270px;
+    box-shadow: 10px 10px 0 #FF8D24;
+}
+
+.portrait-name-title-cont {
+    width: 100%;
+}
+
+.portrait-name-title-cont h2, .portrait-name-title-cont h3 {
+    text-align: center;
+}
+
+.portrait-name-title-cont h3 {
+    color: #222;
+}
+
+.description-cont p {
+    text-align: justify;
 }
