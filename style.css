@@ -15,27 +15,52 @@
 
 h1 {
     font-weight: 700;
+
+    /* legacy setting */
     font-size: 40px;
+
+    /* responsive setting */
+    font-size: 2vw;
 }
 
 h2 {
     font-weight: 700;
+
+    /* legacy setting */
     font-size: 20px;
+
+    /* responsive setting */
+    font-size: 1vw;
 }
 
 h3 {
     font-weight: 600;
+
+    /* legacy setting */
     font-size: 18px;
+
+    /* responsive setting */
+    font-size: .9vw;
 }
 
 h4 {
     font-weight: 400;
+
+    /* legacy setting */
     font-size: 16px;
+
+    /* responsive setting */
+    font-size: .8vw;
 }
 
 p {
     font-weight: 700;
+
+    /* legacy setting */
     font-size: 20px;
+
+    /* responsive setting */
+    font-size: 1vw;
 }
 
 /* navigation bar */
@@ -43,12 +68,17 @@ p {
 .nav-bar {
     z-index: 100;
     background-color: #FFF;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     display: grid;
     place-items: center;
     position: fixed;
-    padding: 10px;
     width: 100vw;
+
+    /* legacy setting */
+    padding: 10px;
+
+    /* responsive setting */
+    padding: .5vw;
 }
 
 .nav-bar-cont {
@@ -59,26 +89,55 @@ p {
 }
 
 .nav-bar img {
+    /* legacy setting */
     height: 80px;
+
+    /* responsive setting */
+    height: 4vw;
 }
 
 .nav-bar form {
     display: flex;
-    height: 24px;
-    width: 240px;
     position: absolute;
     right: 0;
+
+    /* legacy setting */
+    height: 24px;
+    width: 240px;
+
+    /* responsive setting */
+    height: 1.2vw;
+    width: 12vw;
 }
 
 .search-bar-input {
-    height: 100%;
+    border-right: none;
+    font-weight: 400;
+    border: 1px solid #000;
+
+    /* legacy setting */
+    height: 24px;
     width: 200px;
     padding-left: 4px;
     padding-right: 4px;
-    border: 2px solid #000;
-    border-right: none;
-    font-weight: 400;
     font-size: 14px;
+
+    /* responsive setting */
+    height: 1.3vw;
+    width: 10vw;
+    padding-left: .2vw;
+    padding-right: .2vw;
+    font-size: .7vw;
+}
+
+.search-bar-input::placeholder {
+    position: absolute;
+
+    /* legacy setting */
+    top: 4px;
+
+    /* responsive setting */
+    top: .2vw;
 }
 
 .search-bar-input:focus {
@@ -86,10 +145,16 @@ p {
 }
 
 .search-bar-submit {
-    height: 100%;
-    width: 24px;
     background-color: #000;
     border: 2px solid #000;
+
+    /* legacy setting */
+    height: 24px;
+    width: 24px;
+
+    /* responsive setting */
+    height: 1.3vw;
+    width: 1.3vw;
 }
 
 .nav-bar-links {
@@ -102,8 +167,13 @@ p {
 }
 
 .nav-bar-link-cont {
+    /* legacy setting */
     height: 35px;
     margin: 0 5px;
+
+    /* responsive setting */
+    height: 1.75vw;
+    margin: 0 .25vw;
 }
 
 .nav-bar-link-cont ul {
@@ -114,12 +184,19 @@ p {
 }
 
 .nav-bar-link-cont a {
-    padding: 8px 10px;
-    border-radius: 6px;
     text-decoration: none;
     color: #707070;
     font-weight: 400;
+
+    /* legacy setting */
+    padding: 8px 10px;
+    border-radius: 6px;
     font-size: 14px;
+
+    /* responsive setting */
+    padding: .4vw .5vw;
+    border-radius: .3vw;
+    font-size: .7vw;
 }
 
 .highlighted .selected {
@@ -131,9 +208,14 @@ p {
     display: none;
     position: absolute;
     background-color: #FFF;
-    border-radius: 0 6px 6px 6px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+
+    /* legacy setting */
+    border-radius: 0 6px 6px 6px;
+
+    /* responsive setting */
+    border-radius: 0 .3vw .3vw .3vw;
 }
 
 .submenu ul {
@@ -163,13 +245,11 @@ p {
 }
 
 .filler {
+    /* legacy setting */
     height: 139px;
-}
 
-@media (max-width: 1590px) {
-    .filler {
-        height: 174px;
-    }
+    /* responsive setting */
+    height: 6.95vw;
 }
 
 /* footer */
@@ -179,7 +259,12 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* legacy setting */
     padding: 40px;
+
+    /* responsive setting */
+    padding: 2vw;
 }
 
 .footer-cont {
@@ -195,9 +280,15 @@ p {
 
 .footer-inner-cont1 {
     width: 100%;
-    height: 44px;
     position: relative;
+
+    /* legacy setting */
+    height: 44px;
     margin-bottom: 10px;
+
+    /* responsive setting */
+    height: 2.2vw;
+    margin-bottom: .5vw;
 }
 
 .footer-page-links {
@@ -214,8 +305,14 @@ p {
     color: #FFF;
     text-decoration: none;
     font-weight: 400;
+
+    /* legacy setting */
     font-size: 16px;
     margin-right: 40px;
+
+    /* responsive setting */
+    font-size: .8vw;
+    margin-right: 2vw;
 }
 
 .footer-page-links a:hover {
@@ -234,12 +331,20 @@ p {
 }
 
 .footer-social-links a {
-    height: 44px;
-    width: 44px;
     display: grid;
     place-items: center;
+
+    /* legacy setting */
+    height: 44px;
+    width: 44px;
     margin-left: 10px;
     border-radius: 5px;
+
+    /* responsive setting */
+    height: 2.2vw;
+    width: 2.2vw;
+    margin-left: .5vw;
+    border-radius: .25vw;
 }
 
 .footer-social-links a:hover {
@@ -255,20 +360,36 @@ p {
 }
 
 .social-icon-44 img {
+    /* legacy setting */
     height: 44px;
     width: 44px;
+
+    /* responsive setting */
+    height: 2.2vw;
+    width: 2.2vw;
 }
 
 .social-icon-32 img {
+    /* legacy setting */
     height: 32px;
     width: 32px;
+
+    /* responsive setting */
+    height: 1.6vw;
+    width: 1.6vw;
 }
 
 .footer-inner-cont2 {
-    height: 20px;
     width: 100%;
     position: relative;
+    
+    /* legacy setting */
+    height: 20px;
     margin-bottom: 10px;
+
+    /* responsive setting */
+    height: 1vw;
+    margin-bottom: .5vw;
 }
 
 .footer-address {
@@ -292,7 +413,11 @@ p {
 }
 
 .footer-contact-info h4 {
+    /* legacy setting */
     margin-left: 20px;
+
+    /* responsive setting */
+    margin-left: 1vw;
 }
 
 /* apna conference 2023 global css */
@@ -313,7 +438,11 @@ p {
 }
 
 .con23-sec {
+    /* legacy setting */
     padding: 40px;
+
+    /* responsive setting */
+    padding: 2vw;
 }
 
 .black-bg {
@@ -321,15 +450,22 @@ p {
 }
 
 .orange-btn {
-    padding: 14px 0px;
-    border-radius: 10px;
     background-color: #FF8D24;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    font-size: 20px;
     font-weight: 700;
     color: #FFF;
     text-align: center;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    
+    /* legacy setting */
+    padding: 14px 0;
+    border-radius: 10px;
+    font-size: 20px;
+
+    /* responsive setting */
+    padding: .7vw 0;
+    border-radius: .5vw;
+    font-size: 1vw;
 }
 
 .orange-btn:hover {
@@ -370,7 +506,12 @@ p {
 
 .con23-sec1 p {
     width: 60%;
+    
+    /* legacy setting */
     margin-top: 20px;
+
+    /* responsive setting */
+    margin-top: 1vw;
 }
 
 .con23-sec1-btn {
@@ -386,25 +527,47 @@ p {
     width: 100%;
     display: flex;
     justify-content: center;
+    
+    /* legacy setting */
     padding-top: 20px;
+
+    /* responsive setting */
+    padding-top: 1vw;
 }
 
 .portrait-cont {
     display: grid;
     place-items: center;
+    
+    /* legacy setting */
     margin-right: 40px;
+
+    /* responsive setting */
+    margin-right: 2vw;
 }
 
 .portrait-image-cont {
+    /* legacy setting */
     height: 370px;
     width: 280px;
     margin-bottom: 10px;
+
+    /* responsive setting */
+    height: 18.5vw;
+    width: 14vw;
+    margin-bottom: .5vw;
 }
 
 .portrait-image-cont img {
+    /* legacy setting */
     height: 360px;
     width: 270px;
     box-shadow: 10px 10px 0 #FF8D24;
+
+    /* responsive setting */
+    height: 18vw;
+    width: 13.5vw;
+    box-shadow: .5vw .5vw 0 #FF8D24;
 }
 
 .portrait-name-title-cont {
@@ -427,12 +590,22 @@ p {
 
 .sec3-list-cont {
     width: 80%;
+
+    /* legacy setting */
     margin-bottom: 40px;
+
+    /* responsive setting */
+    margin-bottom: 2vw;
 }
 
 .con23-sec3-cont li {
     font-weight: 700;
+
+    /* legacy setting */
     font-size: 20px;
+
+    /* responsive setting */
+    font-size: 1vw;
 }
 
 .con23-sec3-cont h1, .con23-sec3-cont p, .con23-sec3-cont li {
@@ -441,7 +614,11 @@ p {
 }
 
 .con23-sec3-cont p, .con23-sec3-cont ul {
+    /* legacy setting */
     margin-top: 20px;
+
+    /* responsive setting */
+    margin-top: 1vw;
 }
 
 .con23-sec3-cont h2, .con23-sec3-cont h3 {
@@ -451,7 +628,11 @@ p {
 /* apna conference 2023 section 4 */
 
 .con23-sec4-cont h1 {
+    /* legacy setting */
     margin-bottom: 20px;
+
+    /* responsive setting */
+    margin-bottom: 1vw;
 }
 
 .con23-sec4-cont h1, .con23-sec4-cont p {
@@ -466,11 +647,19 @@ p {
 }
 
 .con23-sec5-cont p {
+    /* legacy setting */
     margin-top: 20px;
+
+    /* responsive setting */
+    margin-top: 1vw;
 }
 
 .sec5-left-cont {
+    /* legacy setting */
     margin-right: 40px;
+
+    /* responsive setting */
+    margin-right: 2vw;
 }
 
 .sec5-right-cont {
@@ -478,10 +667,16 @@ p {
 }
 
 .sec5-right-cont img {
-    height: 200px;
-    width: 200px;
+    height: auto;
+    width: 10vw;
+    
+    /* legacy setting */
     border-radius: 10px;
     margin-bottom: 20px;
+
+    /* responsive setting */
+    border-radius: .5vw;
+    margin-bottom: 1vw;
 }
 
 .con23-sec5-btn {
@@ -494,7 +689,12 @@ p {
     width: 60vw;
     height: 30vw;
     position: relative;
+    
+    /* legacy setting */
     margin: 20px 0;
+
+    /* responsive setting */
+    margin: 1vw 0;
 }
 
 .con23-carousel-cont ul {
