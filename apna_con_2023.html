@@ -368,15 +368,19 @@
     <script>
         function openBurgerCont() {
             var x = document.getElementById("burger-cont");
+            var bodyElement = document.querySelector('body');
             if (x.style.display != "block") {
                 x.style.display = "block";
+                bodyElement.style.overflow = "hidden";
             }
         }
 
         function closeBurgerCont() {
             var x = document.getElementById("burger-cont");
+            var bodyElement = document.querySelector('body');
             if (x.style.display != "none") {
                 x.style.display = "none";
+                bodyElement.style.overflow = "auto";
             }
         }
 
