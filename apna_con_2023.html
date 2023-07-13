@@ -4,7 +4,9 @@
     <title>Asia Pacific Neurofeedback Conference 2023</title>
     <meta name="description" content="Join us at the Asia Pacific Neurofeedback Conference 2023, a premier event bringing together experts, researchers, and practitioners to explore the latest advancements in neurofeedback and biofeedback.">
     <meta name="keywords" content="neurofeedback conference, biofeedback conference, APNA conference, neurofeedback research, biofeedback research, neurofeedback applications, biofeedback applications, neurofeedback practitioners, biofeedback practitioners, Asia Pacific conference">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/APNA logo circle.png" type="image/icon type">
 </head>
 <body>
     <nav class="nav-bar">
@@ -348,6 +350,8 @@
         </div>
     </footer>
     <script>
+        // image carousel
+
         const buttons = document.querySelectorAll("[data-carousel-button]")
 
         buttons.forEach(button => {
@@ -366,6 +370,8 @@
         })
     </script>
     <script>
+        // navigation bar button functions
+
         function openBurgerCont() {
             var x = document.getElementById("burger-cont");
             var bodyElement = document.querySelector('body');
@@ -424,6 +430,16 @@
                 plus.style.display = "block";
                 minus.style.display = "none";
             }
+        }
+    </script>
+    <script>
+        // damn you samsung internet browser
+
+        if (navigator.userAgent.match(/samsung/i)) {
+            alert("Your browser (Samsung Internet) may not show this website" + 
+                  "correctly. Please consider using a standards-compliant" + 
+                  "browser instead. \n\n" +
+                  "We recommend Firefox, Microsoft Edge, or Google Chrome.");
         }
     </script>
 </body>

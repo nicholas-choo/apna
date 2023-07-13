@@ -4,6 +4,7 @@
     <title>APNA</title>
     <meta name="description" content="Explore the Asia Pacific Neurofeedback Association (APNA) - the leading hub for clinicians, researchers, and professionals passionate about unlocking the power of the mind through innovative neurofeedback and biofeedback applications. Discover groundbreaking research, collaboration opportunities, and resources to empower individuals in their journey towards optimal well-being.">
     <meta name="keywords" content="neurofeedback, biofeedback, APNA, Asia Pacific, clinicians, researchers, professionals, mind, well-being, research, collaboration, resources">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/APNA logo circle.png" type="image/icon type">
 </head>
@@ -199,6 +200,8 @@
         </div>
     </footer>
     <script>
+        // navigation bar button functions
+
         function openBurgerCont() {
             var x = document.getElementById("burger-cont");
             var bodyElement = document.querySelector('body');
@@ -257,6 +260,16 @@
                 plus.style.display = "block";
                 minus.style.display = "none";
             }
+        }
+    </script>
+    <script>
+        // damn you samsung internet browser
+
+        if (navigator.userAgent.match(/samsung/i)) {
+            alert("Your browser (Samsung Internet) may not show this website" + 
+                  "correctly. Please consider using a standards-compliant" + 
+                  "browser instead. \n\n" +
+                  "We recommend Firefox, Microsoft Edge, or Google Chrome.");
         }
     </script>
 </body>
