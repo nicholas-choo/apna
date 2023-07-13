@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #000;
+}
+
 h1 {
     font-weight: 700;
 
@@ -105,7 +109,47 @@ p {
     }
 }
 
-@media only screen and (max-device-width: 500px) {}
+@media only screen and (max-device-width: 500px) {
+    h1 {
+        /* legacy setting */
+        font-size: 60px;
+    
+        /* responsive setting */
+        font-size: 6vw;
+    }
+    
+    h2 {
+        /* legacy setting */
+        font-size: 26px;
+    
+        /* responsive setting */
+        font-size: 2.6vw;
+    }
+    
+    h3 {
+        /* legacy setting */
+        font-size: 24px;
+    
+        /* responsive setting */
+        font-size: 2.4vw;
+    }
+    
+    h4 {
+        /* legacy setting */
+        font-size: 24px;
+    
+        /* responsive setting */
+        font-size: 2.4vw;
+    }
+    
+    p {
+        /* legacy setting */
+        font-size: 26px;
+    
+        /* responsive setting */
+        font-size: 2.6vw;
+    }
+}
 
 /* navigation bar */
 
@@ -944,7 +988,139 @@ p {
     }
 }
 
-@media only screen and (max-device-width: 500px) {}
+@media only screen and (max-device-width: 500px) {
+    .footer-cont {
+        width: 80vw;
+    }
+    
+    .footer-inner-cont1 {
+        display: grid;
+        position: static;
+        height: auto;
+    
+        /* legacy setting */
+        margin-bottom: 40px;
+    
+        /* responsive setting */
+        margin-bottom: 4vw;
+    }
+    
+    .footer-page-links {
+        position: static;
+        left: unset;
+        top: unset;
+        transform: translateY(0);
+
+        /* legacy setting */
+        margin-bottom: 40px;
+    
+        /* responsive setting */
+        margin-bottom: 4vw;
+    }
+    
+    .footer-page-links a {
+        margin: auto;
+
+        /* legacy setting */
+        font-size: 28px;
+    
+        /* responsive setting */
+        font-size: 2.8vw;
+    }
+    
+    .footer-social-links {
+        position: static;
+        right: unset;
+        top: unset;
+        transform: translateY(0);
+    }
+    
+    .footer-social-links a {
+        /* legacy setting */
+        height: 88px;
+        width: 88px;
+        margin: 0 10px;
+        border-radius: 10px;
+    
+        /* responsive setting */
+        height: 8.8vw;
+        width: 8.8vw;
+        margin: 0 1vw;
+        border-radius: 1vw;
+    }
+    
+    .social-icon-44 img {
+        /* legacy setting */
+        height: 88px;
+        width: 88px;
+    
+        /* responsive setting */
+        height: 8.8vw;
+        width: 8.8vw;
+    }
+    
+    .social-icon-32 img {
+        /* legacy setting */
+        height: 64px;
+        width: 64px;
+    
+        /* responsive setting */
+        height: 6.4vw;
+        width: 6.4vw;
+    }
+    
+    .footer-inner-cont2 {
+        display: grid;
+        place-items: center;
+        height: auto;
+
+        /* legacy setting */
+        margin-bottom: 40px;
+    
+        /* responsive setting */
+        margin-bottom: 4vw;
+    }
+    
+    .footer-address {
+        display: grid;
+        place-items: center;
+        justify-content: unset;
+        align-items: unset;
+        position: static;
+        left: unset;
+        top: unset;
+        transform: translateY(0);
+
+        /* legacy setting */
+        margin-bottom: 40px;
+    
+        /* responsive setting */
+        margin-bottom: 4vw;
+    }
+    
+    .footer-contact-info {
+        display: grid;
+        place-items: center;
+        justify-content: unset;
+        align-items: unset;
+        position: static;
+        right: unset;
+        top: unset;
+        transform: translateY(0);
+    }
+
+    .footer-cont h4, .footer-address {
+        /* legacy setting */
+        font-size: 2.2px;
+    
+        /* responsive setting */
+        font-size: 2.2vw;
+    }
+    
+    .footer-contact-info h4 {
+        margin-left: 0;
+    }
+}
 
 /* apna conference 2023 global css */
 
@@ -964,6 +1140,8 @@ p {
 }
 
 .con23-sec {
+    background-color: #FFF;
+
     /* legacy setting */
     padding: 40px;
 
@@ -1004,11 +1182,17 @@ p {
     }
     
     .con23-sec {
+        background-color: #FFF;
+
         /* legacy setting */
         padding: 20px;
     
         /* responsive setting */
         padding: 2vw;
+    }
+
+    .black-bg {
+        background-color: #000;
     }
     
     .orange-btn {
@@ -1024,7 +1208,33 @@ p {
     }
 }
 
-@media only screen and (max-device-width: 500px) {}
+@media only screen and (max-device-width: 500px) {
+    .con23-sec {
+        background-color: #FFF;
+
+        /* legacy setting */
+        padding: 40px;
+    
+        /* responsive setting */
+        padding: 5vw;
+    }
+
+    .black-bg {
+        background-color: #000;
+    }
+    
+    .orange-btn {
+        /* legacy setting */
+        padding: 26px 0;
+        border-radius: 10px;
+        font-size: 26px;
+    
+        /* responsive setting */
+        padding: 2.6vw 0;
+        border-radius: 1vw;
+        font-size: 2.6vw;
+    }
+}
 
 /* apna conference 2023 section 1 */
 
@@ -1085,7 +1295,41 @@ p {
     }
 }
 
-@media only screen and (max-device-width: 500px) {}
+@media only screen and (max-device-width: 500px) {
+    .con23-sec1 {
+        min-height: none;
+        max-height: none;
+    }
+    
+    .con23-sec1 img {
+        height: 140%;
+    }
+    
+    .con23-sec1 h1, .con23-sec1 p {
+        text-align: justify;
+    }
+    
+    .con23-sec1 p {
+        width: 100%;
+
+        /* legacy setting */
+        margin-top: 40px;
+    
+        /* responsive setting */
+        margin-top: 4vw;
+    }
+    
+    .con23-sec1-btn {
+        position: static;
+        width: 100%;
+        
+        /* legacy setting */
+        margin-top: 40px;
+    
+        /* responsive setting */
+        margin-top: 4vw;
+    }
+}
 
 /* apna conference 2023 section 2 */
 
@@ -1194,7 +1438,59 @@ p {
     }
 }
 
-@media only screen and (max-device-width: 500px) {}
+@media only screen and (max-device-width: 500px) {
+    .keynote-speaker-cont {
+        display: grid;
+        justify-content: unset;
+        place-content: center;
+        
+        /* legacy setting */
+        padding-top: 20px;
+        padding-bottom: 20px;
+    
+        /* responsive setting */
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
+    
+    .portrait-cont {
+        display: grid;
+        place-items: center;
+        margin-right: 0;
+    }
+    
+    .portrait-image-cont {
+        /* legacy setting */
+        height: 330px;
+        width: 250px;
+        margin-bottom: 20px;
+    
+        /* responsive setting */
+        height: 41vw;
+        width: 31vw;
+        margin-bottom: 2vw;
+    }
+    
+    .portrait-image-cont img {
+        /* legacy setting */
+        height: 320px;
+        width: 240px;
+        box-shadow: 10px 10px 0 #FF8D24;
+    
+        /* responsive setting */
+        height: 40vw;
+        width: 30vw;
+        box-shadow: 1vw 1vw 0 #FF8D24;
+    }
+    
+    .description-cont {
+        /* legacy setting */
+        margin-top: 20px;
+
+        /* responsive setting */
+        margin-top: 2vw
+    }
+}
 
 /* apna conference 2023 section 3 */
 
@@ -1221,6 +1517,7 @@ p {
 .con23-sec3-cont h1, .con23-sec3-cont p, .con23-sec3-cont li {
     color: #FFF;
 }
+
 .con23-sec3-cont p, .con23-sec3-cont li {
     text-align: justify;
 }
@@ -1267,7 +1564,52 @@ p {
     }
 }
 
-@media only screen and (max-device-width: 500px) {}
+@media only screen and (max-device-width: 500px) {
+    .sec3-list-cont {
+        width: 90%;
+
+        /* legacy setting */
+        margin-bottom: 20px;
+    
+        /* responsive setting */
+        margin-bottom: 2vw;
+    }
+    
+    .con23-sec3-cont li {
+        /* legacy setting */
+        font-size: 26px;
+    
+        /* responsive setting */
+        font-size: 2.6vw;
+    }
+    
+    .con23-sec3-cont p {
+        /* legacy setting */
+        margin-top: 20px;
+    
+        /* responsive setting */
+        margin-top: 2vw;
+    }
+    .con23-sec3-cont ul {
+        /* legacy setting */
+        margin-top: 40px;
+    
+        /* responsive setting */
+        margin-top: 4vw;
+    }
+
+    .con23-sec3-cont .keynote-speaker-cont {
+        /* legacy setting */
+        margin-top: 20px;
+    
+        /* responsive setting */
+        margin-top: 2vw;
+    }
+    
+    .con23-sec3-cont .keynote-speaker-cont ul {
+        margin: 0;
+    }
+}
 
 /* apna conference 2023 section 4 */
 
@@ -1383,7 +1725,58 @@ p {
     }
 }
 
-@media only screen and (max-device-width: 500px) {}
+@media only screen and (max-device-width: 500px) {
+    .sec5-inner-cont {
+        display: grid;
+        justify-content: unset;
+        place-content: center;
+    
+        /* legacy setting */
+        margin-top: 40px;
+    
+        /* responsive setting */
+        margin-top: 4vw;
+    }
+    
+    .sec5-left-cont {
+        margin-right: 0;
+    }
+    
+    .sec5-left-cont p {
+        /* legacy setting */
+        margin-bottom: 20px;
+    
+        /* responsive setting */
+        margin-bottom: 2vw;
+    }
+
+    .sec5-right-cont {
+        display: grid;
+        place-items: center;
+    }
+    
+    .sec5-right-cont img {
+        /* legacy setting */
+        width: 400px;
+        border-radius: 10px;
+        margin: 20px 0;
+    
+        /* responsive setting */
+        width: 40vw;
+        border-radius: 1vw;
+        margin: 2vw 0;
+    }
+
+    .con23-sec5-btn {
+        /* legacy setting */
+        width: 40vw;
+        font-size: 32px;
+    
+        /* responsive setting */
+        width: 40vw;
+        font-size: 3.2vw;
+    }
+}
 
 /* carousel */
 
@@ -1478,4 +1871,12 @@ p {
     }
 }
 
-@media only screen and (max-device-width: 500px) {}
+@media only screen and (max-device-width: 500px) {
+    .con23-carousel-cont {
+        height: 50vw;
+    }
+
+    .slide img {
+        height: 50vw;
+    }
+}
