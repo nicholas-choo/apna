@@ -31,13 +31,33 @@ h2 {
     font-weight: 700;
 
     /* legacy setting */
+    font-size: 36px;
+
+    /* responsive setting */
+    font-size: 1.8vw;
+}
+
+h3 {
+    font-weight: 700;
+
+    /* legacy setting */
+    font-size: 28px;
+
+    /* responsive setting */
+    font-size: 1.4vw;
+}
+
+h4 {
+    font-weight: 700;
+
+    /* legacy setting */
     font-size: 20px;
 
     /* responsive setting */
     font-size: 1vw;
 }
 
-h3 {
+h5 {
     font-weight: 600;
 
     /* legacy setting */
@@ -47,7 +67,7 @@ h3 {
     font-size: .9vw;
 }
 
-h4 {
+h6 {
     font-weight: 400;
 
     /* legacy setting */
@@ -58,7 +78,7 @@ h4 {
 }
 
 p {
-    font-weight: 700;
+    font-weight: 600;
 
     /* legacy setting */
     font-size: 20px;
@@ -75,29 +95,45 @@ p {
         /* responsive setting */
         font-size: 4vw;
     }
-    
+
     h2 {
+        /* legacy setting */
+        font-size: 36px;
+    
+        /* responsive setting */
+        font-size: 3.6vw;
+    }
+    
+    h3 {
+        /* legacy setting */
+        font-size: 28px;
+    
+        /* responsive setting */
+        font-size: 2.8vw;
+    }
+    
+    h4 {
+        /* legacy setting */
+        font-size: 20px;
+    
+        /* responsive setting */
+        font-size: 2vw;
+    }
+    
+    h5 {
+        /* legacy setting */
+        font-size: 18px;
+    
+        /* responsive setting */
+        font-size: 1.8vw;
+    }
+    
+    h6 {
         /* legacy setting */
         font-size: 16px;
     
         /* responsive setting */
         font-size: 1.6vw;
-    }
-    
-    h3 {
-        /* legacy setting */
-        font-size: 14px;
-    
-        /* responsive setting */
-        font-size: 1.4vw;
-    }
-    
-    h4 {
-        /* legacy setting */
-        font-size: 14px;
-    
-        /* responsive setting */
-        font-size: 1.4vw;
     }
     
     p {
@@ -117,37 +153,53 @@ p {
         /* responsive setting */
         font-size: 6vw;
     }
-    
+
     h2 {
         /* legacy setting */
-        font-size: 26px;
+        font-size: 56px;
     
         /* responsive setting */
-        font-size: 2.6vw;
+        font-size: 5.6vw;
     }
     
     h3 {
         /* legacy setting */
-        font-size: 24px;
+        font-size: 40px;
     
         /* responsive setting */
-        font-size: 2.4vw;
+        font-size: 4vw;
     }
     
     h4 {
         /* legacy setting */
+        font-size: 32px;
+    
+        /* responsive setting */
+        font-size: 3.2vw;
+    }
+    
+    h5 {
+        /* legacy setting */
+        font-size: 18px;
+    
+        /* responsive setting */
+        font-size: 1.8vw;
+    }
+    
+    h6 {
+        /* legacy setting */
         font-size: 24px;
     
         /* responsive setting */
-        font-size: 2.4vw;
+        font-size: 2vw;
     }
     
     p {
         /* legacy setting */
-        font-size: 26px;
+        font-size: 30px;
     
         /* responsive setting */
-        font-size: 2.6vw;
+        font-size: 3vw;
     }
 }
 
@@ -758,7 +810,7 @@ p {
     place-items: center;
 }
 
-.footer-cont h4 {
+.footer-cont h6 {
     color: #FFF;
     text-align: center;
 }
@@ -897,7 +949,7 @@ p {
     transform: translateY(-50%);
 }
 
-.footer-contact-info h4 {
+.footer-contact-info h6 {
     /* legacy setting */
     margin-left: 20px;
 
@@ -979,7 +1031,7 @@ p {
         margin-bottom: 2vw;
     }
     
-    .footer-contact-info h4 {
+    .footer-contact-info h6 {
         /* legacy setting */
         margin-left: 20px;
     
@@ -1109,7 +1161,7 @@ p {
         transform: translateY(0);
     }
 
-    .footer-cont h4, .footer-address {
+    .footer-cont h6, .footer-address {
         /* legacy setting */
         font-size: 2.2px;
     
@@ -1117,20 +1169,20 @@ p {
         font-size: 2.2vw;
     }
     
-    .footer-contact-info h4 {
+    .footer-contact-info h6 {
         margin-left: 0;
     }
 }
 
-/* apna conference 2023 global css */
+/* global css */
 
-.hori-center {
+.flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.verti-center {
+.grid-center {
     display: grid;
     place-items: center;
 }
@@ -1139,7 +1191,7 @@ p {
     width: 60vw;
 }
 
-.con23-sec {
+.sec {
     background-color: #FFF;
 
     /* legacy setting */
@@ -1176,12 +1228,30 @@ p {
     cursor: pointer;
 }
 
+.black-btn {
+    background-color: #000;
+    font-weight: 400;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+    
+    /* legacy setting */
+    padding: 14px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+
+    /* responsive setting */
+    padding: .7vw 1vw;
+    border-radius: .5vw;
+    font-size: 1vw;
+}
+
 @media only screen and (max-device-width: 970px) {
     .width60vw {
         width: 80vw;
     }
     
-    .con23-sec {
+    .sec {
         background-color: #FFF;
 
         /* legacy setting */
@@ -1209,7 +1279,7 @@ p {
 }
 
 @media only screen and (max-device-width: 500px) {
-    .con23-sec {
+    .sec {
         background-color: #FFF;
 
         /* legacy setting */
@@ -1235,6 +1305,187 @@ p {
         font-size: 2.6vw;
     }
 }
+
+/* home section 1 */
+
+.home-sec1-cont {
+    margin: 4vw 0;
+}
+
+.home-sec1-left-cont {
+    width: 40%;
+    margin-right: 5%;
+    display: grid;
+}
+
+.home-sec1-left-cont h1, .home-sec1-left-cont p {
+    /* legacy setting */
+    margin-bottom: 20px;
+    
+    /* responsive setting */
+    margin-bottom: 1vw;
+}
+
+.home-sec1-left-cont p {
+    text-align: justify;
+}
+
+.home-sec1-cont img {
+    width: 55%;
+
+    /* legacy setting */
+    border-radius: 16px;
+    
+    /* responsive setting */
+    border-radius: .8vw;
+}
+
+.home-sec1-learn-more {
+    display: flex;
+    justify-content: left;
+}
+
+@media only screen and (max-device-width: 970px) {}
+
+@media only screen and (max-device-width: 500px) {}
+
+/* home section 2*/
+
+.home-sec2-cont h2, .home-sec2-cont p {
+    color: #FFF;
+    text-align: center;
+}
+
+.home-sec2-cont h2 {
+    /* legacy setting */
+    margin-bottom: 20px;
+    
+    /* responsive setting */
+    margin-bottom: 1vw;
+}
+
+@media only screen and (max-device-width: 970px) {}
+
+@media only screen and (max-device-width: 500px) {}
+
+/* home section 3 */
+
+.home-sec3-cont h2 {
+    text-align: center;
+
+    /* legacy setting */
+    margin-bottom: 20px;
+    
+    /* responsive setting */
+    margin-bottom: 1vw;
+}
+
+.home-sec3-card-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home-sec3-card {
+    background-color: #EEE;
+    position: relative;
+
+    /* legacy setting */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    height: 300px;
+    width: 370px;
+    
+    /* responsive setting */
+    padding: 1vw;
+    margin: .5vw;
+    border-radius: 1vw;
+    height: 15vw;
+    width: 18.5vw;
+}
+
+.home-sec3-card div, .home-sec3-card h3, .home-sec3-card p {
+    /* legacy setting */
+    margin-bottom: 8px;
+
+    /* responsive setting */
+    margin-bottom: .4vw;
+}
+
+.home-sec3-card p {
+    color: rgba(0, 0, 0, .5);
+}
+
+.home-sec3-card a {
+    position: absolute;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 600;
+
+    /* legacy setting */
+    font-size: 20px;
+    bottom: 20px;
+
+    /* responsive setting */
+    font-size: 1vw;
+    bottom: 1vw;
+}
+
+.home-sec3-rectangle {
+    width: 30%;
+
+    /* legacy setting */
+    height: 12px;
+
+    /* responsive setting */
+    height: .6vw;
+}
+
+@media only screen and (max-device-width: 970px) {}
+
+@media only screen and (max-device-width: 500px) {}
+
+/* home section 4 */
+
+.home-sec4-cont h2 {
+    text-align: center;
+
+    /* legacy setting */
+    margin-bottom: 20px;
+    
+    /* responsive setting */
+    margin-bottom: 1vw;
+}
+
+.home-sec4-inner-cont img {
+    object-fit: cover;
+
+    /* legacy setting */
+    width: 440px;
+    height: 320px;
+    border-radius: 20px;
+    margin-right: 40px;
+
+    /* responsive setting */
+    width: 22vw;
+    height: 16vw;
+    border-radius: 1vw;
+    margin-right: 2vw;
+}
+
+.home-sec4-right-cont h3, .home-sec4-right-cont p {
+    margin-bottom: .5vw;
+}
+
+.home-sec4-learn-more {
+    display: flex;
+    justify-content: left;
+}
+
+@media only screen and (max-device-width: 970px) {}
+
+@media only screen and (max-device-width: 500px) {}
 
 /* apna conference 2023 section 1 */
 
@@ -1305,7 +1556,7 @@ p {
         height: 140%;
     }
     
-    .con23-sec1 h1, .con23-sec1 p {
+    .con23-sec1 h2, .con23-sec1 p {
         text-align: justify;
     }
     
@@ -1384,11 +1635,11 @@ p {
     width: 100%;
 }
 
-.portrait-name-title-cont h2, .portrait-name-title-cont h3 {
+.portrait-name-title-cont h4, .portrait-name-title-cont h5 {
     text-align: center;
 }
 
-.portrait-name-title-cont h3 {
+.portrait-name-title-cont h5 {
     color: #222;
 }
 
@@ -1494,7 +1745,7 @@ p {
 
 /* apna conference 2023 section 3 */
 
-.sec3-list-cont {
+.con23-sec3-list-cont {
     width: 80%;
 
     /* legacy setting */
@@ -1505,7 +1756,7 @@ p {
 }
 
 .con23-sec3-cont li {
-    font-weight: 700;
+    font-weight: 600;
 
     /* legacy setting */
     font-size: 20px;
@@ -1514,7 +1765,7 @@ p {
     font-size: 1vw;
 }
 
-.con23-sec3-cont h1, .con23-sec3-cont p, .con23-sec3-cont li {
+.con23-sec3-cont h2, .con23-sec3-cont p, .con23-sec3-cont li {
     color: #FFF;
 }
 
@@ -1530,12 +1781,12 @@ p {
     margin-top: 1vw;
 }
 
-.con23-sec3-cont h2, .con23-sec3-cont h3 {
+.con23-sec3-cont h4, .con23-sec3-cont h5 {
     color: #FFF;
 }
 
 @media only screen and (max-device-width: 970px) {
-    .sec3-list-cont {
+    .con23-sec3-list-cont {
         /* legacy setting */
         margin-bottom: 20px;
     
@@ -1565,7 +1816,7 @@ p {
 }
 
 @media only screen and (max-device-width: 500px) {
-    .sec3-list-cont {
+    .con23-sec3-list-cont {
         width: 90%;
 
         /* legacy setting */
@@ -1613,7 +1864,7 @@ p {
 
 /* apna conference 2023 section 4 */
 
-.con23-sec4-cont h1 {
+.con23-sec4-cont h2 {
     /* legacy setting */
     margin-bottom: 20px;
 
@@ -1626,7 +1877,7 @@ p {
 }
 
 @media only screen and (max-device-width: 970px) {
-    .con23-sec4-cont h1 {
+    .con23-sec4-cont h2 {
         /* legacy setting */
         margin-bottom: 10px;
 
@@ -1639,11 +1890,11 @@ p {
 
 /* apna conference 2023 section 5 */
 
-.con23-sec5-cont h1, .con23-sec5-cont p {
+.con23-sec5-cont h2, .con23-sec5-cont p {
     color: #FFF;
 }
 
-.sec5-inner-cont {
+.con23-sec5-inner-cont {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1655,7 +1906,7 @@ p {
     margin-top: 1vw;
 }
 
-.sec5-left-cont {
+.con23-sec5-left-cont {
     /* legacy setting */
     margin-right: 40px;
 
@@ -1663,7 +1914,7 @@ p {
     margin-right: 2vw;
 }
 
-.sec5-left-cont p {
+.con23-sec5-left-cont p {
     text-align: justify;
 
     /* legacy setting */
@@ -1673,7 +1924,7 @@ p {
     margin-bottom: .8vw;
 }
 
-.sec5-right-cont img {
+.con23-sec5-right-cont img {
     height: auto;
     
     /* legacy setting */
@@ -1688,7 +1939,7 @@ p {
 }
 
 @media only screen and (max-device-width: 970px) {
-    .sec5-inner-cont {
+    .con23-sec5-inner-cont {
         /* legacy setting */
         margin-top: 10px;
     
@@ -1696,7 +1947,7 @@ p {
         margin-top: 1vw;
     }
     
-    .sec5-left-cont {
+    .con23-sec5-left-cont {
         /* legacy setting */
         margin-right: 20px;
     
@@ -1704,7 +1955,7 @@ p {
         margin-right: 2vw;
     }
     
-    .sec5-left-cont p {
+    .con23-sec5-left-cont p {
         /* legacy setting */
         margin-bottom: 16px;
     
@@ -1712,7 +1963,7 @@ p {
         margin-bottom: 1.6vw;
     }
     
-    .sec5-right-cont img {
+    .con23-sec5-right-cont img {
         /* legacy setting */
         width: 200px;
         border-radius: 10px;
@@ -1726,7 +1977,7 @@ p {
 }
 
 @media only screen and (max-device-width: 500px) {
-    .sec5-inner-cont {
+    .con23-sec5-inner-cont {
         display: grid;
         justify-content: unset;
         place-content: center;
@@ -1738,11 +1989,11 @@ p {
         margin-top: 4vw;
     }
     
-    .sec5-left-cont {
+    .con23-sec5-left-cont {
         margin-right: 0;
     }
     
-    .sec5-left-cont p {
+    .con23-sec5-left-cont p {
         /* legacy setting */
         margin-bottom: 20px;
     
@@ -1750,12 +2001,12 @@ p {
         margin-bottom: 2vw;
     }
 
-    .sec5-right-cont {
+    .con23-sec5-right-cont {
         display: grid;
         place-items: center;
     }
     
-    .sec5-right-cont img {
+    .con23-sec5-right-cont img {
         /* legacy setting */
         width: 400px;
         border-radius: 10px;
