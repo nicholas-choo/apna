@@ -1514,12 +1514,12 @@ p {
     position: relative;
 }
 
-.con23-sec1 h1, .con23-sec1 p {
+.con23-sec1 h1, .con23-sec1 h3, .con23-sec1 h4, .con23-sec1 p {
     color: #FFF;
     text-shadow: 0 2px 6px #000;
 }
 
-.con23-sec1 p {
+.con23-sec1 h3, .con23-sec1 h4, .con23-sec1 p {
     width: 60%;
     
     /* legacy setting */
@@ -1537,7 +1537,7 @@ p {
 }
 
 @media only screen and (max-device-width: 970px) {
-    .con23-sec1 p {
+    .con23-sec1 h3, .con23-sec1 h4, .con23-sec1 p {
         /* legacy setting */
         margin-top: 20px;
     
@@ -1556,11 +1556,11 @@ p {
         height: 140%;
     }
     
-    .con23-sec1 h2, .con23-sec1 p {
+    .con23-sec1 h3, .con23-sec1 p {
         text-align: justify;
     }
     
-    .con23-sec1 p {
+    .con23-sec1 h3, .con23-sec1 h4, .con23-sec1 p {
         width: 100%;
 
         /* legacy setting */
@@ -1631,6 +1631,10 @@ p {
     box-shadow: .5vw .5vw 0 #FF8D24;
 }
 
+.too-bright {
+    border: 1px black solid;
+}
+
 .portrait-name-title-cont {
     width: 100%;
 }
@@ -1641,6 +1645,14 @@ p {
 
 .portrait-name-title-cont h5 {
     color: #222;
+}
+
+.description-cont h4 {
+    /* legacy setting */
+    margin-bottom: 20px;
+
+    /* responsive setting */
+    margin-bottom: 1vw;
 }
 
 .description-cont p {
@@ -1686,6 +1698,14 @@ p {
         height: 18vw;
         width: 13.5vw;
         box-shadow: .5vw .5vw 0 #FF8D24;
+    }
+
+    .description-cont h4 {
+        /* legacy setting */
+        margin-bottom: 20px;
+    
+        /* responsive setting */
+        margin-bottom: 2vw;
     }
 }
 
@@ -1741,7 +1761,42 @@ p {
         /* responsive setting */
         margin-top: 2vw
     }
+
+    .description-cont h4 {
+        /* legacy setting */
+        margin-bottom: 20px;
+    
+        /* responsive setting */
+        margin-bottom: 2vw;
+    }
 }
+
+/* apna conference 2023 section 2.5 */
+
+.con23-sec2_5-cont h2 {
+    /* legacy setting */
+    margin-bottom: 20px;
+
+    /* responsive setting */
+    margin-bottom: 1vw;
+}
+
+.con23-sec2_5-cont h2, .con23-sec2_5-cont p {
+    color: #FFF;
+    text-align: center;
+}
+
+@media only screen and (max-device-width: 970px) {
+    .con23-sec2_5-cont h2 {
+        /* legacy setting */
+        margin-bottom: 10px;
+
+        /* responsive setting */
+        margin-bottom: 1vw;
+    }
+}
+
+@media only screen and (max-device-width: 500px) {}
 
 /* apna conference 2023 section 3 */
 
@@ -1765,24 +1820,16 @@ p {
     font-size: 1vw;
 }
 
-.con23-sec3-cont h2, .con23-sec3-cont p, .con23-sec3-cont li {
-    color: #FFF;
-}
-
 .con23-sec3-cont p, .con23-sec3-cont li {
     text-align: justify;
 }
 
-.con23-sec3-cont p, .con23-sec3-cont ul {
+.con23-sec3-cont h3, .con23-sec3-cont p, .con23-sec3-cont ul {
     /* legacy setting */
     margin-top: 20px;
 
     /* responsive setting */
     margin-top: 1vw;
-}
-
-.con23-sec3-cont h4, .con23-sec3-cont h5 {
-    color: #FFF;
 }
 
 @media only screen and (max-device-width: 970px) {
@@ -1876,6 +1923,10 @@ p {
     text-align: justify;
 }
 
+.con23-sec4-cont h2, .con23-sec4-cont p {
+    color: #FFF;
+}
+
 @media only screen and (max-device-width: 970px) {
     .con23-sec4-cont h2 {
         /* legacy setting */
@@ -1889,10 +1940,6 @@ p {
 @media only screen and (max-device-width: 500px) {}
 
 /* apna conference 2023 section 5 */
-
-.con23-sec5-cont h2, .con23-sec5-cont p {
-    color: #FFF;
-}
 
 .con23-sec5-inner-cont {
     width: 100%;
@@ -1926,6 +1973,7 @@ p {
 
 .con23-sec5-right-cont img {
     height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     
     /* legacy setting */
     width: 200px;
