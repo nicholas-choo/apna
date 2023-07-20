@@ -2182,11 +2182,24 @@ p {
 
 /* About Story Page */
 
+.about-sec1 {
+    /* legacy setting */
+    margin-bottom: 20px;
+
+    /* responsive setting */
+    margin-bottom: 1vw;
+}
 .about-sec1-cont {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom:20px; 
+
+    /* legacy setting */
+    padding-top: 20px;
+
+    /* responsive setting */
+    padding-top: 1vw;
 }
 
 .about-image {
@@ -2195,21 +2208,36 @@ p {
 }
 
 .about-image-cont {
+    object-fit: cover;
+
+    /* legacy setting */    
     width: 440px;
     height: 320px;
     border-radius: 20px;
     margin-right: 40px;
 
+    /* responsive setting */
+    width: 22vw;
+    height: 16vw;
+    border-radius: 1vw;
+    margin-right: 2vw;
+
 }
 
-.about-desc-cont h2 {
+.about-desc-cont h2, .about-desc-cont p {
+    text-align: justify;
+
+    /* legacy setting */
     margin-bottom: 20px;
+    
+    /* responsive setting */
+    margin-bottom: 1vw;
 }
 
 /* About Sec2 */
 
 .about-sec2-desc{
-    text-align: left;
+    text-align: justify;
     margin-bottom: 10px;
 }
 
@@ -2233,14 +2261,19 @@ p {
 .about-sec2-card {
     background-color: #EEE;
     position: relative;
-    
-
    
     padding: 25px;
     margin: 10px;
     border-radius: 20px;
-    height: 570px;
+    height: 17vw;
     width: 370px;
+    
+    /* responsive setting */
+    padding: 1vw;
+    margin: .5vw;
+    border-radius: 1vw;
+    height: 25vw;
+    width: 18.5vw;
 
 }
 
@@ -2284,6 +2317,7 @@ p {
 
 .about-sec3-cont p{
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .about-sec3-cont h2 {
@@ -2297,7 +2331,7 @@ p {
 }
 
 .about-sec3-buttons {
-    margin-top: 20px;
+    margin: auto;
     position: relative;
     display: flex;
     justify-content: center;
