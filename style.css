@@ -2397,7 +2397,7 @@ min-width: 22vw;
     padding: 25px;
     margin: 10px;
     border-radius: 20px;
-    height: 17vw;
+    height: 550px;
     width: 370px;
     
     /* responsive setting */
@@ -2405,7 +2405,7 @@ min-width: 22vw;
     margin: .5vw;
     border-radius: 1vw;
     height: 25vw;
-    width: 18.5vw;
+    width: 19vw;
 
 }
 
@@ -2444,6 +2444,31 @@ min-width: 22vw;
     /* responsive setting */
     height: .6vw;
 }
+
+@media only screen and (max-device-width: 970px) {
+
+    .about-sec2-card {
+        background-color: #EEE;
+        position: relative;
+       
+        padding: 25px;
+        margin: 10px;
+        border-radius: 20px;
+        height: 900px;
+        width: 500px;
+        
+        /* responsive setting */
+        padding: 1vw;
+        margin: .5vw;
+        border-radius: 1vw;
+        height: 45vw;
+        width: 25vw;
+    
+    }
+
+}
+
+@media only screen and (max-device-width: 500px) {}
 
 /* About Section 3 */
 
