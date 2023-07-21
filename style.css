@@ -2461,14 +2461,110 @@ min-width: 22vw;
         padding: 1vw;
         margin: .5vw;
         border-radius: 1vw;
-        height: 45vw;
+        height: 47vw;
         width: 25vw;
     
     }
 
+    .about-sec2-card a {
+        position: absolute;
+        color: rgba(0, 0, 0, 1);
+        font-weight: 600;
+    
+        /* legacy setting */
+        font-size: 18px;
+        bottom: 20px;
+    
+        /* responsive setting */
+        font-size: 1.8vw;
+        bottom: 1vw;
+    }
+
 }
 
-@media only screen and (max-device-width: 500px) {}
+@media only screen and (max-device-width: 500px) {
+
+    .about-sec2-card-cont {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .about-sec2-card {
+        background-color: #EEE;
+        position: relative;
+       
+        padding: 25px;
+        margin: 10px;
+        border-radius: 20px;
+        height: 600px;
+        width: 1080px;
+        
+        /* responsive setting */
+        padding: 1vw;
+        margin: .5vw;
+        border-radius: 1vw;
+        height: 25vw;
+        width: 60vw;
+        
+    
+    }
+
+    .about-sec2-card div, .about-sec2-card h3, .about-sec2-card p {
+        /* legacy setting */
+        margin-bottom: 8px;
+    
+        /* responsive setting */
+        margin-bottom: .4vw;
+    }
+    
+    .about-sec2-card h3 {
+         /* legacy setting */
+         font-size: 50px;
+         bottom: 20px;
+     
+         /* responsive setting */
+         font-size: 3vw;
+         bottom: 1vw;
+     }
+         
+    .about-sec2-card p {
+        color: rgba(0, 0, 0, .5);
+
+        /* legacy setting */
+        font-size: 30px;
+        bottom: 20px;
+    
+        /* responsive setting */
+        font-size: 1.6vw;
+        bottom: 1vw;
+    }
+        
+    
+    .about-sec2-card a {
+        position: absolute;
+        color: rgba(0, 0, 0, 1);
+        font-weight: 600;
+    
+        /* legacy setting */
+        font-size: 30px;
+        bottom: 20px;
+    
+        /* responsive setting */
+        font-size: 2.5vw;
+        bottom: 1vw;
+    }
+    
+    .about-sec2-rectangle {
+    
+        /* legacy setting */
+        height: 13px;
+    
+        /* responsive setting */
+        height: .8vw;
+    }
+}
 
 /* About Section 3 */
 
@@ -2502,4 +2598,36 @@ min-width: 22vw;
 
 .about-sec3-buttons a {
     margin: auto;
+}
+
+@media screen and (max-device-width: 970px){
+
+    .about-sec3-buttons a {
+
+        /* legacy setting */
+        font-size: 22px;
+        margin: 10px;
+    
+        /* responsive setting */
+        font-size: 1.8vw;
+        margin: 1vw;
+
+    }
+
+}
+
+@media screen and (max-device-width: 500px){
+
+    .about-sec3-buttons a {
+
+        /* legacy setting */
+        font-size: 30px;
+        margin: 14px;
+    
+        /* responsive setting */
+        font-size: 2.5vw;
+        margin: 1.2vw;
+
+    }
+
 }
