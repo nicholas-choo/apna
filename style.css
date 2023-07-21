@@ -2278,12 +2278,13 @@ p {
 }
 
 .about-image {
-    display: grid;
+    display: flex;
     place-items: center;
 }
 
 .about-image img {
 object-fit: cover;
+min-width: 22vw;
 
     /* legacy setting */    
     width: 440px;
@@ -2293,11 +2294,12 @@ object-fit: cover;
 
     /* responsive setting */
     width: 22vw;
-    height: 16vw;
+    height: 14vw;
     border-radius: 1vw;
     margin-right: 2vw;
 
 }
+
 
 .about-desc-cont h2, .about-desc-cont p {
     text-align: justify;
@@ -2310,10 +2312,60 @@ object-fit: cover;
 }
 
 
-@media only screen and (max-device-width: 970px) {}
 
-@media only screen and (max-device-width: 500px) {}
+@media only screen and (max-device-width: 500px) {
 
+    .about-sec1 {
+        /* legacy setting */
+        margin-bottom: 20px;
+    
+        /* responsive setting */
+        margin-bottom: 1vw;
+    }
+
+    .about-sec1-cont {
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        margin-bottom:20px; 
+    
+        /* legacy setting */
+        padding-top: 20px;
+    
+        /* responsive setting */
+        padding-top: 1vw;
+    }
+
+    .about-image img {
+        object-fit: cover;
+        margin-bottom: 2vw;
+        margin-left: 2vw;
+        
+            /* legacy setting */    
+            width: 440px;
+            height: 320px;
+            border-radius: 20px;
+            margin-right: 40px;
+        
+            /* responsive setting */
+            width: auto;
+            height: 40vw;
+            border-radius: 1vw;
+            margin-right: 2vw;
+        
+        }
+
+        .about-desc-cont h2, .about-desc-cont p {
+            text-align: justify;
+        
+            /* legacy setting */
+            margin-bottom: 20px;
+            
+            /* responsive setting */
+            margin-bottom: 1vw;
+        }
+    
+    }
 /* About Sec2 */
 
 .about-sec2-desc{
@@ -2411,10 +2463,18 @@ object-fit: cover;
 }
 
 .about-sec3-buttons {
-    margin: auto;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* legacy setting */
+    margin-top: 10px;
     
+    /* responsive setting */
+    margin-top: 1vw;
+}
+
+.about-sec3-buttons a {
+    margin: auto;
 }
