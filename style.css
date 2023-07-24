@@ -1439,7 +1439,15 @@ p {
     justify-content: left;
 }
 
-@media only screen and (max-device-width: 970px) {}
+@media only screen and (max-device-width: 970px) {
+    .home-sec1-cont img {
+        /* legacy setting */
+        border-radius: 16px;
+        
+        /* responsive setting */
+        border-radius: 1.6vw;
+    }
+}
 
 @media only screen and (max-device-width: 500px) {
     .home-sec1-cont {
@@ -1453,6 +1461,12 @@ p {
         width: 100%;
         margin-left: 0;
         margin-bottom: 5%;
+
+        /* legacy setting */
+        border-radius: 32px;
+        
+        /* responsive setting */
+        border-radius: 3.2vw;
     }
 
     .home-sec1-left-cont {
