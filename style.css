@@ -2264,6 +2264,117 @@ p {
     }
 }
 
+/* visitor info section 1 */
+
+.visitor-info-sec1-cont {
+    display: flex;
+    justify-content: center;
+}
+
+.visitor-info-sec1-cont img {
+    width: 35%;
+    object-fit: cover;
+
+    /* legacy setting */
+    border-radius: 20px;
+    margin-right: 40px;
+
+    /* responsive setting */
+    border-radius: 1vw;
+    margin-right: 2vw;
+}
+
+.visitor-info-sec1-right-cont {
+    display: grid;
+    place-items: center;
+}
+
+.visitor-info-sec1-right-cont h1 {
+    /* legacy setting */
+    margin-bottom: 20px;
+
+    /* responsive setting */
+    margin-bottom: 1vw;
+}
+
+.visitor-info-sec1-right-cont p {
+    text-align: justify;
+}
+
+@media screen and (max-device-width: 970px){}
+
+@media screen and (max-device-width: 500px){
+    .visitor-info-sec1-cont {
+        display: grid;
+        justify-content: unset;
+        place-items: center;
+    }
+
+    .visitor-info-sec1-cont img {
+        width: 100%;
+        margin-right: 0;
+
+        /* legacy setting */
+        border-radius: 20px;
+        margin-bottom: 20px;
+
+        /* responsive setting */
+        border-radius: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    .visitor-info-sec1-right-cont h1 {
+        /* legacy setting */
+        margin-bottom: 20px;
+
+        /* responsive setting */
+        margin-bottom: 2vw;
+    }
+}
+
+/* visitor info section 2 */
+
+.visitor-info-sec2-cont {
+    display: grid;
+    place-items: center;
+}
+
+.visitor-info-sec2-cont h2 {
+    width: 100%;
+}
+
+.visitor-info-sec2-cont p {
+    text-align: justify;
+}
+
+.visitor-info-sec2-cont h2, .visitor-info-sec2-cont p {
+    /* legacy setting */
+    margin-bottom: 20px;
+
+    /* responsive setting */
+    margin-bottom: 1vw;
+}
+
+@media screen and (max-device-width: 970px){
+    .visitor-info-sec2-cont h2, .visitor-info-sec2-cont p {
+        /* legacy setting */
+        margin-bottom: 20px;
+    
+        /* responsive setting */
+        margin-bottom: 2vw;
+    }
+}
+
+@media screen and (max-device-width: 500px){
+    .visitor-info-sec2-cont h2, .visitor-info-sec2-cont p {
+        /* legacy setting */
+        margin-bottom: 20px;
+    
+        /* responsive setting */
+        margin-bottom: 2vw;
+    }
+}
+
 /* apna conference 2023 section 1 */
 
 .con23-sec1 {
