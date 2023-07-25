@@ -2342,7 +2342,7 @@ min-width: 22vw;
         margin-left: 2vw;
         
             /* legacy setting */    
-            width: 440px;
+            width: 500px;
             height: 320px;
             border-radius: 20px;
             margin-right: 40px;
@@ -2505,8 +2505,8 @@ min-width: 22vw;
         padding: 1vw;
         margin: .5vw;
         border-radius: 1vw;
-        height: 25vw;
-        width: 60vw;
+        height: 50vw;
+        width: 80vw;
         
     
     }
@@ -2525,7 +2525,7 @@ min-width: 22vw;
          bottom: 20px;
      
          /* responsive setting */
-         font-size: 3vw;
+         font-size: 4.5vw;
          bottom: 1vw;
      }
          
@@ -2533,11 +2533,11 @@ min-width: 22vw;
         color: rgba(0, 0, 0, .5);
 
         /* legacy setting */
-        font-size: 30px;
+        font-size: 40px;
         bottom: 20px;
     
         /* responsive setting */
-        font-size: 1.6vw;
+        font-size: 3vw;
         bottom: 1vw;
     }
         
@@ -2548,21 +2548,21 @@ min-width: 22vw;
         font-weight: 600;
     
         /* legacy setting */
-        font-size: 30px;
+        font-size: 45px;
         bottom: 20px;
     
         /* responsive setting */
-        font-size: 2.5vw;
+        font-size: 3.5vw;
         bottom: 1vw;
     }
     
     .about-sec2-rectangle {
     
         /* legacy setting */
-        height: 13px;
+        height: 17px;
     
         /* responsive setting */
-        height: .8vw;
+        height: 1vw;
     }
 }
 
