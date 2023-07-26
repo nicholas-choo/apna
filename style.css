@@ -115,6 +115,14 @@ p {
     font-size: 1vw;
 }
 
+ul {
+    /* legacy setting */
+    font-size: 18px;
+
+    /* responsive setting */
+    font-size: 1vw;
+}
+
 @media only screen and (max-device-width: 970px) {
     h1 {
         /* legacy setting */
@@ -174,6 +182,14 @@ p {
     
         /* responsive setting */
         font-size: 1.6vw;
+    }
+
+    ul {
+        /* legacy setting */
+        font-size: 18px;
+    
+        /* responsive setting */
+        font-size: 1vw;
     }
 }
 
@@ -260,6 +276,14 @@ p {
     
         /* responsive setting */
         font-size: 3vw;
+    }
+
+    ul {
+        /* legacy setting */
+        font-size: 18px;
+    
+        /* responsive setting */
+        font-size: 1vw;
     }
 }
 
