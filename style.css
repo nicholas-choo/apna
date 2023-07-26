@@ -3114,7 +3114,7 @@ ul {
 
 /* APNA Story */
 
-.story-sec h2 {
+.story-sec h1 {
     text-align: center;
 
     /* legacy setting */
@@ -3151,13 +3151,38 @@ ul {
 
 }
 
-.story-sec-card div, .story-sec-card h3, .story-sec-card p {
+.story-sec-card div, .story-sec-card h2, .story-sec-card p {
 
     /* legacy setting */
     margin-bottom: 12px;
 
     /* responsive setting */
     margin-bottom: .7vw;
+}
+
+
+.story-sec-card p, .story-sec-card h4 {
+    color: rgba(0, 0, 0, .5);
+
+}
+
+.story-sec-card h4 {
+
+    /* legacy setting */
+    margin-bottom: 12px;
+
+    /* responsive setting */
+    margin-bottom: .8vw;
+}
+
+.story-sec-rectangle {
+    width: 9%;
+
+    /* legacy setting */
+    height: 12px;
+
+    /* responsive setting */
+    height: .6vw;
 }
 
 .story-sec-card li {
@@ -3182,33 +3207,6 @@ ul {
     margin-bottom: 1vw;
 }
 
-.story-sec-card p {
-    color: rgba(0, 0, 0, .5);
-
-}
-
-.story-sec-card h5 {
-    font-weight: 600;
-
-    /* legacy setting */
-    margin-bottom: 12px;
-
-    /* responsive setting */
-    margin-bottom: .8vw;
-}
-
-
-.story-sec-rectangle {
-    width: 9%;
-
-    /* legacy setting */
-    height: 12px;
-
-    /* responsive setting */
-    height: .6vw;
-}
-
-
 /* APNA Story Section 2 */
 
 .story-sec2-card {
@@ -3231,7 +3229,7 @@ ul {
 
 }
 
-.story-sec2-card div, .story-sec2-card h3, .story-sec2-card p {
+.story-sec2-card div, .story-sec2-card h2, .story-sec2-card p {
 
     /* legacy setting */
     margin-bottom: 12px;
@@ -3240,13 +3238,12 @@ ul {
     margin-bottom: .7vw;
 }
 
-.story-sec2-card p {
+.story-sec2-card p, .story-sec2-card h4 {
     color: rgba(0, 0, 0, .5);
 
 }
 
-.story-sec2-card h5 {
-    font-weight: 600;
+.story-sec2-card h4 {
 
     /* legacy setting */
     margin-bottom: 12px;
@@ -3287,7 +3284,7 @@ ul {
 
 }
 
-.story-sec3-card div, .story-sec3-card h3, .story-sec3-card p {
+.story-sec3-card div, .story-sec3-card h2, .story-sec3-card p {
 
     /* legacy setting */
     margin-bottom: 12px;
@@ -3296,14 +3293,12 @@ ul {
     margin-bottom: .7vw;
 }
 
-.story-sec3-card p {
+.story-sec3-card p, .story-sec3-card h4 {
     color: rgba(0, 0, 0, .5);
 
 }
 
-.story-sec3-card h5 {
-    font-weight: 600;
-
+.story-sec3-card h4 {
     /* legacy setting */
     margin-bottom: 12px;
 
