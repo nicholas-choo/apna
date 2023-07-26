@@ -186,10 +186,10 @@ ul {
 
     ul {
         /* legacy setting */
-        font-size: 18px;
+        font-size: 16px;
     
         /* responsive setting */
-        font-size: 1vw;
+        font-size: 1.6vw;
     }
 }
 
@@ -280,10 +280,10 @@ ul {
 
     ul {
         /* legacy setting */
-        font-size: 18px;
+        font-size: 28px;
     
         /* responsive setting */
-        font-size: 1vw;
+        font-size: 2.9vw;
     }
 }
 
@@ -3146,7 +3146,7 @@ ul {
     padding: 1vw;
     margin: .5vw;
     border-radius: 1vw;
-    height: 85vw;
+    height: 88vw;
     width: 85vw;
 
 }
@@ -3206,6 +3206,61 @@ ul {
     margin-top: 1.2vw;
     margin-bottom: 1vw;
 }
+@media only screen and (max-device-width: 970px) {
+    
+    .story-sec-card {
+        background-color: #EEE;
+        position: relative;
+       
+        padding: 25px;
+        margin: 10px;
+        border-radius: 20px;
+        height: 1310px;
+        width: 1250px;
+        
+        /* responsive setting */
+        padding: 1vw;
+        margin: .5vw;
+        border-radius: 1vw;
+        height: 138vw;
+        width: 85vw;
+    
+    }
+}
+
+@media only screen and (max-device-width: 500px) {
+
+    .story-sec-card p, .story-sec-card h4 {
+        text-align: justify;
+          
+    /* legacy setting */
+    padding: 8px;
+
+    /* responsive setting */
+    padding: 0.8vw;
+
+        
+    }
+    
+    .story-sec-card {
+        background-color: #EEE;
+        position: relative;
+       
+        padding: 25px;
+        margin: 10px;
+        border-radius: 20px;
+        height: 3675px;
+        width: 1250px;
+        
+        /* responsive setting */
+        padding: 1vw;
+        margin: .5vw;
+        border-radius: 1vw;
+        height: 375vw;
+        width: 90vw;
+    
+    }
+}
 
 /* APNA Story Section 2 */
 
@@ -3224,7 +3279,7 @@ ul {
     padding: 1vw;
     margin: .5vw;
     border-radius: 1vw;
-    height: 55vw;
+    height: 57vw;
     width: 85vw;
 
 }
@@ -3262,6 +3317,62 @@ ul {
     height: .6vw;
 }
 
+@media only screen and (max-device-width: 970px) {
+    
+    .story-sec2-card {
+        background-color: #EEE;
+        position: relative;
+       
+        padding: 25px;
+        margin: 10px;
+        border-radius: 20px;
+        height: 900px;
+        width: 1250px;
+        
+        /* responsive setting */
+        padding: 1vw;
+        margin: .5vw;
+        border-radius: 1vw;
+        height: 95vw;
+        width: 85vw;
+    
+    }
+}
+
+@media only screen and (max-device-width: 500px) {
+
+    .story-sec2-card p, .story-sec2-card h4 {
+        text-align: justify;
+          
+       /* legacy setting */
+        padding: 8px;
+  
+        /* responsive setting */
+        padding: 0.8vw;
+
+        
+    }
+    
+    .story-sec2-card {
+        background-color: #EEE;
+        position: relative;
+       
+        padding: 25px;
+        margin: 10px;
+        border-radius: 20px;
+        height: 2900px;
+        width: 1250px;
+        
+        /* responsive setting */
+        padding: 1vw;
+        margin: .5vw;
+        border-radius: 1vw;
+        height: 290vw;
+        width: 90vw;
+    
+    }
+}
+
 /* APNA Story Section 3 */
 
 .story-sec3-card {
@@ -3279,7 +3390,7 @@ ul {
     padding: 1vw;
     margin: .5vw;
     border-radius: 1vw;
-    height: 32vw;
+    height: 34vw;
     width: 85vw;
 
 }
@@ -3336,4 +3447,59 @@ ul {
     /* responsive setting */
     margin-top: 1.2vw;
     margin-bottom: 1vw;
+}
+
+@media only screen and (max-device-width: 970px) {
+    
+    .story-sec3-card {
+        background-color: #EEE;
+        position: relative;
+       
+        padding: 25px;
+        margin: 10px;
+        border-radius: 20px;
+        height: 525px;
+        width: 1250px;
+        
+        /* responsive setting */
+        padding: 1vw;
+        margin: .5vw;
+        border-radius: 1vw;
+        height: 57vw;
+        width: 85vw;
+    
+    }
+}
+
+@media only screen and (max-device-width: 500px) {
+
+    .story-sec3-card p, .story-sec3-card h4 {
+        text-align: justify;
+
+       /* legacy setting */
+        padding: 8px;
+  
+       /* responsive setting */
+        padding: 0.8vw;
+
+    }
+    
+    .story-sec3-card {
+        background-color: #EEE;
+        position: relative;
+       
+        padding: 25px;
+        margin: 10px;
+        border-radius: 20px;
+        height: 525px;
+        width: 1250px;
+        
+        /* responsive setting */
+        padding: 1vw;
+        margin: .5vw;
+        border-radius: 1vw;
+        height: 143vw;
+        width: 85vw;
+    
+    }
 }
