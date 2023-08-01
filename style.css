@@ -3273,7 +3273,7 @@ p {
   justify-content: space-between;
   margin: 0px 11px;
   position: relative;
-  width: 60vw;
+  max-width: 58vw;
 }
 
 .spacer {
@@ -3295,6 +3295,7 @@ p {
 .terms_privacy_menu {
     display: flex;
     align-items: center; 
+    max-width: 400px;
 }
 
 .menu_item {
@@ -3319,7 +3320,6 @@ p {
     color: #fff;
     padding: 10px 20px; 
     border-radius: 5px; 
-    font-size: 14px;
 }
 
 .menu_item:first-child {
@@ -3335,7 +3335,7 @@ p {
   color: #909090;
   padding: 10px 20px; 
   border-radius: 5px; 
-  font-size: 14px;
+
 }
 
 .select_menu_item :hover,
@@ -3353,15 +3353,17 @@ p {
 }
 
 @media only screen and (max-device-width: 970px) {
-  .terms_privacy_menubar {
-    width: 80vw;
-  }
+.terms_privacy_menu {
+    margin-left: 75%;
+    max-width: 400px;
+}
 }
 
 @media only screen and (max-device-width: 500px) {
-  .terms_privacy_menubar {
-    width: 80vw;
-  }
+.terms_privacy_menu {
+    margin-left: 50%;
+    max-width: 400px;
+}
 }
 
 /* Apna Terms and Conditions */
@@ -3370,18 +3372,12 @@ p {
   flex-direction: column;
   margin: 0 19.38% 0 19.69%;
   position: relative;
-  width: 60vw;
 }
 
 .title_terms {
   display: flex;
   flex-direction: column;
   margin: 10px 0;
-}
-
-.horizontal-line {
-  background-color: #909090;
-  height: 1px;
 }
 
 .terms_big_title {
@@ -3406,17 +3402,9 @@ p {
   color: red;
 }
 
-@media only screen and (max-device-width: 970px) {
-  .terms_flex_col1 {
-    width: 80vw;
-  }
-}
+@media only screen and (max-device-width: 970px) {}
 
-@media only screen and (max-device-width: 500px) {
-  .terms_flex_col1 {
-    width: 80vw;
-  }
-}
+@media only screen and (max-device-width: 500px) {}
 
 
 /* Apna Privacy Policy */
@@ -3425,7 +3413,6 @@ p {
   flex-direction: column;
   margin: 0 19.38% 0 19.69%;
   position: relative;
-  width: 60vw;
 }
 
 .title_privacy {
@@ -3478,19 +3465,9 @@ p {
   color: #ffae00;
 }
 
-@media only screen and (max-device-width: 970px) {
-  .privacy_cont_box  {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-}
+@media only screen and (max-device-width: 970px) {}
 
-@media only screen and (max-device-width: 500px) {
-  .privacy_cont_box  {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-}
+@media only screen and (max-device-width: 500px) {}
 
 
 /**contact us page*/
@@ -3505,19 +3482,18 @@ p {
 .title_contact{
     display: flex;
     flex-direction: column;
+    align-items: center;
     flex-grow: 1;
     margin: 500px 19.69% 50px 19.38%;
     position: relative;
-    width: 60vw;
 }
 .contact_big_title{
     color: #000;
     display: flex;
     justify-content: center;
     letter-spacing: 0px;
-    margin: 0px 41.79% 0px 41.97%;
+    margin-top: 10px;
     text-align: center;
-    width: 20%;
 }
 .contact_row1 > .spacer {
     flex: 0 1 62px;
@@ -3531,7 +3507,10 @@ p {
 .vertical-line {
   border-right: 1px solid #909090;
   height: 600px;
-  align-self: center; 
+  position: absolute;
+  top: 50%;
+  margin-left: 400px;
+  transform: translateY(-50%);
 }
 .contact_row1 > .spacer1 {
     flex: 0 1 63px;
@@ -3550,15 +3529,20 @@ p {
     letter-spacing: 0;
     text-align: center;
     min-width: 0;
+    max-width: 400px;
+    margin-right: 20px;
 }
 .enquiry_box {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.247);
   flex: 1 0 calc(50% - 240px);
   border-radius: 15px;
   margin-left: 20px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .enquiry_title{
-    font-size: 24px;
     text-align: center;
     font-weight: bold;
     margin-top: 10px;
@@ -3570,7 +3554,6 @@ fieldset {
 }
 
 legend {
-    font-size: 16px;
     color: #505050;
     font-weight: bold;
     margin-left: 20px;
@@ -3592,15 +3575,16 @@ legend {
     outline: none;
 }
 .enquiry_subbtn{
-    padding: 15px 30px;
+    padding: 10px 80px;
     font-size: 20px;
     background-color: #FF8D24;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.247);
-    border-radius: 0px 0px 5px 5px;
+    border-radius: 5px;
     color: #FFF;
     border: none;
     text-align: center;
-    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
     cursor: pointer;
 }
 .enquiry_subbtn:hover {
@@ -3625,7 +3609,6 @@ legend {
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     gap: 80px;
     margin-bottom: 40px;
-    font-size: 12px;
 }
 .contact_subcont_title {
     text-align: center;
@@ -3640,75 +3623,10 @@ legend {
 .contact_header_img{
     width: 80vw;
 }
-.contact_row1 {
-    flex-direction: column;
-    align-items: center;
 }
-.contact_address_box {
-    margin: 10px auto;
-    max-width: 400px;
-    text-align: center;
-} 
-.enquiry_box {
-    margin: 0px auto;
-    width: 100%;
-}
-.enquiry_inputdata{
-    width: 98%;
-}
-.enquiry_inputdata_message{
-    width: 98%;
-}
-.vertical-line {
-    border: none;
-    height: 0px;
-}
-
-.google_map {
-    width: 100%;
-}
-.contact_subcont{
-    flex-direction: column;
-    align-items: center;
-    max-width: 400px;
-    margin-right: 20px;
-}
-}
-  
 @media only screen and (max-device-width: 500px) {
 .contact_header_img{
     width: 80vw;
 }
-.contact_row1 {
-    flex-direction: column;
-    align-items: center;
 }
-.contact_address_box {
-    margin: 10px auto;
-    max-width: 400px;
-    text-align: center;
-} 
-.enquiry_box {
-    margin: 0px auto;
-    width: 100%;
-  }
-  .enquiry_inputdata{
-    width: 98%;
-}
-.enquiry_inputdata_message{
-    width: 98%;
-}
-.vertical-line {
-    border: none;
-    height: 0px;
-}
-.google_map {
-    width: 100%;
-}
-.contact_subcont{
-    flex-direction: column;
-    align-items: center;
-    max-width: 400px;
-    margin-right: 20px;
-}
-}
+
