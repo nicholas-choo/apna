@@ -3379,7 +3379,11 @@ p {
   flex-direction: column;
   margin: 10px 0;
 }
-
+.line1 {
+  background-color: #909090;
+  height: 1px;
+  min-height: 1px;
+}
 .terms_big_title {
   color: #000;
   justify-content: center;
@@ -3389,8 +3393,8 @@ p {
 }
 
 .terms_box {
-  margin: 49px 5%;
   text-align: justify;
+  margin-top: 40px;
 }
 
 .terms_content {
@@ -3436,21 +3440,25 @@ p {
 }
 
 .privacy_box {
-  margin: 49px 5%;
-  text-align: justify;
+  text-align: center;
 }
-
 .privacy_cont_box {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-  gap: 80px;
-  margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
-
-.privacy_cont1,
+.privacy_subcont {
+    flex: 1;
+    max-width: calc(50% - 20px);
+    text-align: center;
+}
+.privacy_cont1 {
+    margin-top: 40px;
+}
 .privacy_subcont_title,
 .privacy_subcont_content {
   text-align: center;
+  margin-top: 20px;
 }
 
 .privacy_subcont_title {
@@ -3467,7 +3475,23 @@ p {
 
 @media only screen and (max-device-width: 970px) {}
 
-@media only screen and (max-device-width: 500px) {}
+@media only screen and (max-device-width: 500px) {
+    .privacy_cont1 {
+        margin-bottom: 40px;
+    }
+    .privacy_cont_box {
+        display: block; 
+        margin-bottom: 40px;
+    }
+    .privacy_subcont {
+        flex: none; 
+        max-width: 100%; 
+        margin-right: 0; 
+        margin-bottom: 40px; 
+        text-align: center;
+        overflow: auto; 
+    }
+}
 
 
 /**contact us page*/
@@ -3477,7 +3501,6 @@ p {
     object-fit: cover;
     position: absolute;
     top: 180px;
-    width: 60vw;
 }
 .title_contact{
     display: flex;
@@ -3497,10 +3520,11 @@ p {
 }
 .vertical-line {
     border-right: 1px solid #909090;
-    height: 600px;
+    display: flex;
+    height: 100%;
     position: absolute;
     top: 50%;
-    margin-left: 400px;
+    margin-left: 48% ;
     transform: translateY(-50%);
 }
 .contact_row1{
@@ -3512,11 +3536,11 @@ p {
     flex-wrap: nowrap;
 }
 .contact_address_box{
-    flex: 1 0 30vw; 
+    flex: 1 0 10vw; 
     color: #000;
     letter-spacing: 0;
     text-align: center;
-    min-width: 0;
+    width: 0;
     max-width: 400px;
     margin-right: 20px;
 }
@@ -3536,7 +3560,7 @@ p {
     display: block;
 }
 fieldset {
-    border-radius: 5px;
+    border-radius: 0.5vw;
     margin: 0px 20px 20px 20px;
 }
 
@@ -3606,7 +3630,11 @@ legend {
     text-align: justify;
 }
 /* Tablet View */
-@media only screen and (max-width: 970px) {}
+@media only screen and (max-width: 970px) {
+    .contact_header_img{
+    width: 80vw;
+}
+}
 
 /* Mobile View */
 @media only screen and (max-device-width: 500px) {
@@ -3618,14 +3646,17 @@ legend {
     align-items: center;
 }
 .contact_address_box {
+    width: 80vw;
     margin: 10px auto;
     max-width: 400px;
     text-align: center;
-} 
+    margin-bottom: 40px;
+}
 .enquiry_box {
+    width: 80vw;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 100%;
+    margin-left: 0px;
 }
 .enquiry_inputdata{
     width: 98%;
@@ -3637,15 +3668,25 @@ legend {
     border: none;
     height: 0px;
 }
-
+fieldset{
+    border-radius: 1vw;
+}
 .google_map {
     width: 80vw;
 }
-.contact_subcont{
+.contact_subcont_content{
     flex-direction: column;
     align-items: center;
-    max-width: 400px;
+    width: 80vw;
     margin-right: 20px;
+    margin-bottom: 20px;
+}
+.contact_subcont_content{
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 }
 
