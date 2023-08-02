@@ -3524,7 +3524,7 @@ p {
     height: 100%;
     position: absolute;
     top: 50%;
-    margin-left: 48% ;
+    left: 48%;
     transform: translateY(-50%);
 }
 .contact_row1{
@@ -3543,6 +3543,7 @@ p {
     width: 0;
     max-width: 400px;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 .enquiry_box {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.247);
@@ -3558,10 +3559,12 @@ p {
     font-weight: bold;
     margin-top: 10px;
     display: block;
+    font-size: 2vw;
 }
 fieldset {
     border-radius: 0.5vw;
     margin: 0px 20px 20px 20px;
+    font-size: 1vw;
 }
 
 legend {
@@ -3657,6 +3660,12 @@ legend {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 0px;
+}
+.enquiry_title{
+    font-size: 5vw;
+}
+fieldset {
+    font-size: 3vw;
 }
 .enquiry_inputdata{
     width: 98%;
