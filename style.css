@@ -3543,7 +3543,7 @@ p {
     width: 0;
     max-width: 300px;
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 1vh;
 }
 .enquiry_box {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.247);
@@ -3560,12 +3560,13 @@ p {
     margin-top: 10px;
     display: block;
     font-size: 2vw;
-    margin-top: 2vh;
+    height: 1vh;
 }
 fieldset {
     border-radius: 0.5vw;
     margin: 2vh 2vw;
     font-size: 1vw;
+    height: 10%;
 }
 
 legend {
@@ -3577,7 +3578,7 @@ legend {
     margin: 0px 5px 10px 5px;
     border: none;
     width: 95%;
-    margin-top: 1vh;
+    height: 1vh;
 }
 .enquiry_inputdata:focus{
     margin: 0px 5px 10px 5px;
@@ -3588,13 +3589,13 @@ legend {
     border-radius: 5px;
     border: none;
     width: 95%;
-    margin-top: 1vh;
+    height: 30vh;
 }
 .enquiry_inputdata_message:focus {
     outline: none;
 }
 .enquiry_subbtn{
-    padding: 10px 80px;
+    padding: 1vh 5vw;
     background-color: #FF8D24;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.247);
     border-radius: 5px;
@@ -3602,7 +3603,7 @@ legend {
     border: none;
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 1vw;
     cursor: pointer;
 }
 .enquiry_subbtn:hover {
