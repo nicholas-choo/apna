@@ -1,0 +1,38 @@
+.newsletter {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 80px 50px;
+}
+
+.blocks {
+    display: grid;
+    justify-content: center;
+    max-width: 1000px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+    margin-top: 40px;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.block h3 {
+    margin-top: 20px;
+}
+
+.block a {
+    color: black;
+    font-size: 15px;
+}
+
+.block img {
+    width: 100%;
+}
+
