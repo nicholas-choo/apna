@@ -1,0 +1,365 @@
+<!doctype html>
+<html>
+<head>
+    <title>The APNA Story</title>
+    <meta name="description" content="Discover the Asia Pacific Neurofeedback Association (APNA) - a dynamic hub for clinicians, researchers, and professionals devoted to unlocking the power of the mind through neurofeedback and biofeedback. Explore our vision, missions, and initiatives aimed at fostering collaboration, promoting professionalism, and raising public awareness about the transformative benefits of these practices.">
+    <meta name="keywords" content="neurofeedback association, biofeedback association, APNA, Asia Pacific, clinicians, researchers, professionals, vision, missions, collaboration, professionalism, public awareness">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/APNA logo circle.png" type="image/icon type">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-bar-cont">
+            <a href="index.html"><img src="images/APNA logo.png"></a>
+            <form class="nav-bar-search">
+                <input class="search-bar-input" type="text" id="search_bar" name="search_bar" placeholder="Search..."/>
+                <input class="search-bar-submit" type="image" src="images/general_icons/search.png" name="submit" alt="Submit"/>
+            </form>
+        </div>
+        <div class="nav-bar-links">
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="index.html">Home</a>
+                </ul>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul class="highlighted">
+                    <a href="about_apna.html" class="dropdown selected">About APNA</a>
+                </ul>
+                <div class="submenu">
+                    <ul>
+                        <a href="apna_story.html">The APNA Story</a>
+                        <a href="#">Board & Committee</a>
+                        <a href="#">Foreword by President of APNA</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="#" class="dropdown">Membership</a>
+                </ul>
+                <div class="submenu">
+                    <ul>
+                        <a href="#">Membership List</a>
+                        <a href="#">Membership Fee</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="#">Certification</a>
+                </ul>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="#">Research Institutes</a>
+                </ul>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="#">Publications</a>
+                </ul>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="visitor_info.html">Visitor Info</a>
+                </ul>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="#">Contact Us</a>
+                </ul>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="#" class="dropdown">Conference</a>
+                </ul>
+                <div class="submenu">
+                    <ul>
+                        <a href="#">2015 Neurofeedback Conference Photos</a>
+                        <a href="#">2016 Neurofeedback Conference Photos</a>
+                        <a href="#">2017 Neurofeedback Conference Photos</a>
+                        <a href="apna_con_2023.html">2023 Neurofeedback Conference Photos</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="nav-bar-minimized">
+        <div class="nav-bar-min-cont">
+            <a href="index.html"><img src="images/APNA logo.png"></a>
+            <button onclick="openBurgerCont()">&#x2630;</button>
+        </div>
+        <div class="nav-burger-cont-cont" id="burger-cont">
+            <div class="nav-burger-cont">
+                <div class="nav-burger-close-cont">
+                    <button onclick="closeBurgerCont()">&#x2716;</button>
+                </div>
+                <div class="nav-burger-menu">
+                    <form class="nav-bar-min-search">
+                        <input class="min-search-bar-input" type="text" id="search_bar" name="search_bar" placeholder="Search..."/>
+                        <input class="min-search-bar-submit" type="image" src="images/general_icons/search.png" name="submit" alt="Submit"/>
+                    </form>
+                    <div class="nav-bar-min-links-cont">
+                        <ul>
+                            <a href="index.html">Home</a>
+                        </ul>
+                        <ul>
+                            <div class="nav-bar-min-links">
+                                <button>
+                                    <span id="dd1-plus" onclick="openDropdown('about_apna')">+</span>
+                                    <span id="dd1-minus" style="display: none;" onclick="closeDropdown('about_apna')">-</span>
+                                </button>
+                                <a href="about_apna.html">About APNA</a>
+                            </div>
+                        </ul>
+                        <ul class="nav-bar-min-dropdown-cont" id="about_apna">
+                            <div class="nav-bar-min-dropdown">
+                                <a href="#">The APNA Story</a>
+                                <a href="#">Board & Committee</a>
+                                <a href="#">Foreword by President of APNA</a>
+                            </div>
+                        </ul>
+                        <ul>
+                            <div class="nav-bar-min-links">
+                                <button>
+                                    <span id="dd2-plus" onclick="openDropdown('membership')">+</span>
+                                    <span id="dd2-minus" style="display: none;" onclick="closeDropdown('membership')">-</span>
+                                </button>
+                                <a href="#">Membership</a>
+                            </div>
+                        </ul>
+                        <ul class="nav-bar-min-dropdown-cont" id="membership">
+                            <div class="nav-bar-min-dropdown">
+                                <a href="#">Membership List</a>
+                                <a href="#">Membership Fee</a>
+                            </div>
+                        </ul>
+                        <ul>
+                            <a href="#">Certification</a>
+                        </ul>
+                        <ul>
+                            <a href="#">Research Institute</a>
+                        </ul>
+                        <ul>
+                            <a href="#">Publications</a>
+                        </ul>
+                        <ul>
+                            <a href="visitor_info.html">Visitor Info</a>
+                        </ul>
+                        <ul>
+                            <a href="#">Contact Us</a>
+                        </ul>
+                        <ul>
+                            <div class="nav-bar-min-links">
+                                <button>
+                                    <span id="dd3-plus" onclick="openDropdown('conference')">+</span>
+                                    <span id="dd3-minus" style="display: none;" onclick="closeDropdown('conference')">-</span>
+                                </button>
+                                <a href="#">Conference</a>
+                            </div>
+                        </ul>
+                        <ul class="nav-bar-min-dropdown-cont" id="conference">
+                            <div class="nav-bar-min-dropdown">
+                                <a href="#">2015 Neurofeedback Conference Photos</a>
+                                <a href="#">2016 Neurofeedback Conference Photos</a>
+                                <a href="#">2017 Neurofeedback Conference Photos</a>
+                                <a href="apna_con_2023.html">2023 Neurofeedback Conference Photos</a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="filler"></section>
+    <section class="sec flex-center">
+        <div class="story-sec width60vw">
+            <h1>The APNA Story</h1>
+            <div class="story-sec-card-cont">
+                <div class="story-sec-card">
+                    <a id="Clinicians"></a>
+                    <div class="story-sec-rectangle" style="background-color: #FFC300;"></div>
+                    <h2>Clinicians</h2>
+                    <h4>Who are the clinicians/practitioners:</h4>
+                    <p>There is a growing number of professional neurofeedback and biofeedback practitioners in the AP region. These practitioners are also Medical doctors, Psychologists, Counselors, Naturopaths and other certified health practitioners. They offer clinical neurofeedback and biofeedback services in hospitals/medical centers or private practices.</p> 
+                    <p>These practitioners got together in <a href="#">Asia's First Neurofeedback Conference 2015</a> in January 2015 in Singapore. This is a historic event where almost all of the practitioners in the Asia Pacific region got together for the first time to learn from each other, to share their experiences and to build a network to support the professional development of the field. Represented countries include:</p>
+                    <ul>
+                        <li>South Africa</li>
+                        <li>Bangladesh</li>
+                        <li>Malaysia</li>
+                        <li>Singapore</li>
+                        <li>Indonesia</li>
+                        <li>Hong Kong</li>
+                        <li>Japan</li>
+                    </ul>
+                    <h4><br>Certification:</h4>
+                    <p>These professional neurofeedback and biofeedback practitioners have invested time and effort in the rigorous certification training which involves acquiring knowledge about:</p>
+                    <ul>
+                        <li>What Neurofeedback/Biofeedback is</li>
+                        <li>How it works</li>
+                        <li>Its benefits and limitations</li>
+                        <li>How it fits into the scheme of intervention for different disorders or conditions</li>
+                        <li>100 hours of supervision and case review/reports</li>
+                        <li>Specific clinical applications</li>
+                        <li>Good practice and drinks</li>
+                    </ul>
+                    <p><br>Most importantly, the certification course also requires them to have sufficient practicum hours under the supervision of an experience neurofeedback practitioners before being awarded a certification.</p>
+                    <h4><br>Concerns:</h4>
+                    <p>All practitioners noted the increase awareness of the health benefits of neurofeedback/biofeedback among the general public. As such, the demand for this type of intervention has increased. This seems to have led many enterprising business people to set up centers that claim to provide neurofeedback and biofeedback services, to make a quick profit from the increasing demand. These centers are even promoting their services for people with disorders and other clinical conditions.</p>
+                    <p>The concerns that practitioners have are that these business setup:</p>
+                    <ul>
+                        <li>Do not have the proper qualification in health science</li>
+                        <li>Do not have certified neurofeedback/biofeedback practitioners</li>
+                        <li>Do not have supervised experience</li>
+                        <li>Use low cost equipment that is not validated</li>
+                    </ul>
+                    <p><br>As they do not have the proper qualifications in health science and do not have proper certification in neurofeedback and biofeedback, these business enterprises:</p>
+                    <ul>
+                        <li>Do not understand the role of neurofeedback/biofeedback in the overall scheme of healthcare intervention</li>
+                        <li>Do not understand how neurofeedback/biofeedback works and how it's done</li>
+                        <li>As such, they exaggeration the benefits of what neurofeedback/biofeedback can do and give false promises</li>
+                    </ul>
+                    <p><br>Very often, people who sought help from these non-certified centers become worse off. This is a very serious concern for the certified professional neurofeedback/biofeedback practitioners.</p>
+                    <h4><br>The clinical aspect of the Asia Pacific Neuro-biofeedback Association (APNA):</h4>
+                    <p>APNA is formed to promote the professional and clinical use of neurofeedback and biofeedback in the AP region, and to provide information to the general public on neurofeedback and biofeedback intervention.</p>
+                </div>
+                <div class="story-sec-card">
+                    <a id="Researchers"></a>
+                    <div class="story-sec-rectangle" style="background-color: #6CD0DC;"></div>
+                    <h2>Researchers</h2>
+                    <h4>Who are the researchers:</h4>
+                    <p>Researchers are also becoming aware of the enormous health benefits of neurofeedback and biofeedback. There is a growing number of medical, cognitive/behavioral, psychological and other healthcare researchers in the AP region who are doing research in the field of Asian mindfulness and meditation techniques and its applications to health improvements. Many are using scientific methods that includes the use physiological measures such as EEG and ECG.</p>
+                    <p>Biomedical and computer engineers are also attracted to this field of research, especially those in the field of brain imaging and signal analysis. These biomedical and computer engineers are into research and development in the field of brain-computer-interface (BCI). With the knowledge that they have acquired over the years or research, they intend to apply their knowledge to develop useful clinical applications in the field of neurofeedback and biofeedback for interventions.</p>
+                    <h4><br>Certification:</h4>
+                    <p>All these researchers are bounded by strict research ethics. Those who are doing research and developments in the field of neurofeedback and biofeedback for clinical applications have gone through the proper neurofeedback/biofeedback certification (Research).</p>
+                    <h4><br>Concerns:</h4>
+                    <p>Many biomedical and health science researchers were also present at <a href="#">Asia's First Neurofeedback Conference 2015 in January 2015</a> in Singapore.</p>
+                    <p>These bio-medical and computer engineers are different from the healthcare researchers. They are not trained in the clinical aspects of healthcare. As such, their R&D efforts to develop clinical applications will lack clinical perspective. However, the work of these biomedical and computer engineers are crucial as R&D in this field will bring about game changing break-through in clinical applications</p>
+                    <p>Healthcare researchers do research with what is available. They use existing equipment that help them measure physiological markers. They use existing knowledge to interpret the meaning of these measurements.</p>
+                    <p>Biomedical and computer engineers develop methods and computer algorithms that do sophisticated analysis of physiological signals such as EEG (brain waves), fMRI and opto-imaging signals. They look for specific markers in these signals to correlate with specific disorders or disease. These engineers also develop new tools and and equipment for intervention. This will give health care researchers new tools to work with for new break-through.</p>
+                    <p>Their main concern is to establish close collaboration with practitioners and the community so that they can incorporate the clinical and community aspects into their R&D work.</p>
+                    <h4><br>The R&D aspect of the Asia Pacific Neuro-biofeedback Association (APNA):</h4>
+                    <p>APNA is formed to promote close collaboration between researchers, practitioners and the community in the AP region, so as to further advance the field of neurofeedback and biofeedback.</p>
+                </div>
+                <div class="story-sec-card">
+                    <a id="Community"></a>
+                    <div class="story-sec-rectangle" style="background-color: #F64FB6;"></div>
+                    <h2>Community</h2>
+                    <h4>Who are the community:</h4>
+                    <p>The community is the general public who read about the benefits of neurofeedback and biofeedback for health interventions. Many have tried medication and other forms of treatment but had limited progress. They sought Neurofeedback and biofeedback intervention to help improve their conditions further.</p>
+                    <p>However, they do not know what neurofeedback and biofeedback is and how it works. They are not aware of the limitations and how it should be carried out. As such, they are at the mercy of centers or individuals who are not trained in health sciences and do have certification in neurofeedback and biofeedback (<a href="#">see Clinician's concerns above</a>).</p>
+                    <h4><br>Concerns:</h4>
+                    <p>Many members of the community were also present at <a href="#">Asia's First Neurofeedback Conference 2015</a> in January 2015 in Singapore. The community is concerned about where they can find information about:</p>
+                    <ul>
+                        <li>Neurofeedback and biofeedback intervention and how it can help them</li>
+                        <li>Healthcare practitioners who are certified neurofeedback and biofeedback providers</li>
+                    </ul>
+                    <h4><br>The Community aspect of the Asia Pacific Neuro-biofeedback Association (APNA):</h4>
+                    <p>APNA is formed to provide information about neurofeedback and biofeedback and where they can find certified practitioners.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-cont">
+            <div class="footer-inner-cont1">
+                <div class="footer-page-links">
+                    <a href="#">Website Terms and Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Site-map</a>
+                </div>
+                <div class="footer-social-links">
+                    <a onclick="window.open('http://www.facebook.com/sharer.php?u=http://www.apna.asia/index.html', '_blank')" class="social-icon-44 social-white-bg"><img src="images/general_icons/facebook.png"></a>
+                    <a onclick="window.open('https://twitter.com/share?url=http://www.apna.asia/index.html', '_blank')" class="social-icon-32 social-twitter-bg"><img src="images/general_icons/twitter.png"></a>
+                    <a onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url=http://www.apna.asia/index.html', '_blank')" class="social-icon-44 social-white-bg"><img src="images/general_icons/linkedin.png"></a>
+                    <a onclick="window.open('mailto:?body=http://www.apna.asia/index.html', '_blank')" class="social-icon-32 social-white-bg"><img src="images/general_icons/mail.png"></a>
+                </div>
+            </div>
+            <div class="footer-inner-cont2">
+                <h6 class="footer-address">36 Purvis Street, #02-11, Talib Centre, S(188613) SINGAPORE</h6>
+                <div class="footer-contact-info">
+                    <h6>Tel: +65-6834-9476</h6>
+                    <h6>Email: APNA@apna.asia</h6>
+                </div>
+            </div>
+            <h6>© 2016 Asia Pacific Neuro-biofeedback Association<br>All Rights Reserved | Singapore</h6>
+        </div>
+    </footer>
+    <script>
+        // navigation bar button functions
+
+        function openBurgerCont() {
+            var x = document.getElementById("burger-cont");
+            var bodyElement = document.querySelector('body');
+            if (x.style.display != "block") {
+                x.style.display = "block";
+                bodyElement.style.overflow = "hidden";
+            }
+        }
+
+        function closeBurgerCont() {
+            var x = document.getElementById("burger-cont");
+            var bodyElement = document.querySelector('body');
+            if (x.style.display != "none") {
+                x.style.display = "none";
+                bodyElement.style.overflow = "auto";
+            }
+        }
+
+        function openDropdown(y) {
+            var x = document.getElementById(y);
+
+            if (y == "about_apna") {
+                var plus = document.getElementById("dd1-plus");
+                var minus = document.getElementById("dd1-minus");
+            } else if (y == "membership") {
+                var plus = document.getElementById("dd2-plus");
+                var minus = document.getElementById("dd2-minus");
+            } else if (y == "conference") {
+                var plus = document.getElementById("dd3-plus");
+                var minus = document.getElementById("dd3-minus");
+            }
+
+            if (x.style.display != "block") {
+                x.style.display = "block";
+                plus.style.display = "none";
+                minus.style.display = "block";
+            }
+        }
+
+        function closeDropdown(y) {
+            var x = document.getElementById(y);
+
+            if (y == "about_apna") {
+                var plus = document.getElementById("dd1-plus");
+                var minus = document.getElementById("dd1-minus");
+            } else if (y == "membership") {
+                var plus = document.getElementById("dd2-plus");
+                var minus = document.getElementById("dd2-minus");
+            } else if (y == "conference") {
+                var plus = document.getElementById("dd3-plus");
+                var minus = document.getElementById("dd3-minus");
+            }
+
+            if (x.style.display != "none") {
+                x.style.display = "none";
+                plus.style.display = "block";
+                minus.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        // damn you samsung internet browser
+
+        if (navigator.userAgent.match(/samsung/i)) {
+            alert("Your browser (Samsung Internet) may not show this website" + 
+                "correctly. Please consider using a standards-compliant" + 
+                "browser instead. \n\n" +
+                "We recommend Firefox, Microsoft Edge, or Google Chrome.");
+        }
+    </script>
+</body>
+</html>

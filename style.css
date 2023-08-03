@@ -864,6 +864,201 @@
     }
 }
 
+/* apna story header + sections */
+
+.story-sec h1 {
+    text-align: center;
+
+    /* legacy setting */
+    margin-bottom: 20px;
+    
+    /* responsive setting */
+    margin-bottom: 1vw;
+}
+
+.story-sec-card-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.story-sec-card {
+    background-color: #EEE;
+   
+    /* legacy setting */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    
+    /* responsive setting */
+    padding: 1vw;
+    margin-bottom: 1vw;
+    border-radius: 1vw;
+}
+
+.story-sec-card #Clinicians, .story-sec-card #Researchers, .story-sec-card #Community {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* legacy setting */
+    top: -159px;
+
+    /*responsive setting */
+    top: calc(-6.25vw - 20px);
+
+}
+
+.story-sec-card div, .story-sec-card h2, .story-sec-card h4, .story-sec-card p {
+    /* legacy setting */
+    margin-bottom: 14px;
+
+    /* responsive setting */
+    margin-bottom: .7vw;
+}
+
+
+.story-sec-card h4, .story-sec-card p, .story-sec-card li {
+    color: rgba(0, 0, 0, .5);
+    text-align: justify;
+}
+
+.story-sec-rectangle {
+    width: 10%;
+
+    /* legacy setting */
+    height: 12px;
+
+    /* responsive setting */
+    height: .6vw;
+}
+
+.story-sec-card li {
+    width: 80%;
+
+    /* legacy setting */
+    font-size: 20px;
+
+    /* responsive setting */
+    font-size: 1vw;
+}
+
+.story-sec-card ul {
+    display: grid;
+    place-items: center;
+    
+    /* legacy setting */
+    margin-bottom: 20px;
+
+    /* responsive setting */
+    margin-bottom: 1vw;
+}
+
+@media only screen and (max-device-width: 970px) {
+    .story-sec h1 {
+        /* legacy setting */
+        margin-bottom: 20px;
+        
+        /* responsive setting */
+        margin-bottom: 2vw;
+    }
+    
+    .story-sec-card {
+        /* legacy setting */
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        
+        /* responsive setting */
+        padding: 2vw;
+        margin-bottom: 2vw;
+        border-radius: 2vw;
+    }
+    
+    .story-sec-card #Clinicians, .story-sec-card #Researchers, .story-sec-card #Community {
+        /* legacy setting */
+        top: -130px;
+
+        /*responsive setting */
+        top: calc(-13vw - 20px);
+    }
+    
+    .story-sec-card div, .story-sec-card h2, .story-sec-card h4, .story-sec-card p {
+        /* legacy setting */
+        margin-bottom: 14px;
+    
+        /* responsive setting */
+        margin-bottom: 1.4vw;
+    }
+    
+    .story-sec-rectangle {
+        width: 20%;
+    
+        /* legacy setting */
+        height: 12px;
+    
+        /* responsive setting */
+        height: 1.2vw;
+    }
+
+    .story-sec-card li {
+        /* legacy setting */
+        font-size: 20px;
+    
+        /* responsive setting */
+        font-size: 2vw;
+    }
+    
+    .story-sec-card ul {
+        /* legacy setting */
+        margin-bottom: 20px;
+    
+        /* responsive setting */
+        margin-bottom: 2vw;
+    }
+}
+
+@media only screen and (max-device-width: 500px) {
+    .story-sec h1 {
+        /* legacy setting */
+        margin-bottom: 40px;
+        
+        /* responsive setting */
+        margin-bottom: 4vw;
+    }
+    
+    .story-sec-card {
+        /* legacy setting */
+        padding: 40px;
+        margin-bottom: 40px;
+        border-radius: 40px;
+        
+        /* responsive setting */
+        padding: 4vw;
+        margin-bottom: 4vw;
+        border-radius: 4vw;
+    }
+    
+    .story-sec-card div, .story-sec-card h2, .story-sec-card h4, .story-sec-card p {
+        /* legacy setting */
+        margin-bottom: 28px;
+    
+        /* responsive setting */
+        margin-bottom: 2.8vw;
+    }
+    
+    .story-sec-rectangle {
+        width: 40%;
+    
+        /* legacy setting */
+        height: 24px;
+    
+        /* responsive setting */
+        height: 2.4vw;
+    }
+}
+
 /* cnri and research institutes section */
 
 .cnri-sec-cont {
