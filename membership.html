@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+<head>
+    <title>About APNA</title>
+    <meta name="description" content="Discover the Asia Pacific Neurofeedback Association (APNA) - a dynamic hub for clinicians, researchers, and professionals devoted to unlocking the power of the mind through neurofeedback and biofeedback. Explore our vision, missions, and initiatives aimed at fostering collaboration, promoting professionalism, and raising public awareness about the transformative benefits of these practices.">
+    <meta name="keywords" content="neurofeedback association, biofeedback association, APNA, Asia Pacific, clinicians, researchers, professionals, vision, missions, collaboration, professionalism, public awareness">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="icon" href="images/APNA logo circle.png" type="image/icon type">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-bar-cont">
+            <a href="index.html"><img src="images/APNA logo.png"></a>
+            <form class="nav-bar-search">
+                <input class="search-bar-input" type="text" id="search_bar" name="search_bar" placeholder="Search..."/>
+                <input class="search-bar-submit" type="image" src="images/general_icons/search.png" name="submit" alt="Submit"/>
+            </form>
+        </div>
+        <div class="nav-bar-links">
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="index.html">Home</a>
+                </ul>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul class="highlighted">
+                    <a href="#" class="dropdown selected">About APNA</a>
+                </ul>
+                <div class="submenu">
+                    <ul>
+                        <a href="aboutstory.html">The APNA Story</a>
+                        <a href="#">Board & Committee</a>
+                        <a href="#">Foreword by President of APNA</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="#" class="dropdown">Membership</a>
+                </ul>
+                <div class="submenu">
+                    <ul>
+                        <a href="#">Membership List</a>
+                        <a href="#">Membership Fee</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="certification.html">Certification</a>
+                </ul>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="research_institutes.html">Research Institutes</a>
+                </ul>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="#">Publications</a>
+                </ul>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="visitor_info.html">Visitor Info</a>
+                </ul>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="#">Contact Us</a>
+                </ul>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="#" class="dropdown">Conference</a>
+                </ul>
+                <div class="submenu">
+                    <ul>
+                        <a href="#">2015 Neurofeedback Conference</a>
+                        <a href="#">2016 Neurofeedback Conference</a>
+                        <a href="#">2017 Neurofeedback Conference</a>
+                        <a href="apna_con_2023.html">2023 Neurofeedback Conference</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="nav-bar-minimized">
+        <div class="nav-bar-min-cont">
+            <a href="index.html"><img src="images/APNA logo.png"></a>
+            <button onclick="openBurgerCont()">&#x2630;</button>
+        </div>
+        <div class="nav-burger-cont-cont" id="burger-cont">
+            <div class="nav-burger-cont">
+                <div class="nav-burger-close-cont">
+                    <button onclick="closeBurgerCont()">&#x2716;</button>
+                </div>
+                <div class="nav-burger-menu">
+                    <form class="nav-bar-min-search">
+                        <input class="min-search-bar-input" type="text" id="search_bar" name="search_bar" placeholder="Search..."/>
+                        <input class="min-search-bar-submit" type="image" src="images/general_icons/search.png" name="submit" alt="Submit"/>
+                    </form>
+                    <div class="nav-bar-min-links-cont">
+                        <ul>
+                            <a href="index.html">Home</a>
+                        </ul>
+                        <ul>
+                            <div class="nav-bar-min-links">
+                                <button>
+                                    <span id="dd1-plus" onclick="openDropdown('about_apna')">+</span>
+                                    <span id="dd1-minus" style="display: none;" onclick="closeDropdown('about_apna')">-</span>
+                                </button>
+                                <a href="about_apna.html">About APNA</a>
+                            </div>
+                        </ul>
+                        <ul class="nav-bar-min-dropdown-cont" id="about_apna">
+                            <div class="nav-bar-min-dropdown">
+                                <a href="#">The APNA Story</a>
+                                <a href="#">Board & Committee</a>
+                                <a href="#">Foreword by President of APNA</a>
+                            </div>
+                        </ul>
+                        <ul>
+                            <div class="nav-bar-min-links">
+                                <button>
+                                    <span id="dd2-plus" onclick="openDropdown('membership')">+</span>
+                                    <span id="dd2-minus" style="display: none;" onclick="closeDropdown('membership')">-</span>
+                                </button>
+                                <a href="#">Membership</a>
+                            </div>
+                        </ul>
+                        <ul class="nav-bar-min-dropdown-cont" id="membership">
+                            <div class="nav-bar-min-dropdown">
+                                <a href="#">Membership List</a>
+                                <a href="#">Membership Fee</a>
+                            </div>
+                        </ul>
+                        <ul>
+                            <a href="certification.html">Certification</a>
+                        </ul>
+                        <ul>
+                            <a href="research_institutes.html">Research Institutes</a>
+                        </ul>
+                        <ul>
+                            <a href="#">Publications</a>
+                        </ul>
+                        <ul>
+                            <a href="visitor_info.html">Visitor Info</a>
+                        </ul>
+                        <ul>
+                            <a href="#">Contact Us</a>
+                        </ul>
+                        <ul>
+                            <div class="nav-bar-min-links">
+                                <button>
+                                    <span id="dd3-plus" onclick="openDropdown('conference')">+</span>
+                                    <span id="dd3-minus" style="display: none;" onclick="closeDropdown('conference')">-</span>
+                                </button>
+                                <a href="#">Conference</a>
+                            </div>
+                        </ul>
+                        <ul class="nav-bar-min-dropdown-cont" id="conference">
+                            <div class="nav-bar-min-dropdown">
+                                <a href="#">2015 Neurofeedback Conference</a>
+                                <a href="#">2016 Neurofeedback Conference</a>
+                                <a href="#">2017 Neurofeedback Conference</a>
+                                <a href="apna_con_2023.html">2023 Neurofeedback Conference</a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="filler"></section>
+    <section class="sec flex-center">
+        <div class="membership-sec1 width60vw grid-center">
+            <h2>Membership</h2>
+            <div class="membership-sec1-cont">
+                <img src="images/Membership/Clinician Practitioner 1.png">
+                <div class="membership-sec1-desc">
+                    <h3>Clinician / Practitioner</h3>
+                    <p>If you are a practitioner in the field of health science, helping people with psychological or medical conditions and is also practicing Neurofeedback or biofeedback, we welcome you to join us as an accredited member and link-up with other practitioners/clinicians and reserchers in the field.</p>
+                    <div class="membership-sec1-apply-now">
+                        <a class="black-btn" href="#">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="membership-sec1-cont">
+                <img src="images/Membership/Researcher 1.png">
+                <div class="membership-sec1-desc">
+                    <h3>Researcher</h3>
+                    <p>If you are a researcher doing research work in the field of biofeedback or neurofeedback, we welcome you to join the community of accredited professionals and link-up with other reserchers and practitioners/clinicians in the field.</p>
+                    <div class="membership-sec1-apply-now">
+                        <a class="black-btn" href="#">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="membership-sec1-cont">
+                <img src="images/Membership/Student 1.png">
+                <div class="membership-sec1-desc">
+                    <h3>Student</h3>
+                    <p>If you are an student interested in the field of biofeedback and neurofeedback, we welcome you to join us and grow your knowledge in this field with us.</p>
+                    <div class="membership-sec1-apply-now">
+                        <a class="black-btn" href="#">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-cont">
+            <div class="footer-inner-cont1">
+                <div class="footer-page-links">
+                    <a href="#">Website Terms and Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Site-map</a>
+                </div>
+                <div class="footer-social-links">
+                    <a onclick="window.open('http://www.facebook.com/sharer.php?u=http://www.apna.asia/index.html', '_blank')" class="social-icon-44 social-white-bg"><img src="images/general_icons/facebook.png"></a>
+                    <a onclick="window.open('https://twitter.com/share?url=http://www.apna.asia/index.html', '_blank')" class="social-icon-32 social-twitter-bg"><img src="images/general_icons/twitter.png"></a>
+                    <a onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url=http://www.apna.asia/index.html', '_blank')" class="social-icon-44 social-white-bg"><img src="images/general_icons/linkedin.png"></a>
+                    <a onclick="window.open('mailto:?body=http://www.apna.asia/index.html', '_blank')" class="social-icon-32 social-white-bg"><img src="images/general_icons/mail.png"></a>
+                </div>
+            </div>
+            <div class="footer-inner-cont2">
+                <h6 class="footer-address">36 Purvis Street, #02-11, Talib Centre, S(188613) SINGAPORE</h6>
+                <div class="footer-contact-info">
+                    <h6>Tel: +65-6834-9476</h6>
+                    <h6>Email: APNA@apna.asia</h6>
+                </div>
+            </div>
+            <h6>© 2016 Asia Pacific Neuro-biofeedback Association<br>All Rights Reserved | Singapore</h6>
+        </div>
+    </footer>
+    <script>
+        // navigation bar button functions
+
+        function openBurgerCont() {
+            var x = document.getElementById("burger-cont");
+            var bodyElement = document.querySelector('body');
+            if (x.style.display != "block") {
+                x.style.display = "block";
+                bodyElement.style.overflow = "hidden";
+            }
+        }
+
+        function closeBurgerCont() {
+            var x = document.getElementById("burger-cont");
+            var bodyElement = document.querySelector('body');
+            if (x.style.display != "none") {
+                x.style.display = "none";
+                bodyElement.style.overflow = "auto";
+            }
+        }
+
+        function openDropdown(y) {
+            var x = document.getElementById(y);
+
+            if (y == "about_apna") {
+                var plus = document.getElementById("dd1-plus");
+                var minus = document.getElementById("dd1-minus");
+            } else if (y == "membership") {
+                var plus = document.getElementById("dd2-plus");
+                var minus = document.getElementById("dd2-minus");
+            } else if (y == "conference") {
+                var plus = document.getElementById("dd3-plus");
+                var minus = document.getElementById("dd3-minus");
+            }
+
+            if (x.style.display != "block") {
+                x.style.display = "block";
+                plus.style.display = "none";
+                minus.style.display = "block";
+            }
+        }
+
+        function closeDropdown(y) {
+            var x = document.getElementById(y);
+
+            if (y == "about_apna") {
+                var plus = document.getElementById("dd1-plus");
+                var minus = document.getElementById("dd1-minus");
+            } else if (y == "membership") {
+                var plus = document.getElementById("dd2-plus");
+                var minus = document.getElementById("dd2-minus");
+            } else if (y == "conference") {
+                var plus = document.getElementById("dd3-plus");
+                var minus = document.getElementById("dd3-minus");
+            }
+
+            if (x.style.display != "none") {
+                x.style.display = "none";
+                plus.style.display = "block";
+                minus.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        // damn you samsung internet browser
+
+        if (navigator.userAgent.match(/samsung/i)) {
+            alert("Your browser (Samsung Internet) may not show this website" + 
+                  "correctly. Please consider using a standards-compliant" + 
+                  "browser instead. \n\n" +
+                  "We recommend Firefox, Microsoft Edge, or Google Chrome.");
+        }
+    </script>
+</body>
+</html>
