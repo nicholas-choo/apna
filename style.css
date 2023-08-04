@@ -2119,6 +2119,49 @@
     justify-content: left;
 }
 
+@media only screen and (max-device-width: 500px) {
+
+    .membership-sec1 h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        
+        /* Responsive Edit */
+        margin-bottom: 5vw;
+    }
+
+    .membership-sec1-cont {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    
+        margin-bottom: 12vw;
+    }
+
+    .membership-sec1-cont img {
+        object-fit: cover;
+        width: 300px;
+        height: 150px;
+        border-radius: 20px;
+        margin-right: 40px;
+        margin-bottom: 30px;
+    
+        /* Responsive Edit */
+        width: 60vw;
+        height: 33vw;
+        border-radius: 1vw;
+        margin-right: 2vw;
+        margin-bottom: 7vw;
+    }
+
+    .membership-sec1-apply-now {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+
+}
+
 
 /* Membership Fee */
 
@@ -2216,22 +2259,153 @@
     height: .6vw;
 }
 
+@media only screen and (max-device-width: 970px) {
 
-/* Membership Application */
-
-.membershipapp-sec h2 {
-    text-align: center;
-    margin-bottom: 20px;
+    .membershipfee-sec-card div, .membershipfee-sec-card h3{
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 16px;
     
-    /* Responsive Edit */
-    margin-bottom: 1vw;
+        /* Responsive Edit */
+        font-size: 1.8vw;
+        margin-bottom: .8vw;
+    }
+
+    .membershipfee-sec-card {
+        background-color: #EEE;
+        position: relative;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 20px;
+        height: 350px;
+        width: 240px;
+        
+        /* Responsive Edit */
+        width: 24vw;
+        height: 40vw;
+        padding: 1vw;
+        margin: 1vw;
+        border-radius: 1vw;
+    }
+
+    .membershipfee-sec-rectangle {
+        width: 50%;
+        height: 18px;
+    
+        /* Responsive Edit */
+        height: .8vw;
+    }
+
+    .membershipfee-sec-card img {
+        object-fit: cover;
+        width: 195px;
+        height: 120px;
+        border-radius: 20px;
+        margin-right: 40px;
+        margin-bottom: 10px;
+    
+        /* Responsive Edit */
+        width: 22vw;
+        height: 13vw;
+        border-radius: 1vw;
+        margin-right: 2vw;
+        margin-bottom: 0.7vw;
+    
+    }
+
+    .membershipfee-sec-card a {
+        justify-content: center;
+        position: absolute;
+        font-size: 12px;
+        padding-bottom: 23px;
+        margin-left: 32px;
+    
+        /* Responsive Edit */
+        font-size: 1.3vw;
+        padding-bottom: 2.5vw;
+        margin-left: 5.5vw;
+    }
+    
+
 }
 
+@media only screen and (max-device-width: 500px) {
 
-.membershipapp-sec1-cont1 {
-    display: flex;
-}
+    .membershipfee-sec-card div, .membershipfee-sec-card h3{
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 32px;
+    
+        /* Responsive Edit */
+        font-size: 2vw;
+        margin-bottom: 1.5vw;
+    }
 
-.membershipapp-sec1-input label, .membershipapp-sec1-input input [type="text"]{
-    display: block;
+    .membershipfee-sec-card p {
+        font-size: 8px;
+        text-align: center;
+        color: rgba(0, 0, 0, .5);
+
+        /* responsive edit */
+        font-size: 2.2vw;
+    }
+
+    .membershipfee-sec-card {
+        background-color: #EEE;
+        position: relative;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 20px;
+        height: 250px;
+        width: 240px;
+        
+        /* Responsive Edit */
+        width: 24vw;
+        height: 65vw;
+        padding: 1vw;
+        margin: 1vw;
+        border-radius: 1vw;
+    }
+
+    .membershipfee-sec-rectangle {
+        width: 50%;
+        height: 18px;
+    
+        /* Responsive Edit */
+        height: .8vw;
+    }
+
+    .membershipfee-sec-card img {
+        object-fit: cover;
+        width: 195px;
+        height: 120px;
+        border-radius: 20px;
+        margin-right: 40px;
+        margin-bottom: 10px;
+    
+        /* Responsive Edit */
+        width: 22vw;
+        height: 20vw;
+        border-radius: 1vw;
+        margin-right: 2vw;
+        margin-bottom: 0.7vw;
+    
+    }
+
+    .membershipfee-sec-card a {
+        justify-content: left;
+        position: absolute;
+        font-size: 18px;
+        margin-left: 15px;
+        width: 50px;
+        padding-bottom: 12px;
+        
+        /* Responsive Edit */
+        font-size: 2vw;
+        margin-left: 4.1vw;
+        width: 14vw;
+        padding-bottom: 3.5vw;
+    }
+    
+
 }
