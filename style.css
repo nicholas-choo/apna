@@ -1160,6 +1160,211 @@
     }
 }
 
+/* membership fee section */
+
+.membership-mobile {
+    display: none;
+}
+
+.membership-fee-sec-cont h1 {
+    text-align: center;
+
+    /* legacy setting */
+    margin-bottom: 20px;
+    
+    /* responsive setting */
+    margin-bottom: 1vw;
+}
+
+.membership-fee-card-cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.membership-fee-card {
+    background-color: #EEE;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+
+    /* legacy setting */
+    padding: 20px;
+    border-radius: 20px;
+    
+    /* responsive setting */
+    padding: 1vw;
+    border-radius: 1vw;
+}
+
+.membership-fee-card div, .membership-fee-card img, .membership-fee-card h3, .membership-fee-card p {
+    text-align: center;
+
+    /* legacy setting */
+    margin-bottom: 20px;
+
+    /* responsive setting */
+    margin-bottom: 1vw;
+}
+
+.membership-fee-card img {
+    width: 100%;
+    
+    /* legacy setting */
+    border-radius: 10px;
+
+    /* responsive setting */
+    border-radius: .5vw;
+}
+
+.membership-fee-card h3 {
+    white-space: pre-line;
+}
+
+.membership-fee-card p {
+    color: rgba(0, 0, 0, .5);
+}
+
+.membership-fee-rectangle {
+    width: 30%;
+
+    /* legacy setting */
+    height: 12px;
+
+    /* responsive setting */
+    height: .6vw;
+}
+
+.membership-fee-learn-more {
+    margin-top: auto;
+}
+
+@media only screen and (max-device-width: 970px) {
+    .membership-mobile {
+        display: inline;
+    }
+
+    .membership-fee-sec-cont h1 {
+        /* legacy setting */
+        margin-bottom: 20px;
+        
+        /* responsive setting */
+        margin-bottom: 2vw;
+    }
+    
+    .membership-fee-card {
+        /* legacy setting */
+        padding: 15px;
+        border-radius: 15px;
+        
+        /* responsive setting */
+        padding: 1.5vw;
+        border-radius: 1.5vw;
+    }
+    
+    .membership-fee-card div, .membership-fee-card img, .membership-fee-card h3, .membership-fee-card p {
+        /* legacy setting */
+        margin-bottom: 20px;
+    
+        /* responsive setting */
+        margin-bottom: 2vw;
+    }
+    
+    .membership-fee-card img {
+        /* legacy setting */
+        border-radius: 10px;
+    
+        /* responsive setting */
+        border-radius: 1vw;
+    }
+    
+    .membership-fee-rectangle {
+        width: 40%;
+
+        /* legacy setting */
+        height: 12px;
+    
+        /* responsive setting */
+        height: 1.2vw;
+    }
+
+    .membership-fee-learn-more a  {
+        /* legacy setting */
+        border-radius: 10px;
+
+        /* responsive setting */
+        border-radius: 1vw;
+    }
+}
+
+@media only screen and (max-device-width: 500px) {
+    .membership-desktop, .membership-mobile {
+        display: none;
+    }
+
+    .membership-fee-sec-cont h1 {
+        /* legacy setting */
+        margin-bottom: 4%;
+        
+        /* responsive setting */
+        margin-bottom: 4vw;
+    }
+    
+    .membership-fee-card-cont {
+        display: grid;
+        justify-content: unset;
+    }
+    
+    .membership-fee-card {
+        width: 100%;
+    
+        /* legacy setting */
+        padding: 40px;
+        border-radius: 40px;
+        margin-bottom: 40px;
+        
+        /* responsive setting */
+        padding: 4vw;
+        border-radius: 4vw;
+        margin-bottom: 4vw;
+    }
+    
+    .membership-fee-card div, .membership-fee-card img, .membership-fee-card h3, .membership-fee-card p {
+        /* legacy setting */
+        margin-bottom: 40px;
+    
+        /* responsive setting */
+        margin-bottom: 4vw;
+    }
+    
+    .membership-fee-card img {
+        /* legacy setting */
+        border-radius: 20px;
+    
+        /* responsive setting */
+        border-radius: 2vw;
+    }
+    
+    .membership-fee-rectangle {
+        width: 40%;
+    
+        /* legacy setting */
+        height: 24px;
+    
+        /* responsive setting */
+        height: 2.4vw;
+    }
+
+    .membership-fee-learn-more a  {
+        /* legacy setting */
+        padding: 30px 40px;
+        border-radius: 20px;
+
+        /* responsive setting */
+        padding: 3vw 4vw;
+        border-radius: 2vw;
+    }
+}
+
 /* cnri and research institutes section */
 
 .cnri-sec-cont {
