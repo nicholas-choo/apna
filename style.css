@@ -1496,6 +1496,443 @@
     }
 }
 
+/* contact us section */
+
+.contact-sec-cont {
+    display: grid;
+    place-items: center;
+}
+
+.contact-sec-cont img {
+    width: 100%;
+
+    /* legacy setting */
+    border-radius: 15px;
+
+    /* responsive setting */
+    border-radius: .75vw;
+}
+
+.contact-sec-cont h1 {
+    /* legacy setting */
+    margin: 20px 0;
+
+    /* responsive setting */
+    margin: 1vw 0;
+}
+
+.contact-inner-cont1 {
+    width: 100%;
+    display: flex;
+}
+
+.contact-divider {
+    border-left: 1px #000 solid;
+}
+
+.contact-address {
+    margin-right: 3%;
+    display: grid;
+    place-items: center;
+}
+
+.contact-address * {
+    text-align: center;
+}
+
+.contact-inner-cont1 form {
+    margin-left: 3%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* legacy setting */
+    border-radius: 15px;
+    padding: 20px;
+
+    /* responsive setting */
+    border-radius: .75vw;
+    padding: 1vw;
+}
+
+.contact-inner-cont1 form h3 {
+    /* legacy setting */
+    margin-bottom: 20px;
+
+    /* responsive setting */
+    margin-bottom: 1vw;
+}
+
+.contact-inner-cont1 input[type=text] {
+    /* legacy setting */
+    height: 40px;
+    padding: 0 10px;
+
+    /* responsive setting */
+    height: 2vw;
+    padding: 0 .5vw;
+}
+
+.contact-inner-cont1 textarea {
+    resize: none;
+
+    /* legacy setting */
+    padding: 10px;
+    height: calc(100% - 360px);
+
+    /* responsive setting */
+    padding: .5vw;
+    height: calc(100% - 18vw);
+}
+
+.contact-inner-cont1 input[type=text], .contact-inner-cont1 textarea {
+    width: 100%;
+    border: 0;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+
+    /* legacy setting */
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+    /* responsive setting */
+    border-radius: .25vw;
+    margin-bottom: 1vw;
+}
+
+.contact-inner-cont1 input[type=submit] {
+    background-color: #FF8D24;
+    font-weight: 700;
+    color: #FFF;
+    text-align: center;
+    border: 0;
+    margin-top: auto;
+    
+    /* legacy setting */
+    padding: 10px 20px;
+    border-radius: 10px;
+
+    /* responsive setting */
+    padding: .5vw 1vw;
+    border-radius: .5vw;
+}
+
+.contact-inner-cont1 input[type=submit]:hover {
+    cursor: pointer;
+}
+
+.contact-inner-cont1 input, .contact-inner-cont1 textarea {
+    /* legacy setting */
+    font-size: 16px;
+
+    /* responsive setting */
+    font-size: .8vw;
+}
+
+.contact-address, .contact-inner-cont1 form {
+    width: 47%;
+}
+
+.contact-sec-cont iframe {
+    width: 100%;
+    border: 0;
+
+    /* legacy setting */
+    margin: 40px 0;
+    height: 500px;
+
+    /* responsive setting */
+    margin: 2vw 0;
+    height: 25vw;
+}
+
+.contact-inner-cont2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-left-cont, .contact-right-cont {
+    width: 48%;
+}
+
+.contact-left-cont p {
+    text-align: justify;
+}
+
+.contact-right-cont li {
+    width: 94%;
+    margin-left: 6%;
+    text-align: justify;
+
+    /* legacy setting */
+    font-size: 20px;
+
+    /* responsive setting */
+    font-size: 1vw;
+}
+
+@media screen and (max-device-width: 970px) {
+    .contact-sec-cont img {
+        /* legacy setting */
+        border-radius: 15px;
+
+        /* responsive setting */
+        border-radius: 1.5vw;
+    }
+
+    .contact-sec-cont h1 {
+        /* legacy setting */
+        margin: 20px 0;
+
+        /* responsive setting */
+        margin: 2vw 0;
+    }
+
+    .contact-address {
+        margin-right: 5%;
+    }
+
+    .contact-inner-cont1 form {
+        margin-left: 5%;
+
+        /* legacy setting */
+        border-radius: 15px;
+        padding: 20px;
+
+        /* responsive setting */
+        border-radius: 1.5vw;
+        padding: 2vw;
+    }
+
+    .contact-inner-cont1 form h3 {
+        /* legacy setting */
+        margin-bottom: 20px;
+
+        /* responsive setting */
+        margin-bottom: 2vw;
+    }
+
+    .contact-inner-cont1 input[type=text] {
+        /* legacy setting */
+        height: 40px;
+        padding: 0 10px;
+
+        /* responsive setting */
+        height: 4vw;
+        padding: 0 1vw;
+    }
+
+    .contact-inner-cont1 textarea {
+        /* legacy setting */
+        padding: 10px;
+        height: calc(100% - 360px);
+
+        /* responsive setting */
+        padding: 1vw;
+        height: calc(100% - 36vw);
+    }
+
+    .contact-inner-cont1 input[type=text], .contact-inner-cont1 textarea {
+        /* legacy setting */
+        border-radius: 5px;
+        margin-bottom: 20px;
+
+        /* responsive setting */
+        border-radius: .5vw;
+        margin-bottom: 2vw;
+    }
+
+    .contact-inner-cont1 input[type=submit] {
+        /* legacy setting */
+        padding: 10px 20px;
+        border-radius: 10px;
+
+        /* responsive setting */
+        padding: 1vw 2vw;
+        border-radius: 1vw;
+    }
+
+    .contact-inner-cont1 input, .contact-inner-cont1 textarea {
+        /* legacy setting */
+        font-size: 16px;
+
+        /* responsive setting */
+        font-size: 1.6vw;
+    }
+
+    .contact-address, .contact-inner-cont1 form {
+        width: 45%;
+    }
+
+    .contact-sec-cont iframe {
+        /* legacy setting */
+        margin: 40px 0;
+        height: 500px;
+
+        /* responsive setting */
+        margin: 4vw 0;
+        height: 50vw;
+    }
+
+    .contact-left-cont, .contact-right-cont {
+        width: 46%;
+    }
+
+    .contact-right-cont li {
+        /* legacy setting */
+        font-size: 16px;
+
+        /* responsive setting */
+        font-size: 1.6vw;
+    }
+}
+
+@media screen and (max-device-width: 500px) {
+    .contact-sec-cont img {
+        /* legacy setting */
+        border-radius: 30px;
+    
+        /* responsive setting */
+        border-radius: 3vw;
+    }
+    
+    .contact-sec-cont h1 {
+        /* legacy setting */
+        margin: 40px 0;
+    
+        /* responsive setting */
+        margin: 4vw 0;
+    }
+    
+    .contact-inner-cont1 {
+        display: grid;
+    }
+    
+    .contact-divider {
+        border-left: 0;
+    }
+    
+    .contact-address {
+        margin-right: 0;
+
+        /* legacy setting */
+        margin-bottom: 40px;
+    
+        /* responsive setting */
+        margin-bottom: 4vw;
+    }
+    
+    .contact-inner-cont1 form {
+        margin-left: 0;
+    
+        /* legacy setting */
+        border-radius: 30px;
+        padding: 40px;
+    
+        /* responsive setting */
+        border-radius: 3vw;
+        padding: 4vw;
+    }
+    
+    .contact-inner-cont1 form h3 {
+        /* legacy setting */
+        margin-bottom: 40px;
+    
+        /* responsive setting */
+        margin-bottom: 4vw;
+    }
+    
+    .contact-inner-cont1 input[type=text] {
+        /* legacy setting */
+        height: 160px;
+        padding: 0 20px;
+    
+        /* responsive setting */
+        height: 16vw;
+        padding: 0 2vw;
+    }
+    
+    .contact-inner-cont1 textarea {
+        /* legacy setting */
+        padding: 20px;
+        height: calc(100% - 180px);
+    
+        /* responsive setting */
+        padding: 2vw;
+        height: calc(100% - 18vw);
+    }
+    
+    .contact-inner-cont1 input[type=text], .contact-inner-cont1 textarea {
+        box-shadow: 0;
+        border: 1px #000 solid;
+
+        /* legacy setting */
+        border-radius: 1px;
+        margin-bottom: 40px;
+    
+        /* responsive setting */
+        border-radius: 1vw;
+        margin-bottom: 4vw;
+    }
+    
+    .contact-inner-cont1 input[type=submit] {
+        /* legacy setting */
+        padding: 20px 40px;
+        border-radius: 20px;
+    
+        /* responsive setting */
+        padding: 2vw 4vw;
+        border-radius: 2vw;
+    }
+    
+    .contact-inner-cont1 input, .contact-inner-cont1 textarea {
+        /* legacy setting */
+        font-size: 32px;
+    
+        /* responsive setting */
+        font-size: 3.2vw;
+    }
+    
+    .contact-address, .contact-inner-cont1 form {
+        width: 100%;
+    }
+    
+    .contact-sec-cont iframe {
+        /* legacy setting */
+        margin: 80px 0;
+        height: 1000px;
+    
+        /* responsive setting */
+        margin: 8vw 0;
+        height: 100vw;
+    }
+    
+    .contact-inner-cont2 {
+        display: grid;
+        justify-content: unset;
+    }
+    
+    .contact-left-cont, .contact-right-cont {
+        width: 100%;
+    }
+
+    .contact-left-cont {
+        /* legacy setting */
+        margin-bottom: 40px;
+    
+        /* responsive setting */
+        margin-bottom: 4vw;
+    }
+    
+    .contact-right-cont li {
+        /* legacy setting */
+        font-size: 32px;
+    
+        /* responsive setting */
+        font-size: 3.2vw;
+    }
+}
+
 /* apna conference 2023 section 1 */
 
 .con23-sec1 {
@@ -2398,11 +2835,11 @@
 
 .pp-row {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .pp-row div {
-    width: 46%;
+    width: 48%;
 }
 
 .pp-row h2 {
@@ -2411,9 +2848,6 @@
 
 .pp-row p {
     text-align: justify;
-}
-
-.pp-row a {
 }
 
 @media only screen and (max-device-width: 970px) {
