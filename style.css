@@ -2242,12 +2242,14 @@
     position: absolute;
     font-size: 20px;
     height: 40px;
+    padding-top: 11px;
     margin-left: 100px;
 
     /* Responsive Edit */
     font-size: 0.8vw;
     bottom: 1vw;
     height: 2vw;
+    padding-top: 0.5vw;
     margin-left: 5vw;
 }
 
@@ -2322,7 +2324,7 @@
     
         /* Responsive Edit */
         font-size: 1.3vw;
-        padding-bottom: 2.5vw;
+        padding-bottom: 2.6vw;
         margin-left: 5.5vw;
     }
     
@@ -2331,18 +2333,22 @@
 
 @media only screen and (max-device-width: 500px) {
 
+    .membershipfee-sec-card-cont {
+        display: grid;
+    }
+
     .membershipfee-sec-card div, .membershipfee-sec-card h3{
         text-align: center;
-        font-size: 15px;
+        font-size: 25px;
         margin-bottom: 32px;
     
         /* Responsive Edit */
-        font-size: 2vw;
+        font-size: 2.5vw;
         margin-bottom: 1.5vw;
     }
 
     .membershipfee-sec-card p {
-        font-size: 8px;
+        font-size: 22px;
         text-align: center;
         color: rgba(0, 0, 0, .5);
 
@@ -2356,11 +2362,11 @@
         padding: 20px;
         margin: 10px;
         border-radius: 20px;
-        height: 250px;
-        width: 240px;
+        height: 530px;
+        width: 590px;
         
         /* Responsive Edit */
-        width: 24vw;
+        width: 60vw;
         height: 65vw;
         padding: 1vw;
         margin: 1vw;
@@ -2368,7 +2374,7 @@
     }
 
     .membershipfee-sec-rectangle {
-        width: 50%;
+        width: 30%;
         height: 18px;
     
         /* Responsive Edit */
@@ -2377,23 +2383,25 @@
 
     .membershipfee-sec-card img {
         object-fit: cover;
-        width: 195px;
-        height: 120px;
+        width: 500px;
+        height: 300px;
         border-radius: 20px;
+        margin-left: 35px;
         margin-right: 40px;
         margin-bottom: 10px;
     
         /* Responsive Edit */
-        width: 22vw;
-        height: 20vw;
+        width: 51vw;
+        height: 33vw;
         border-radius: 1vw;
+        margin-left: 3.5vw;
         margin-right: 2vw;
         margin-bottom: 0.7vw;
     
     }
 
     .membershipfee-sec-card a {
-        justify-content: left;
+        justify-content: center;
         position: absolute;
         font-size: 18px;
         margin-left: 15px;
@@ -2402,8 +2410,8 @@
         
         /* Responsive Edit */
         font-size: 2vw;
-        margin-left: 4.1vw;
         width: 14vw;
+        margin-left: 21.5vw;
         padding-bottom: 3.5vw;
     }
     
