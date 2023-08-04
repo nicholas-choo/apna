@@ -3565,7 +3565,7 @@ p {
 }
 fieldset {
     border-radius: 0.5vw;
-    margin: 1vw 1vw;
+    margin: 1vw 1vw 1vw 1vw;
     font-size: 1vw;
 }
 
@@ -3670,6 +3670,8 @@ legend {
 }
 fieldset {
     font-size: 3vw;
+    margin: 3vw 3vw 3vw 3vw;
+    border-radius: 1vw;
 }
 .enquiry_inputdata{
     width: 98%;
