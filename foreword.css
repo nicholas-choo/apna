@@ -1,0 +1,22 @@
+.foreword {
+    background-color: white;
+    min-height: 90vh;
+    padding: 50px 50px;
+}
+
+.foreword-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    gap: 50px;
+}
+
+.fore-text {
+    max-width: 600px;
+}
+
+.fore-img h4 {
+    margin-top: 10px;
+}
+
