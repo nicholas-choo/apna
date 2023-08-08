@@ -2417,3 +2417,237 @@
     
 
 }
+
+/* Membership Application */
+
+.membershipapp-sec {
+    margin-bottom: 50px;
+
+    /* Responsive Edit */
+    margin-bottom: 2.5vw;
+}
+
+.membershipapp-sec h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    
+    /* Responsive Edit */
+    margin-bottom: 1vw;
+}
+
+.membershipapp-sec1-cont1 {
+    padding-left: 75px;
+
+    /* Responsive Edit */
+    padding-left: 3.9vw;
+}
+
+.membershipapp-sec1-cont1 h3 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+ 
+    /* Responsive Edit */
+    margin-bottom: 0.8vw;
+    margin-bottom: 0.8vw;
+}
+
+.membershipapp-sec1-cont1 input[type=submit] {
+    background-color: #000;
+    color: #FFF;
+    width: 100px;
+    padding: 8px 16px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 25px;
+
+    /* Responsive Edit */
+    font-size: 0.7vw;
+    width: 5vw;
+    border-radius: .25vw;
+    padding: .4vw .8vw;
+    margin-top: 1.5vw;
+    margin-bottom: 2vw;
+}
+
+.membershipapp-sec1-forms {
+    display: flex;
+    margin-bottom: 15px;
+    margin-top: 10px;
+
+    /* Responsive Edit */
+    margin-bottom: 0.8vw;
+    margin-top: 0.6vw;
+}
+
+.membershipapp-sec1-title {
+      color: #000;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 15px;
+      display: block;
+      margin-bottom: 4px;
+
+      /* Responsive Edit */
+      font-size: 1vw;
+      line-height: 1vw;
+      margin-bottom: 0.2vw;
+
+}
+
+.membershipapp-sec1-input {
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+
+    /* Responsive Edit */
+    height: 1.6vw;
+    border-radius: 0.5vw;
+}
+
+.membershipapp-sec1-title2 {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 15px;
+    width: 500px;
+    display: grid;
+    margin-bottom: 4px;
+
+    /* Responsive Edit */
+    font-size: 0.8vw;
+    line-height: 1vw;
+    margin-bottom: 0.2vw;
+}
+
+/* Membership Application - Input Section 1 */
+
+.membershipapp-sec1-forms > #FirstGap {
+    width: 26%;
+}
+
+.membershipapp-sec1-input > #FirstColumn {
+    width:  240px;
+
+    /* Responsive Edit */
+    width: 12.5vw;
+}
+
+.membershipapp-sec1-forms > #SecondGap {
+    width: 36%;
+}
+
+.membershipapp-sec1-input > #SecondColumn {
+    width:  345px;
+
+    /* Responsive Edit */
+    width: 18vw;
+}
+
+.membershipapp-sec1-input > #ThirdColumn {
+    width:  320px;
+
+    /* Responsive Edit */
+    width: 16.6vw;
+}
+
+.membershipapp-sec1-forms > #FourthGap {
+    width: 62%;
+}
+
+.membershipapp-sec1-input > #FourthColumn {
+    width:  634px;
+
+    /* Responsive Edit */
+    width: 32.6vw;
+}
+
+/* Membership Application - Input Section 2 & 3 */
+
+
+.membershipapp-sec1-forms > #FifthGap {
+    width: 48%;
+}
+
+.membershipapp-sec1-input > #FifthColumn {
+    width:  470px;
+
+    /* Responsive Edit */
+    width: 24.5vw;
+}
+
+.membershipapp-sec1-input > #SixthColumn {
+    width:  470px;
+
+    /* Responsive Edit */
+    width: 24.5vw;
+}
+
+.membershipapp-sec1-forms > #SmallGap1 {
+    width: 25%;
+    
+}
+
+.membershipapp-sec1-input > #SmallColumn1 {
+    width:  200px;
+
+    /* Responsive Edit */
+    width: 10.5vw;
+}
+
+.membershipapp-sec1-forms > #SmallGap2 {
+    width: 23%;
+}
+
+.membershipapp-sec1-input > #SmallColumn2 {
+    width:  200px;
+
+    /* Responsive Edit */
+    width: 10.5vw;
+}
+
+.membershipapp-sec1-forms > #SmallGap3 {
+    width: 25%;
+}
+
+.membershipapp-sec1-input > #SmallColumn3 {
+    width:  200px;
+
+    /* Responsive Edit */
+    width: 10.5vw;
+}
+
+.membershipapp-sec1-forms > #SmallGap4 {
+    width: 20%;
+}
+
+
+.membershipapp-sec1-input > #SmallColumn4 {
+    width:  200px;
+
+    /* Responsive Edit */
+    width: 10.5vw;
+}
+
+.membershipapp-sec1-forms > #BigGap {
+    width: 30%;
+    margin-top: 20px;
+    margin-bottom: 250px;
+
+    /* Responsive Edit */
+    margin-top: 1vw;
+    margin-bottom: 13vw;
+}
+
+.membershipapp-sec1-input > #BigColumn {
+    height: 250px;
+    width: 985px;
+
+    /* Responsive Edit*/
+    height: 13vw;
+    width: 51.5vw;
+}
+
+.membershipapp-sec1-forms > #SmallGap5 {
+    width: 100px;
+}
