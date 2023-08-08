@@ -1,0 +1,86 @@
+.conference {
+    background-color: white;
+    min-height: 100vh;
+    padding: 50px 50px;
+}
+
+.conf-center {
+    display: flex;
+    justify-content: center;
+}
+
+.conference-flex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 1000px;
+    gap: 40px;
+}
+
+.conf {
+    background-color: #f5f5f5;
+    padding: 40px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.conf-flex {
+    color: #9e9e9e;
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.conf-content img {
+    max-width: 250px;
+}
+
+.before {
+    width: 100px;
+    height: 10px;
+    margin-bottom: 15px;
+}
+
+.before.c1 {
+    background-color: #FFC300;
+}
+
+.before.c2 {
+    background-color: #6CD0DC;
+}
+
+.before.c3 {
+    background-color: #F64FB6;
+}
+
+.before.c4 {
+    background-color: #7EDE0E;
+}
+
+.conf-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-left: auto;
+    width: fit-content;
+    min-height: 100%;
+    gap: 10px;
+}
+
+.conference-flex a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+.a-2018 {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
