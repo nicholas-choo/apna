@@ -296,7 +296,7 @@ p {
     height: 4vw;
 }
 
-.nav-bar form {
+.nav-bar-search {
     display: flex;
     position: absolute;
     right: 0;
@@ -3706,4 +3706,14 @@ fieldset{
     margin-bottom: 20px;
 }
 }
+
+/*Search Results page*/
+.search_flex_col1 {
+  text-align: center;
+}
+.title_search {
+    text-align: center;
+    height: 100%;
+}
+
 

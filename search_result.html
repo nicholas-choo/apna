@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
 <head>
     <title>APNA</title>
@@ -7,6 +7,9 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/APNA logo circle.png" type="image/icon type">
+    <script type="text/javascript" src="./javascript/jsSiteSearch.js"></script>
+    <script type="text/javascript" src="./javascript/jquery.js"></script>
+    <script type="text/javascript" src="./javascript/jquery.wputils.js"></script>
     <script type="text/javascript" async="" src="./javascript/plusone.js.下载" gapi_processed="true"></script><script type="text/javascript" src="./javascript/jquery.js.下载"></script>
     <script type="text/javascript">
       $(document).ready(function() {
@@ -75,8 +78,8 @@
                 </ul>
             </div>
             <div class="nav-bar-link-cont">
-                <ul class="highlighted">
-                    <a href="contact_us.html" class="selected">Contact Us</a>
+                <ul>
+                    <a href="contact_us.html">Contact Us</a>
                 </ul>
             </div>
             <div class="nav-bar-link-cont">
@@ -184,100 +187,20 @@
     <section class="filler"></section>
 
     <section class="sec flex-center">
-        <img class="contact_header_img width60vw" src="contact_apna\contact us header image.png">
-        <div class="title_contact width60vw">
-          <h1 class="contact_big_title">Contact Us</h1>
-          <div class="contact_row1">
-            <div class="contact_address_box width60vw">
-            <p> ASIA PACIFIC NEURO-BIOFEEDBACK<br /><br /> 
-                ASSOCIATION HEADQUARTERS<br /><br />
-                Singapore:<br /><br />
-                36 Purvis Street<br />
-                Talib Centre<br />
-                #02-11<br />
-                Singapore 188613<br /><br />
-                Operating Hours:<br /><br />
-                Tuesdays-Saturdays<br />
-                09:00 AM-06:00 PM<br />
-                (By appointment only)<br />
-                Tel : +65 68349476<br />
-                Fax : +65 6830 8459<br /><br />
-                Malaysia:<br /><br />
-                279, Jalan Pekeliling 11700 Pulau Pinang<br />
-            </p>
-            </div>
-            <div class="vertical-line"></div>
-            <div class="enquiry_box">
-                <span class="enquiry_title">Enquiry</span><br><br>
-                <fieldset>
-                    <legend>First Name</legend>
-                    <input type="text" name="first_name" class="enquiry_inputdata" size="100%">
-                </fieldset>
-                <fieldset>
-                    <legend>Last Name</legend>
-                    <input type="text" name="last_name" class="enquiry_inputdata" size="100%">
-                </fieldset>
-                <fieldset>
-                    <legend>Email Address</legend>
-                    <input type="email" name="email_address" class="enquiry_inputdata" size="100%">
-                </fieldset>
-                <fieldset>
-                    <legend>Message</legend>
-                    <textarea name="message" class="enquiry_inputdata_message" rows="15" cols="100%"></textarea>
-                </fieldset>
-                <input type="submit" name="enquiry_submit_btn" class="enquiry_subbtn" value="Submit">
-            </div>
-          </div>
-          <div class="contact_map width60vw">
-            <iframe  class="google_map width60vw" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7977.593958179652!2d103.854914!3d1.29645!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19a5730bd999%3A0x2af97fe860d583f1!2s36%20Purvis%20St%2C%20Singapore%20188613!5e0!3m2!1sen!2sus!4v1690911687950!5m2!1sen!2sus" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="contact_cont_box contact_flex_container">
-                <div class="contact_subcont">
-                    <h3 class="contact_subcont_title">Public Transport Directions:</h3>
-                    <p class="contact_subcont_content">
-                        From Bugis MRT Station, take Exit C. Exit from Bugis Junction 
-                        Fountain side and walk along North Bridge Road towards the direction 
-                        of National Library. Look out for Maybank opposite National Library. 
-                        Cross the road to Maybank. Purvis Street will be on the left.
-                        <br><br>
-                        Our office is located in one of those red-framed windows shop houses. 
-                        The lobby entrance to our office is 2 units away from Kiliney coffee shop. 
-                        Enter the lobby and go to second floor.
-                    </p>
-                </div>
-            </div>
-            <div class="contact_cont_box contact_flex_container">
-                <div class="contact_subcont">
-                    <h3 class="contact_subcont_title">Driving Directions:</h3>
-                    <p class="contact_subcont_content">
-                        Purvis street is opposite the National Library and Bras Basah Complex. 
-                        As it is a one way street, drivers will have to enter via Beach Road and 
-                        make a left turn into Purvis street.
-                    </p>
-                </div>
-            </div>
-            <div class="contact_cont_box contact_flex_container">
-                <div class="contact_subcont">
-                    <h3 class="contact_subcont_title">Parking Options:</h3>
-                    <p class="contact_subcont_content">
-                        <ul>
-                            <li><p>Street Carpark - Along Purvis Street.</p></li>
-                            <li><p>Beach Centre Carpark - 15 Beach Road, S189677. 
-                                When you first turn into Purvis Street, make 
-                                another left turn and the carpark entrance is on 
-                                the left.</p>
-                            </li>
-                            <li><p>North Bridge Centre Carpark - 420 North Bridge Road, 
-                                S188727. Driving along Purvis Street, make a right 
-                                turn (just before Maybank), the carpark entrance is 
-                                on your left.</p></li>
-                            <li><p>National Library Carpark - 100 Victoria Street, S188064.</p></li>
-                        </ul>
-                    </p>
-                </div>
-            </div>
-          </div>
+      <div class="title_search width60vw">
+          <h1 class="search_big_title">Search Results</h1>
+        <div id="divMain" class="results-iframe">
+          <iframe id="site_search_results_2" name="site_search_results_2" data-results="font-family: 'Verdana'; font-size: 1vw; color: #000000;" data-links="font-family: 'Verdana'; font-size: 1vw; color: #000000;" style="position:relative; left:0px; top:1vw; width:60vw; height: 60vw; border:none 0px;"></iframe>
         </div>
+        <div>
+          <script type="text/javascript">
+              GetSiteSearchResults(true,site_search_results_2,"site_search_results_2","Verdana","1.5vw","#909090","Verdana","1.5vw","#000000","transparent","result(s) found for search term:");
+              GetSmartSearchResults('http://www.serifwebresources.com/control.php?action=search&siteurl=http://www.apna.asia/', 'site_search_results_2');
+          </script>
+        </div>
+      </div>
     </section>
+  
 
     <footer class="footer">
         <div class="footer-cont">
