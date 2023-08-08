@@ -1569,6 +1569,117 @@
     }
 }
 
+/* foreword */
+
+.foreword-sec-cont h1 {
+    text-align: center;
+    
+    /* legacy setting */
+    margin-bottom: 20px;
+
+    /* responsive setting */
+    margin-bottom: 1vw;
+}
+
+.foreword-inner-cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.foreword-inner-cont img {
+    /* legacy setting */
+    margin-right: 40px;
+    border-radius: 20px;
+    height: 400px;
+
+    /* responsive setting */
+    margin-right: 2vw;
+    border-radius: 1vw;
+    height: 20vw;
+}
+
+.foreword-inner-cont p {
+    text-align: justify;
+
+    /* legacy setting */
+    margin-top: 20px;
+
+    /* responsive setting */
+    margin-top: 1vw;
+}
+
+@media only screen and (max-device-width: 970px) {
+    .foreword-sec-cont h1 {
+        /* legacy setting */
+        margin-bottom: 20px;
+    
+        /* responsive setting */
+        margin-bottom: 2vw;
+    }
+    
+    .foreword-inner-cont {
+        display: grid;
+        justify-content: unset;
+        place-items: center;
+    }
+    
+    .foreword-inner-cont img {
+        margin-right: 0;
+
+        /* legacy setting */
+        border-radius: 20px;
+        height: 400px;
+        margin-bottom: 20px;
+    
+        /* responsive setting */
+        border-radius: 2vw;
+        height: 40vw;
+        margin-bottom: 2vw;
+    }
+
+    .foreword-inner-cont h3, .foreword-inner-cont h4 {
+        text-align: center;
+    }
+    
+    .foreword-inner-cont p {
+        /* legacy setting */
+        margin-top: 20px;
+    
+        /* responsive setting */
+        margin-top: 2vw;
+    }
+}
+
+@media only screen and (max-device-width: 500px) {
+    .foreword-sec-cont h1 {
+        /* legacy setting */
+        margin-bottom: 40px;
+    
+        /* responsive setting */
+        margin-bottom: 4vw;
+    }
+    
+    .foreword-inner-cont img {
+        /* legacy setting */
+        border-radius: 40px;
+        height: 600px;
+        margin-bottom: 40px;
+    
+        /* responsive setting */
+        border-radius: 4vw;
+        height: 60vw;
+        margin-bottom: 4vw;
+    }
+    
+    .foreword-inner-cont p {
+        /* legacy setting */
+        margin-top: 40px;
+    
+        /* responsive setting */
+        margin-top: 4vw;
+    }
+}
+
 /* membership section */
 
 .membership-inner-cont {
