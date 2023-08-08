@@ -885,6 +885,7 @@
 
 .story-sec-card {
     background-color: #EEE;
+    position: relative;
    
     /* legacy setting */
     padding: 20px;
