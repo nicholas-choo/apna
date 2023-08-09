@@ -3019,14 +3019,13 @@
         padding: 5px;
         outline: none;
         border-width: 2px;
-        border-collapse: none;
         border-color: #000000;
         resize: none;
         
         
         /* responsive edit */
         font-size: 3.5vw;
-        border-width: 0.7vw;
+        border-width: 0.3vw 0.4vw 0.6vw 0.4vw;
         height: 1vw;
         width: 1vw;
         padding: 0.2vw;
@@ -3034,14 +3033,13 @@
     }
 
     .membershipapp-sec1-input{
-        border-style: solid 1px;
         font-size: 35px;
         margin-top: 4px;
         border-width: 5px;
 
         /* Responsive Edit */
         font-size: 3.5vw;
-        border-width: 0.7vw;
+        border-width: 0.3vw 0.4vw 0.6vw 0.4vw;
     }
 
     .membershipapp-sec1-forms {
