@@ -3273,17 +3273,32 @@
 
 .membershiplist-sec-cont table {
     width: 100%;
-    border: solid 2px;
-    border-collapse: collapse;
+    border: solid 1px;
+    border-collapse: separate;
+    border-spacing: 0;
     border-radius: 8px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    /* Responsive Edit */
+    border: solid 0.1vw;
+    border-radius: 0.4vw;
+    border-bottom-left-radius: 0.8vw;
+    border-bottom-right-radius: 0.8vw;
 
 }
 
-.membershiplist-sec-cont th {
+.membershiplist-sec-cont th{
+  font-size: 15px;
   padding-top: 12px;
   padding-bottom: 12px;
   background-color: #000;
   color: #EEE;
+
+  /* Responsive Edit */
+  font-size: 0.8vw;
+  padding-top: 0.7vw;
+  padding-bottom: 0.7vw;
 }
 .membershiplist-sec-cont td {
     width: 230.4px;
@@ -3291,10 +3306,43 @@
     left: 0px;
     top: 0px;
     padding: 8px;
-
-    background: #FFFFFF;
-    border-width: 1px 1px 0px 1px;
+    background: #FFFFFF;    
+    border-width: 0.5px 0.5px 0px 0.5px;
     border-style: solid;
     border-color: rgba(0, 0, 0, 0.5);
 
+    /* Responsive Edit */
+    font-size: 0.8vw;
+    width: 12vw;
+    height: 3.1vw;
+    padding: 0.4vw;
+
+}
+
+.membershiplist-sec-cont table tr:last-child th:first-child {
+    border: 0.5px solid;
+    overflow: none; 
+    border-color: #000;
+    border-bottom-left-radius: 15px;
+    height: 40px;
+
+    /* Responsive Edit */
+    height: 2.2vw;
+    border-bottom-left-radius: 0.8vw;
+}
+    
+.membershiplist-sec-cont table tr:last-child th:last-child {
+    border: 0.5px solid;
+    border-color: #000;
+    border-bottom-right-radius: 15px;
+    height: 40px;
+
+    /* Responsive Edit */
+    height: 2.2vw;
+    border-bottom-right-radius: 0.8vw;
+    
+}
+
+.membershiplist-sec-cont td#FirstName {
+    text-align: right;
 }
