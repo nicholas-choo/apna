@@ -3265,10 +3265,10 @@
 
 .membershiplist-sec h2 {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 
     /* Responsive Edit */
-    margin-bottom: 1vw;
+    margin-bottom: 0.75w;
 }
 
 .membershiplist-sec-cont table {
@@ -3345,4 +3345,172 @@
 
 .membershiplist-sec-cont td#FirstName {
     text-align: right;
+}
+
+@media only screen and (max-device-width: 970px){
+    .membershiplist-sec h2 {
+        text-align: center;
+        margin-bottom: 15px;
+    
+        /* Responsive Edit */
+        margin-bottom: 1.5vw;
+    }
+    
+    .membershiplist-sec-cont table {
+        width: 100%;
+        border: solid 1px;
+        border-collapse: separate;
+        border-spacing: 0;
+        border-radius: 8px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    
+        /* Responsive Edit */
+        border: solid 0.1vw;
+        border-radius: 0.8vw;
+        border-bottom-left-radius: 1.5vw;
+        border-bottom-right-radius: 1.5vw;
+    
+    }
+    
+    .membershiplist-sec-cont th{
+      font-size: 15px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      background-color: #000;
+      color: #EEE;
+    
+      /* Responsive Edit */
+      font-size: 1.5vw;
+      padding-top: 1.2vw;
+      padding-bottom: 1.2vw;
+    }
+    .membershiplist-sec-cont td {
+        font-size: 15px;
+        width: 230.4px;
+        height: 60px;
+        left: 0px;
+        top: 0px;
+        padding: 8px;
+        background: #FFFFFF;    
+        border-width: 0.5px 0.5px 0px 0.5px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.5);
+    
+        /* Responsive Edit */
+        font-size: 1.5vw;
+        width: 23vw;
+        height: 6vw;
+        padding: 0.4vw;
+    
+    }
+    
+    .membershiplist-sec-cont table tr:last-child th:first-child {
+        border: 0.5px solid;
+        overflow: none; 
+        border-color: #000;
+        border-bottom-left-radius: 15px;
+        height: 40px;
+    
+        /* Responsive Edit */
+        height: 4vw;
+        border-bottom-left-radius: 1.5vw;
+    }
+        
+    .membershiplist-sec-cont table tr:last-child th:last-child {
+        border: 0.5px solid;
+        border-color: #000;
+        border-bottom-right-radius: 15px;
+        height: 40px;
+    
+        /* Responsive Edit */
+        height: 4vw;
+        border-bottom-right-radius: 1.5vw;
+        
+    }
+
+}
+
+@media only screen and (max-device-width: 500px){
+    .membershiplist-sec h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    
+        /* Responsive Edit */
+        margin-bottom: 1.5vw;
+    }
+    
+    .membershiplist-sec-cont table {
+        width: 100%;
+        border: solid 2px;
+        border-collapse: separate;
+        border-spacing: 0;
+        border-radius: 8px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    
+        /* Responsive Edit */
+        border: solid 0.1vw;
+        border-radius: 0.8vw;
+        border-bottom-left-radius: 1.5vw;
+        border-bottom-right-radius: 1.5vw;
+    
+    }
+    
+    .membershiplist-sec-cont th{
+      font-size: 30px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      background-color: #000;
+      color: #EEE;
+    
+      /* Responsive Edit */
+      font-size: 1.5vw;
+      padding-top: 1.2vw;
+      padding-bottom: 1.2vw;
+    }
+    .membershiplist-sec-cont td {
+        font-size: 30px;
+        width: 460.28px;
+        height: 120px;
+        left: 0px;
+        top: 0px;
+        padding: 16px;
+        background: #FFFFFF;    
+        border-width: 1px 1px 0px 1px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.5);
+    
+        /* Responsive Edit */
+        font-size: 1.5vw;
+        width: 23vw;
+        height: 6vw;
+        padding: 0.4vw;
+    
+    }
+    
+    .membershiplist-sec-cont table tr:last-child th:first-child {
+        border: 1px solid;
+        overflow: none; 
+        border-color: #000;
+        border-bottom-left-radius: 30px;
+        height: 80px;
+    
+        /* Responsive Edit */
+        height: 4vw;
+        border-bottom-left-radius: 1.5vw;
+    }
+        
+    .membershiplist-sec-cont table tr:last-child th:last-child {
+        border: 0.5px solid;
+        border-color: #000;
+        border-bottom-right-radius: 30px;
+        height: 80px;
+    
+        /* Responsive Edit */
+        height: 4vw;
+        border-bottom-right-radius: 1.5vw;
+        
+    }
+
 }
