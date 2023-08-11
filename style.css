@@ -3418,7 +3418,7 @@
 }
 
 .visitor-info-sec1-cont img {
-    width: 35%;
+    width: 200%;
     object-fit: cover;
 
     /* legacy setting */
@@ -3447,7 +3447,11 @@
     text-align: justify;
 }
 
-@media screen and (max-device-width: 970px) {}
+@media screen and (max-device-width: 970px) {
+    .visitor-info-sec1-cont img {
+        width: 400%;
+    }
+}
 
 @media screen and (max-device-width: 500px) {
     .visitor-info-sec1-cont {
