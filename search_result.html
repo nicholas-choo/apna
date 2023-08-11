@@ -18,6 +18,19 @@
       $('#search_btn').click(function(event) { window.location.href = 'search_result.html?site_search_results_2='+document.getElementById('search_bar').value+'&depth=0&swr=false'; });
       });
     </script>
+    <style>
+        @media (max-width: 970px) {
+          #site_search_results_2 {
+            width: 80vw;
+          }
+        }
+        
+        @media (max-device-width: 500px) {
+          #site_search_results_2 {
+            width: 80vw;
+          }
+        }
+        </style>
 </head>
 <body>
     <nav class="nav-bar">
@@ -190,7 +203,7 @@
       <div class="title_search width60vw">
           <h1 class="search_big_title">Search Results</h1>
         <div id="divMain" class="results-iframe">
-          <iframe id="site_search_results_2" name="site_search_results_2" data-results="font-family: 'Verdana'; font-size: 1vw; color: #000000;" data-links="font-family: 'Verdana'; font-size: 1vw; color: #000000;" style="position:relative; left:1vw; top:1vw; width:60vw; height:175vw; border:none 0vw;"></iframe>
+          <iframe id="site_search_results_2" name="site_search_results_2" data-results="font-family: 'Verdana'; font-size: 1vw; color: #000000;" data-links="font-family: 'Verdana'; font-size: 1vw; color: #000000;" style="position:relative; left:1vw; top:1vw; border:none 0vw;"></iframe>
         </div>
         <div class="search">
           <script type="text/javascript">
