@@ -12,7 +12,17 @@
 	resultsText
   ) {
 	// ... Function body ...
+	var screenWidth = window.innerWidth;
+	var fontSize = "1.6vw"; // Default font size for desktop
+	var linkSize = "1.6vw"; // Default link size for desktop
   
+	if (screenWidth <= 500) {
+	  fontSize = "1.8vw";; // Use mobile font size for screens up to 500px wide
+	  linkSize = "1.8vw";  // Use mobile font size for screens up to 500px wide
+	} else if (screenWidth <= 970) {
+	  fontSize = "1.8vw";; // Use tablet font size for screens up to 970px wide
+	  linkSize = "1.8vw";  // Use tablet font size for screens up to 970px wide
+	}
 	// Process search terms from URL and parameters
 	var sTerms = "";
 	var iDepth = 0;
@@ -50,10 +60,24 @@
 	d.write("<!doctype html>");
 	d.write("<html lang=\"en\">");
 	// ... Writing metadata and style ...
-	d.write("<head>" );
-	d.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">" );
-	d.write("</head>" );
-	d.write("<body style=\"overflow-y: hidden; display: flex; justify-content: center; height: auto; width:98%; text-align: center; margin: 0vw 0vw 0vw 0vw; font-family: "+fontFace+"; font-size: "+fontSize+"; color: "+fontColour+"; background: "+bgColour+";\">" );
+	d.write("<head>");
+	d.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">");
+	d.write("<style>");
+	d.write("    font-size: 1.6vw; ");
+	d.write("@media only screen and (max-width: 500px) {");
+	d.write("  body {");
+	d.write("    font-size: 1.8vw; ");
+	d.write("  }");
+	d.write("}");
+	
+	d.write("@media only screen and (max-width: 970px) {");
+	d.write("  body {");
+	d.write("    font-size: 1.8vw; ");
+	d.write("  }");
+	d.write("}");
+	d.write("</style>");
+	d.write("</head>");
+	d.write("<body style=\"overflow-y: hidden; display: flex; justify-content: center; height: auto; width:98%; text-align: center; margin: 0vw 0vw 0vw 0vw; font-family: "+fontFace+"; color: "+fontColour+"; background: "+bgColour+";\">");
 	// Write search results div and JavaScript code
 	d.write("<div id=\"wpSearchResults\"></div>");
 	d.write("<script type=\"text/javascript\">");
@@ -83,7 +107,7 @@
 		d.write("      }");
 		d.write("    }");
 		d.write("    if (found) {"); // Show results if any term is found
-		d.write("      results += \"<a style=\\\"background-color: #d9d9dd; cursor: pointer; font-family: " + linkFace + "; font-size: " + linkSize + "; color: " + linkColour + "; \\\" onclick=\\\"doNav(\" + i + \" );\\\"><div style=\\\"border-radius:1.5vw; padding: 1vw 1vw 2vw 1vw; background-color: #d9d9d9; \\\"><h3 style=\\\"text-align: justify; margin-bottom: 0.1vw;\\\">\" + pageMap[i] + \"</h3><br><div style=\\\"color: #808080; text-align: justify;\\\">\" + preMap[i] + \"...</div></div></a><br><br>\";");
+		d.write("      results += \"<a style=\\\"background-color: #d9d9dd; cursor: pointer; font-family: " + linkFace + "; font-size: " + linkSize + "; color: " + linkColour + "; \\\" onclick=\\\"doNav(\" + i + \" );\\\"><div style=\\\"border-radius:1.5vw; padding: 1vw 1vw 2vw 1vw; background-color: #d9d9d9; \\\"><h3 style=\\\"text-align: justify; margin-left: 1vw; margin-right: 1vw; margin-bottom: 0.1vw;\\\">\" + pageMap[i] + \"</h3><br><div style=\\\"margin-right: 1vw; margin-left: 1vw; color: #808080; text-align: justify;\\\">\" + preMap[i] + \"...</div></div></a><br><br>\";");
 		d.write("      resultscount++;");
 		d.write("    }");
 		d.write("  }");
