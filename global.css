@@ -296,7 +296,7 @@ p {
     height: 4vw;
 }
 
-.nav-bar form {
+.nav-bar-search {
     display: flex;
     position: absolute;
     right: 0;

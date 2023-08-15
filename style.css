@@ -5186,3 +5186,28 @@
         width: 100%;
     }
 }
+
+/* search results section */
+.search_flex_col1 {
+  text-align: center;
+}
+.title_search {
+    text-align: center; 
+}
+#site_search_results_2 {
+    width: 60vw;
+    height: 175vw;
+}
+@media only screen and (max-device-width: 970px) {
+    #site_search_results_2 {
+      width: 80vw;
+      height: 175vw;
+    }
+}
+  
+@media only screen and (max-device-width: 500px) {
+    #site_search_results_2 {
+      width: 80vw;
+      height: 275vw;
+    }
+}
