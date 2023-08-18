@@ -1,0 +1,771 @@
+<!doctype html>
+<html>
+<head>
+    <title>Template</title>
+    <meta name="description" content="Just a page template.">
+    <meta name="keywords" content="Just a page template.">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/APNA logo circle.png" type="image/icon type">
+    <script type="text/javascript" async="" src="./javascript/plusone.js.下载" gapi_processed="true"></script><script type="text/javascript" src="./javascript/jquery.js.下载"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $("a.ActiveButton").bind({ mousedown:function(){if ( $(this).attr('disabled') === undefined ) $(this).addClass('Activated');}, mouseleave:function(){ if ( $(this).attr('disabled') === undefined ) $(this).removeClass('Activated');}, mouseup:function(){ if ( $(this).attr('disabled') === undefined ) $(this).removeClass('Activated');}});
+      $('#search_bar').keypress(function(event) { if ( event.keyCode == 13 ) window.location.href = 'search_result.html?site_search_results_2='+document.getElementById('search_bar').value+'&depth=0&swr=false'; });
+      $('#search_btn').click(function(event) { window.location.href = 'search_result.html?site_search_results_2='+document.getElementById('search_bar').value+'&depth=0&swr=false'; });
+      });
+    </script>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-bar-cont">
+            <a href="index.html"><img src="images/APNA logo.png"></a>
+            <div class="nav-bar-search">
+                <input class="search-bar-input" type="text" id="search_bar" name="search_bar" placeholder="Search..."/>
+                <input class="search-bar-submit" type="image" id="search_btn" src="images/general_icons/search.png" name="submit" alt="Submit"/>
+            </div>
+        </div>
+        <div class="nav-bar-links">
+            <div class="nav-bar-link-cont">
+                <ul class="highlighted">
+                    <a href="index.html" class="selected">Home</a>
+                </ul>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="about_apna.html" class="dropdown">About APNA</a>
+                </ul>
+                <div class="submenu">
+                    <ul>
+                        <a href="apna_story.html">The APNA Story</a>
+                        <a href="board_and_committee_2017.html">Board & Committee</a>
+                        <a href="foreword.html">Foreword by Past President of APNA</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="membership.html" class="dropdown">Membership</a>
+                </ul>
+                <div class="submenu">
+                    <ul>
+                        <a href="membership_list.html">Membership List</a>
+                        <a href="membership_fee.html">Membership Fee</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="certification.html">Certification</a>
+                </ul>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="research_institutes.html">Research Institutes</a>
+                </ul>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="publications.html">Publications</a>
+                </ul>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="visitor_info.html">Visitor Info</a>
+                </ul>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="contact_us.html">Contact Us</a>
+                </ul>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="conference.html" class="dropdown">Conference</a>
+                </ul>
+                <div class="submenu">
+                    <ul>
+                        <a href="#">2015 Neurofeedback Conference</a>
+                        <a href="#">2016 Neurofeedback conference</a>
+                        <a href="#">2017 Neurofeedback Conference</a>
+                        <a href="apna_con_2023.html">2023 Neurofeedback Conference</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="nav-bar-minimized">
+        <div class="nav-bar-min-cont">
+            <a href="index.html"><img src="images/APNA logo.png"></a>
+            <button onclick="openBurgerCont()">&#x2630;</button>
+        </div>
+        <div class="nav-burger-cont-cont" id="burger-cont">
+            <div class="nav-burger-cont">
+                <div class="nav-burger-close-cont">
+                    <button onclick="closeBurgerCont()">&#x2716;</button>
+                </div>
+                <div class="nav-burger-menu">
+                    <form class="nav-bar-min-search">
+                        <input class="min-search-bar-input" type="text" id="search_bar" name="search_bar" placeholder="Search..."/>
+                        <input class="min-search-bar-submit" type="image" src="images/general_icons/search.png" name="submit" alt="Submit"/>
+                    </form>
+                    <div class="nav-bar-min-links-cont">
+                        <ul>
+                            <a href="index.html">Home</a>
+                        </ul>
+                        <ul>
+                            <div class="nav-bar-min-links">
+                                <button>
+                                    <span id="dd1-plus" onclick="openDropdown('about_apna')">+</span>
+                                    <span id="dd1-minus" style="display: none;" onclick="closeDropdown('about_apna')">-</span>
+                                </button>
+                                <a href="about_apna.html">About APNA</a>
+                            </div>
+                        </ul>
+                        <ul class="nav-bar-min-dropdown-cont" id="about_apna">
+                            <div class="nav-bar-min-dropdown">
+                                <a href="apna_story.html">The APNA Story</a>
+                                <a href="board_and_committee_2017.html">Board & Committee</a>
+                                <a href="foreword.html">Foreword by Past President of APNA</a>
+                            </div>
+                        </ul>
+                        <ul>
+                            <div class="nav-bar-min-links">
+                                <button>
+                                    <span id="dd2-plus" onclick="openDropdown('membership')">+</span>
+                                    <span id="dd2-minus" style="display: none;" onclick="closeDropdown('membership')">-</span>
+                                </button>
+                                <a href="membership.html">Membership</a>
+                            </div>
+                        </ul>
+                        <ul class="nav-bar-min-dropdown-cont" id="membership">
+                            <div class="nav-bar-min-dropdown">
+                                <a href="membership_list.html">Membership List</a>
+                                <a href="membership_fee.html">Membership Fee</a>
+                            </div>
+                        </ul>
+                        <ul>
+                            <a href="certification.html">Certification</a>
+                        </ul>
+                        <ul>
+                            <a href="research_institutes.html">Research Institutes</a>
+                        </ul>
+                        <ul>
+                            <a href="publications.html">Publications</a>
+                        </ul>
+                        <ul>
+                            <a href="visitor_info.html">Visitor Info</a>
+                        </ul>
+                        <ul>
+                            <a href="contact_us.html">Contact Us</a>
+                        </ul>
+                        <ul>
+                            <div class="nav-bar-min-links">
+                                <button>
+                                    <span id="dd3-plus" onclick="openDropdown('conference')">+</span>
+                                    <span id="dd3-minus" style="display: none;" onclick="closeDropdown('conference')">-</span>
+                                </button>
+                                <a href="conference.html">Conference</a>
+                            </div>
+                        </ul>
+                        <ul class="nav-bar-min-dropdown-cont" id="conference">
+                            <div class="nav-bar-min-dropdown">
+                                <a href="#">2015 Neurofeedback Conference</a>
+                                <a href="#">2016 Neurofeedback Conference</a>
+                                <a href="#">2017 Neurofeedback Conference</a>
+                                <a href="apna_con_2023.html">2023 Neurofeedback Conference</a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="filler"></section>
+    <section class="sec flex-center">
+        <div class="conference2017_content">
+            <div class="conference2017_title width60vw">
+                <h1 class="conference2017_big_title">ASIA PACIFIC NEUROFEEDBACK/BIOFEEDBACK CONFERENCE KUALA LUMPUR, MALAYSIA 2017</h1>
+            </div>
+            <div class="conference2017_header_img width60vw"><img src="images\con_2017\brain.jpg"></div>
+            <div class="conference2017_header_subtitle width60vw">
+                <h1 class="conference2017_big_subtitle">New Advancements in Neurofeedback</h1>
+                <p  class="conference2017_big_organized">
+                    Organized By :<br>
+                    ASIA Pacific Neuro-biofeedback Association (APNA) <br>
+                    and <br>
+                    Universiti Teknologi PETRONAS (UTP) <br>
+                    Center for Intelligent Signal and Imaging Research (HICOE-CISIR)
+                </p>
+            </div>
+            <div id="register_interest" class="conference2017_optionbtn width60vw">
+                <div class="conference2017_optionbtn_register">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdNK3sWR5vBoLkvugE5Lrfi_r8PqSEfXJPjorvsTj6r0KOwcw/closedform">Register your interest here!</a>
+                </div>
+            </div>
+            <div class="conference2017_optionbtn width60vw">
+                <div class="conference2017_optionbtn_SSC">
+                    <a href="#Speakers">Speakers</a>
+                    <a href="">Sponsors</a>
+                    <a href="">Conference Schedule</a>
+                </div>
+            </div>
+            <div class="conference2017_subtitle width60vw">
+                <h3>Featured Speakers</h3>
+            </div>
+            <div id="Speakers" class="conference2017_speaker">     
+                <div class="conference2017_speaker_info">
+                    <img class="conference2017_speaker_img" src="images/con_2017/Prof Dato Dr See.png">
+                    <div class="conference2017_speaker_content">
+                    <p class="conference2017_speaker_info_blue">Keynote Speaker</p>
+                    <h3>Prof Dato Dr Susie CM See</h3>
+                    <p>Universiti Sains Malaysia<br>
+                        Loh Guan Lye Specialist Centre<br> 
+                        Principal at Lions REACh, Penang</p>
+                    <p class="conference2017_speaker_info_blue">Best Practices in Clinical Neurofeedback</p>
+                    <a class="conference2017_speaker_learnMore" href="">Learn More</a>
+                    </div>
+                </div>
+                <div class="conference2017_speaker_info">
+                    <img class="conference2017_speaker_img" src="images/con_2017/Nidal Kamel.jpg">
+                    <div class="conference2017_speaker_content">
+                    <p class="conference2017_speaker_info_blue">Keynote Speaker</p>
+                    <h3>Assoc. Prof. Nidal Kamel</h3>
+                    <p>Centre for Inteligent Signal<br>
+                        and Imaging Research (CISIR)<br>
+                        Electrical & Electronic Engineering<br> 
+                        Universiti Teknologi PETRONAS</p>
+                    <p class="conference2017_speaker_info_blue">Functional And Effective Brain Connectivity<br>
+                                                                For Neurofeedback Training</p>                                                             
+                    <a class="conference2017_speaker_learnMore" href="">Learn More</a>
+                    </div>
+                </div>
+                <div class="conference2017_speaker_info">
+                    <img class="conference2017_speaker_img" src="images/con_2017/Professor MOK Wahedi.jpg">
+                    <div class="conference2017_speaker_content">
+                    <h3>Prof. Dr. M O K Wahedi</h3>
+                    <p>Depart. Of Paediatrics<br>
+                        Medical College for Women and Hospital<br>
+                    <p class="conference2017_speaker_info_blue">Neurofeedback and Brains Anatomical<br>
+                                                                and Functional Correlation to its<br>
+                                                                Therapeutic Outcome</p>
+                    <a class="conference2017_speaker_learnMore" href="">Learn More</a>
+                    </div>
+                </div>
+                <div class="conference2017_speaker_info">
+                    <img class="conference2017_speaker_img" src="images/con_2017/Malik.png">
+                    <div class="conference2017_speaker_content">
+                    <h3>Assoc.Prof.Aamir Saeed Malik</h3>
+                    <p>Centre for Inteligent Signal<br>
+                        and Imaging Research (CISIR)<br>
+                        Electrical & Electronic Engineering<br> 
+                        Universiti Teknologi PETRONAS</p>
+                    <p class="conference2017_speaker_info_blue">Simultaneous EEG-fMRI For<br>
+                                                                Cognitive Processes<br>
+                                                                And Neurofeedback</p>
+                    <a class="conference2017_speaker_learnMore" href="">Learn More</a>
+                    </div>
+                </div>
+                <div class="conference2017_speaker_info">
+                    <img class="conference2017_speaker_img" src="images/con_2017/Kelli.jpg">
+                    <div class="conference2017_speaker_content">
+                    <h3>Ms Kelli Law</h3>
+                    <p>Neurofeedback Therapist<br>
+                        Pebbles Consultancy<br>
+                        Loh Guan Lye Specialist Hospital</p>
+                    <p class="conference2017_speaker_info_blue">Integrative Approach<br>
+                                                                Of Neurofeedback And Counselling<br>
+                                                                For Selective Mutism:A Case Study</p>
+                    <a class="conference2017_speaker_learnMore" href="">Learn More</a>
+                    </div>
+                </div> 
+                <div class="conference2017_speaker_info">
+                    <img class="conference2017_speaker_img" src="images/con_2017/Tim.jpg">
+                    <div class="conference2017_speaker_content">
+                    <h3>Dr. Tim Hill</h3>
+                    <p>Psychologist and Certified<br>
+                        Neurofeedback Practitioner</p>
+                    <p class="conference2017_speaker_info_blue">Neurotherapy For Clients Suffering<br>
+                                                                From Anxiety,Obsessive-compulsive<br>
+                                                                And Depressive Disorder</p>                                                                
+                    <a class="conference2017_speaker_learnMore" href="">Learn More</a>
+                    </div>
+                </div>
+                <div class="conference2017_speaker_info">
+                    <img class="conference2017_speaker_img" src="images/con_2017/Sophian.jpg">
+                    <div class="conference2017_speaker_content">
+                    <h3>Dr. Muhamad Sophian</h3>
+                    <p>Lecturer<br>
+                        Universiti Malaysia, Sarawak<br>
+                        Neurofeedback Practitioner</p>
+                    <p class="conference2017_speaker_info_blue">The Differences Of Brainwave<br>
+                                                                Pattern And Attention Among<br>
+                                                                Visual Learners And<br>
+                                                                Auditory Learners Using EEG</p>                                                                
+                    <a class="conference2017_speaker_learnMore" href="">Learn More</a>
+                    </div>
+                </div>
+                <div class="conference2017_speaker_info">
+                    <img class="conference2017_speaker_img" src="images/con_2017/Faye.jpg">
+                    <div class="conference2017_speaker_content">
+                    <h3>Assoc. Prof. Ibrahima Faye</h3>
+                    <p>Centre for Inteligent Signal<br>
+                        and Imaging Research (CISIR)<br>
+                        Fundamental & Applied Sciences<br> 
+                        Universiti Teknologi PETRONAS</p>
+                    <p class="conference2017_speaker_info_blue">Detection Of Situational Interest<br>
+                                                                Through EEG For Improvement<br>
+                                                                Of Classroom Teaching And Learning</p>                                                                
+                    <a class="conference2017_speaker_learnMore" href="">Learn More</a>
+                    </div>
+                </div>
+                <div class="conference2017_speaker_info">
+                    <img class="conference2017_speaker_img" src="images/con_2017/Dr Khuwuthyakorn.jpg">
+                    <div class="conference2017_speaker_content">
+                    <h3>Dr. Panu Khuwuthyakorn</h3>
+                    <p>Saunprung Psychiatric Hospital,<br>
+                        Chiang Mai</p>
+                    <p class="conference2017_speaker_info_blue">RICD Neurofeedback<br>
+                                                                Centre In Chiangmai</p>                                                                
+                    <a class="conference2017_speaker_learnMore" href="">Learn More</a>
+                    </div>
+                </div>  
+                <div class="conference2017_speaker_info">
+                    <img class="conference2017_speaker_img" src="images/con_2017/Khan.jpg">
+                    <div class="conference2017_speaker_content">
+                    <h3>Mr Danish Mahmood Khan</h3>
+                    <p>Centre for Intelligent Signal<br>
+                        And Imaging Research (CISIR)<br>
+                        Electrical & Electronic Engineering<br>
+                        Universiti Teknologi PETRONAS</p>
+                    <p class="conference2017_speaker_info_blue">Brain Effective Connectivity<br>
+                                                                Using EEG Signals<br>
+                                                                For Early Prediction Of<br>
+                                                                Epileptic Seizure</p>                                                                
+                    <a class="conference2017_speaker_learnMore" href="">Learn More</a>
+                    </div>
+                </div>
+                <div class="conference2017_speaker_info">
+                    <img class="conference2017_speaker_img" src="images/con_2017/Koo.jpg">
+                    <div class="conference2017_speaker_content">
+                    <h3>Mr Hiro Koo</h3>
+                    <p>Clinical Hypnotherapist<br>
+                        Hypnosis Integrative Hub</p>
+                    <p class="conference2017_speaker_info_blue">Clinical Hypnosis And<br>
+                                                                Neurofeedback Intervention<br>
+                                                                For Autonomic Dysfunction</p>                                                                
+                    <a class="conference2017_speaker_learnMore" href="">Learn More</a>
+                    </div>
+                </div>
+                <div class="conference2017_speaker_info">
+                    <img class="conference2017_speaker_img" src="images/con_2017/Fauzan.jpg">
+                    <div class="conference2017_speaker_content">
+                    <h3>Assoc.Prof.Norsiah Fauzan</h3>
+                    <p>Cognitive Sciences & Human Development<br>
+                        Universiti Malaysia, Sarawak</p>
+                    <p class="conference2017_speaker_info_blue">Training Protocol For<br>
+                                                                Neurofeedback Training<br>
+                                                                Among Mild Cognitive<br>
+                                                                Impaired Elderly</p>                                                                
+                    <a class="conference2017_speaker_learnMore" href="">Learn More</a>
+                    </div>
+                </div>
+                <div class="conference2017_speaker_info">
+                    <img class="conference2017_speaker_img" src="images/con_2017/Siong.jpg">
+                    <div class="conference2017_speaker_content">
+                    <h3>Mr Alex Ng Wei Siong</h3>
+                    <p>Cognitive Sciences & Human Development<br>
+                        Neuro/Clinical Psychologist<br>
+                        Subang Jaya Medical Centre</p>
+                    <p class="conference2017_speaker_info_blue">Is Alpha Wave Neurofeedback<br>
+                                                                Effective In Depression?</p>                                                                
+                    <a class="conference2017_speaker_learnMore" href="">Learn More</a>
+                    </div>
+                </div>
+                <div class="conference2017_speaker_info">
+                    <img class="conference2017_speaker_img" src="images/con_2017/Lee.png">
+                    <div class="conference2017_speaker_content">
+                    <h3>Mr Joachim Lee</h3>
+                    <h3>(Msc Counseling)</h3>
+                    <p>Clinical Hypnotherapist and<br>
+                        Psychologist<br>
+                        Certified Neurofeedback Therapist<br>
+                        Director, Tampines Family Service Centre</p>
+                    <p class="conference2017_speaker_info_blue">Integrating Neuroscience With<br>
+                                                                Audio Visual Entrainment<br>
+                                                                To accelerate Behavioral Change -<br>
+                                                                Treatment Of A 21 Year Old Woman<br>
+                                                                Addicted To Gambling,<br>
+                                                                Socially Isolated And<br>
+                                                                Lacking Motivation</p>                                                                
+                    <a class="conference2017_speaker_learnMore" href="">Learn More</a>
+                    </div>
+                </div>
+                <div class="conference2017_speaker_info">
+                    <img class="conference2017_speaker_img" src="images/con_2017/Ali.jpg">
+                    <div class="conference2017_speaker_content">
+                    <h3>Dr. Syed Saad Azhar Ali</h3>
+                    <p>Centre for Intelligent Signal<br>
+                        and Imaging Research (CISIR)<br>
+                        Electrical & Electronic Engineering<br>
+                        Universiti Teknologi PETRONAS</p>
+                    <p class="conference2017_speaker_info_blue">Content Optimization For<br>
+                                                                Neurofeedback Based Treatment<br>
+                                                                Of Stress And Depression</p>                                                                
+                    <a class="conference2017_speaker_learnMore" href="">Learn More</a>
+                    </div>
+                </div>
+                <div class="conference2017_speaker_info">
+                    <img class="conference2017_speaker_img" src="images/con_2017/Subhasis.jpg">
+                    <div class="conference2017_speaker_content">
+                    <h3>Dr. Banerji Subhasis</h3>
+                    <p>LYL Sch of Medicine<br>
+                        <a href="https://www.synphne.org/">Inventor of SynPhNe<br>Founder of SynPhNe Pte Ltd</a></p>
+                    <p class="conference2017_speaker_info_blue">Neuroplasticity And Its Implications<br>
+                                                                For The 21<sup>st</sup> Century Therapist</p>                                                                
+                    <a class="conference2017_speaker_learnMore" href="">Learn More</a>
+                    </div>
+                </div>
+                <div class="conference2017_speaker_info">
+                    <img class="conference2017_speaker_img" src="images/con_2017/Reddy.jpg">
+                    <div class="conference2017_speaker_content">
+                    <h3>Assoc.Prof.K.</h3>
+                    <h3>Jayasankara Reddy</h3>
+                    <p>Department of Psychology<br>
+                        Christ University<br>
+                        Bangalore</p>
+                    <p class="conference2017_speaker_info_blue">EEG Neurofeedback In<br>
+                                                                Treating Epilepsy</p>                                                                
+                    <a class="conference2017_speaker_learnMore" href="">Learn More</a>
+                    </div>
+                </div>
+                <div class="conference2017_speaker_info">
+                    <img class="conference2017_speaker_img" src="images/con_2017/Mumtaz.jpg">
+                    <div class="conference2017_speaker_content">
+                    <h3>Dr. Wajid Mumtaz</h3>
+                    <p>Centre for Intelligent Signal<br>
+                        And Imaging Research (CISIR)<br>
+                        Electrical & Electronic Engineering<br>
+                        Universiti Teknologi PETRONAS</p>
+                    <p class="conference2017_speaker_info_blue">Electroencephalography<br>
+                                                                (EEG)-based Diagnosis<br>
+                                                                And Treatment Selection For<br>
+                                                                Major Depressive Disorder(MDD)</p>                                                                
+                    <a class="conference2017_speaker_learnMore" href="">Learn More</a>
+                    </div>
+                </div>
+                <div class="conference2017_speaker_info">
+                    <img class="conference2017_speaker_img" src="images/con_2017/Ying.png">
+                    <div class="conference2017_speaker_content">
+                    <h3>Ms Jerry Lee Shin Ying</h3>
+                    <p>Neurofeedback Therapist<br>
+                        Lions REACh Autism Centre</p>
+                    <p class="conference2017_speaker_info_blue">Treating Inattention<br>
+                                                                And Impulsivity<br>
+                                                                In Children With Autism<br>
+                                                                Using Neurofeedback</p>                                                                
+                    <a class="conference2017_speaker_learnMore" href="">Learn More</a>
+                    </div>
+                </div>
+                <div class="conference2017_speaker_info">
+                    <img class="conference2017_speaker_img" src="images/con_2017/Subhani.jpg">
+                    <div class="conference2017_speaker_content">
+                    <h3>Mr Ahmad Rauf Subhani</h3>
+                    <p>Centre for Intelligent Signal<br>
+                        And Imaging Research (CISIR)<br>
+                        Electrical & Electronic Engineering<br>
+                        Universiti Teknologi PETRONAS</p>
+                    <p class="conference2017_speaker_info_blue">Assessment Of Psychosocial<br>
+                                                                Stress Levels Using EEG</p>                                                                
+                    <a class="conference2017_speaker_learnMore" href="">Learn More</a>
+                    </div>
+                </div>
+                <div class="conference2017_speaker_info">
+                    <img class="conference2017_speaker_img" src="images/con_2017/Fong.jpg">
+                    <div class="conference2017_speaker_content">
+                    <h3>Ms Eleanor Fong</h3>
+                    <p>Hypnotherapist<br>
+                        Neurofeedback Therapist<br>
+                        Spectrum Learning</p>
+                    <p class="conference2017_speaker_info_blue">QEEG Analysis Of Heart Rate Variability<br>
+                                                                Biofeedback: An Implication For<br>
+                                                                The Optimal Learning State</p>                                                                
+                    <a class="conference2017_speaker_learnMore" href="">Learn More</a>
+                    </div>
+                </div>             
+            </div>
+            <div class="conference2017_optionbtn width60vw">
+                <div class="conference2017_comingsoon width60vw">
+                    <p><b>More speakers coming</b>
+                </div>
+            </div>
+            <div id="register_interest" class="conference2017_optionbtn width60vw">
+                <div class="conference2017_optionbtn_register">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdNK3sWR5vBoLkvugE5Lrfi_r8PqSEfXJPjorvsTj6r0KOwcw/closedform">Register your interest here!</a>
+                </div>
+            </div>
+            <div class="conference2017_subtitle width60vw">
+                <h3>Workshop</h3>
+            </div>
+            <div class="conference2017_information width60vw">
+                <p class="conference2017_information_content">
+                    <br><br>
+                    <h2>Concurrent Workshops</h2><br>
+                    <h2>Workshop 1: Neurofeedback Practice - Process and Protocols</h2><br>
+                    <h2>21<sup>st</sup> October 2017</h2><br>
+                    <div class="conference2017_speaker" style="justify-content: center;">
+                    <div class="conference2017_speaker_info" style="min-width: 29%; border: 1px solid #000; border-radius: 5px; margin: 1vw 1vw 1vw 1vw;">
+                        <img class="conference2017_speaker_img" src="images/con_2017/Koo.jpg">
+                        <div class="conference2017_speaker_content" style="text-align: justify;">
+                        <h3>Mr Hiro Koo</h3>
+                        <p style="margin-bottom: 1vw;">Clinical Hypnotherapist<br>
+                            Neurofeedback Therapist<br>
+                            Hypnosis Integrative Hub</p>                                                               
+                        <a class="conference2017_speaker_learnMore" href="">See Profile</a>
+                        </div>
+                    </div>
+                    <div class="conference2017_speaker_info" style="min-width: 29%; border: 1px solid #000; border-radius: 5px; margin: 1vw 1vw 1vw 1vw;">
+                        <img class="conference2017_speaker_img" src="images/con_2017/Min.png">
+                        <div class="conference2017_speaker_content" style="text-align: justify;">
+                        <h3>Mr Low Ting Min</h3>
+                        <p style="margin-bottom: 1vw;">Senior Neurofeedback Therapist<br>
+                            Spectrum Learning</p>                                                               
+                        <a class="conference2017_speaker_learnMore" href="">See Profile</a>
+                        </div>
+                    </div>
+                    <div class="conference2017_speaker_info" style="min-width: 29%; border: 1px solid #000; border-radius: 5px; margin: 1vw 1vw 1vw 1vw;">
+                        <img class="conference2017_speaker_img" src="images/con_2017/Fong.jpg">
+                        <div class="conference2017_speaker_content" style="text-align: justify;">
+                        <h3>Ms Eleanor Fong</h3>
+                        <p style="margin-bottom: 1vw;">Hypnotherapist<br>
+                            Neurofeedback Therapist<br>
+                            Spectrum Learning</p>                                                                
+                        <a class="conference2017_speaker_learnMore" href="">See Profile</a>
+                        </div>
+                    </div>
+                    </div>
+                </p>
+                    <div class="conference2017_optionbtn width60vw">
+                        <div class="conference2017_comingsoon width60vw">
+                            <p><b>Come and meet them to learn more about this exciting field.</b><br>
+                                With live demonstrations!</p>
+                        </div>
+                    </div><hr>
+                <p  class="conference2017_information_content">
+                    <br><br>
+                    <h2>Concurrent Workshops</h2><br>
+                    <h2>Workshop 2: Quantitative EEG for In-Depth Brain Analysis</h2><br>
+                    <h2>21<sup>st</sup> October 2017</h2><br>
+                </p>
+                <div class="conference2017_workshop_img width60vw"><img src="images\con_2017\UTP.png"></div>
+                <div class="conference2017_comingsoon width60vw">
+                    <p><br><b>Come and learn from the team at UTP on the use of QEEG in brain analysis.</b><br><br>
+                </div>
+            </div>
+            <div class="conference2017_subtitle width60vw">
+                <h3>COME JOIN US!</h3>
+            </div>
+            <div class="conference2017_information width60vw">
+                <p  class="conference2017_information_content">
+                    <br>
+                    <b>Open to all! - public, clinicians, researchers and professionals</b><br>
+                    <b>Find out how you can benefit from Neurofeedback and Biofeedback</b><br><br>
+                    <b>Featuring:</b><br> 
+                    <b>Clinicians, Researchers and Inventors Product Demonstrations</b><br><br>
+                    <b>Highlights of the Conference:</b><br><br>
+                    <div class="conference2017_ul">
+                        <ul style="list-style-position: inside;">
+                            <li>New advancement in the field of Neurofeedback</li>
+                            <li>Clinical applications of neurofeedback</li>
+                            <li>New gadgets for brain computer interface</li>
+                            <li>And More</li>
+                        </ul>
+                    </div>
+                </p>
+                <p  class="conference2017_information_content">
+                    <b>Come join us to:</b><br><br>
+                    <div class="conference2017_ul">
+                        <ul style="list-style-position: inside;">
+                            <li>Promote awareness of the benefits of neurofeedback and biofeedback</li>
+                            <li>Promote professionalism in the field of neurofeedback/biofeedback</li>
+                            <li>Learn from experts in various modalities of intervention</li>
+                            <li>Learn new applications for neurofeedback and biofeedback</li>
+                            <li>Showcase your clinical work experience</li>
+                            <li>Build networks with experts and peers from different regions</li>
+                        </ul>
+                    </div>
+                    <div class="conference2017_optionbtn width60vw">
+                        <div class="conference2017_comingsoon width60vw">
+                            <p><b>Visit Conference web page for latest updates!</b><br>
+                            www.apna.asia/2017_nfb_conference.html</p><br>
+                        </div>
+                    </div>
+                </p>
+            </div>
+            <iframe class="conference2017_google_map width60vw" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1991.8803160737077!2d101.706239!3d3.15769!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37d63504bb37%3A0x9c12dee98c505b8!2sHotel%20Maya%20Kuala%20Lumpur!5e0!3m2!1sen!2smy!4v1692248216314!5m2!1sen!2smy" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="conference2017_information width60vw">
+                <p  class="conference2017_information_content">
+                    <br>
+                    <b>Conference Date:</b><br>
+                    20<sup>th</sup> to 21<sup>st</sup> Oct 2017 (Friday to Saturday)<br>
+                    8.30am to 5.30pm daily<br><br>
+
+                    <b>Venue:</b><br>
+                    Hotel Maya Kuala Lumpur<br>
+                    138, Jalan Ampang, Kampung Baru,<br>
+                    50450 Kuala Lumpur,<br>
+                    Federal Territory of Kuala Lumpur, Malaysia<br><br>
+
+                    <b>Conference Price:</b><br>
+                    (2 tea breaks and 1 lunch)<br>
+                    <div class="conference2017_ol">
+                        <ol style="list-style-position: inside;">
+                            <li>Non-APNA members RM800</li>
+                            <li>APNA members: RM650</li>
+                            <li>Students: RM500</li>
+                        </ol>
+                    </div>
+                </p>
+                <p class="conference2017_information_content">
+                    <br><b>For more information on conference details and registration:</b><br>
+                    Email: nidalkamel@utp.edu.my<br>
+                    Tel: (+60)126615107<br><br>
+
+                    See above for exhibition/sponsorship opportunities!<br><br>
+                </p>
+            </div>
+            <div class="conference2017_subtitle width60vw">
+                <h3>Don't miss this chance to broaden your insights and knowledge!</h3>
+            </div>
+            <div class="conference2017_footer_subtitle width60vw">
+                <p class="conference2017_big_footer_content">
+                    This is a rare opportunity to meet practitioners, researchers and inventors from different fields of intervention<br>
+                    from different fields of intervention and countries in Asia.<br><br>
+                    <b>                        
+                        For more information on registration:<br>
+                        Email: nidalkamel@utp.edu.my<br>
+                        Tel: (+60)126615107<br>
+                    </b><br><br>
+                    <b>For sponsorship/exhibition opportunity (Malaysia and other countries):</b><br>
+                    Email: nidalkamel@utp.edu.my<br> 
+                    (+60)126615107<br>
+                    </b><br>
+                    <b>For sponsorship/exhibition opportunity (Singapore):</b><br>
+                    Email: eleanor.fong@spectrumlearning.com.sg<br>
+                    (+65) 68349476<br><br>
+                    <h3>Limited seats available!<h3>
+                    <div class="conference2017_optionbtn width60vw">
+                        <div class="conference2017_comingsoon width60vw">
+                            <h3>The only Neurofeedback conference in Asia!<br>
+                            Be part of this historical event!</h3><br>
+                        </div>
+                    </div>
+                    <div id="register_interest" class="conference2017_optionbtn width60vw">
+                        <div class="conference2017_optionbtn_register">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdNK3sWR5vBoLkvugE5Lrfi_r8PqSEfXJPjorvsTj6r0KOwcw/closedform">Register your interest here!</a>
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-cont">
+            <div class="footer-inner-cont1">
+                <div class="footer-page-links">
+                    <a href="terms_and_conditions.html">Website Terms and Conditions</a>
+                    <a href="privacy_policy.html">Privacy Policy</a>
+                </div>
+                <div class="footer-social-links">
+                    <a onclick="window.open('http://www.facebook.com/sharer.php?u=http://www.apna.asia/index.html', '_blank')" class="social-icon-44 social-white-bg"><img src="images/general_icons/facebook.png"></a>
+                    <a onclick="window.open('https://twitter.com/share?url=http://www.apna.asia/index.html', '_blank')" class="social-icon-32 social-twitter-bg"><img src="images/general_icons/twitter.png"></a>
+                    <a onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url=http://www.apna.asia/index.html', '_blank')" class="social-icon-44 social-white-bg"><img src="images/general_icons/linkedin.png"></a>
+                    <a onclick="window.open('mailto:?body=http://www.apna.asia/index.html', '_blank')" class="social-icon-32 social-white-bg"><img src="images/general_icons/mail.png"></a>
+                </div>
+            </div>
+            <div class="footer-inner-cont2">
+                <h6 class="footer-address">36 Purvis Street, #02-11, Talib Centre, S(188613) SINGAPORE</h6>
+                <div class="footer-contact-info">
+                    <h6>Tel: +65-6834-9476</h6>
+                    <h6>Email: APNA@apna.asia</h6>
+                </div>
+            </div>
+            <h6>© 2016 Asia Pacific Neuro-biofeedback Association<br>All Rights Reserved | Singapore</h6>
+        </div>
+    </footer>
+    <script>
+        // navigation bar button functions
+
+        function openBurgerCont() {
+            var x = document.getElementById("burger-cont");
+            var bodyElement = document.querySelector('body');
+            if (x.style.display != "block") {
+                x.style.display = "block";
+                bodyElement.style.overflow = "hidden";
+            }
+        }
+
+        function closeBurgerCont() {
+            var x = document.getElementById("burger-cont");
+            var bodyElement = document.querySelector('body');
+            if (x.style.display != "none") {
+                x.style.display = "none";
+                bodyElement.style.overflow = "auto";
+            }
+        }
+
+        function openDropdown(y) {
+            var x = document.getElementById(y);
+
+            if (y == "about_apna") {
+                var plus = document.getElementById("dd1-plus");
+                var minus = document.getElementById("dd1-minus");
+            } else if (y == "membership") {
+                var plus = document.getElementById("dd2-plus");
+                var minus = document.getElementById("dd2-minus");
+            } else if (y == "conference") {
+                var plus = document.getElementById("dd3-plus");
+                var minus = document.getElementById("dd3-minus");
+            }
+
+            if (x.style.display != "block") {
+                x.style.display = "block";
+                plus.style.display = "none";
+                minus.style.display = "block";
+            }
+        }
+
+        function closeDropdown(y) {
+            var x = document.getElementById(y);
+
+            if (y == "about_apna") {
+                var plus = document.getElementById("dd1-plus");
+                var minus = document.getElementById("dd1-minus");
+            } else if (y == "membership") {
+                var plus = document.getElementById("dd2-plus");
+                var minus = document.getElementById("dd2-minus");
+            } else if (y == "conference") {
+                var plus = document.getElementById("dd3-plus");
+                var minus = document.getElementById("dd3-minus");
+            }
+
+            if (x.style.display != "none") {
+                x.style.display = "none";
+                plus.style.display = "block";
+                minus.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        // damn you samsung internet browser
+
+        if (navigator.userAgent.match(/samsung/i)) {
+            alert("Your browser (Samsung Internet) may not show this website" + 
+                  "correctly. Please consider using a standards-compliant" + 
+                  "browser instead. \n\n" +
+                  "We recommend Firefox, Microsoft Edge, or Google Chrome.");
+        }
+    </script>
+</body>
+</html>
