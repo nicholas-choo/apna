@@ -4221,6 +4221,1697 @@
     }
 }
 
+/* Conference 2017 Page */
+
+  .conference2017_big_title {
+    text-align: center;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+ }
+
+  .conference2017_header_img {
+    display: flex;
+    justify-content: center;
+    height: 25vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+ }
+
+  .conference2017_header_img img {
+    border-radius: 15px;
+ }
+
+  .conference2017_big_subtitle {
+    text-align: center;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+ }
+  .conference2017_big_organized {
+    text-align: center;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+
+ }
+  .conference2017_optionbtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+ }
+
+  .conference2017_optionbtn_register a {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+    padding: 0.5vw 5vw;
+    background-color: #FF8D24;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.247);
+    border-radius: 5px;
+    color: #FFF;
+    border: none;
+    text-align: center;
+    text-decoration: none; 
+ }
+
+  .conference2017_optionbtn_SSC a{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    padding: 0.5vw 5vw;
+    background-color: #FFF;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.247);
+    border-radius: 5px;
+    color: #000;
+    border: none;
+    text-decoration: none;
+ }
+
+  .conference2017_comingsoon {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    color: #B81414;
+ }
+
+  .conference2017_subtitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    padding: 0.2vw 5vw;
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+ }
+
+  .conference2017_big_footer_content {
+    text-align: center;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+ }
+
+  .conference2017_footer_subtitle {
+    text-align: center;
+ }
+
+  .conference2017_information {
+    border: 1px solid #000;
+    border-radius: 5px;
+    text-align: center;
+    display: table-cell;
+ }
+
+  .conference2017_information_content {
+    font-size: 1vw;
+ }
+
+  .conference2017_ul {
+    margin: 0 auto;
+    text-align: justify;
+    display: inline-block;
+    font-size: 1vw;
+ }
+
+  .conference2017_ol {
+    margin: 0 auto;
+    text-align: justify;
+    display: inline-block;
+    font-size: 1vw;
+ }
+
+  .conference2017_google_map {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    border-radius: 5px;
+ }
+
+  .conference2017_workshop_content {
+    display: flex;
+    justify-content: center;
+ }
+
+  .conference2017_workshop_img {
+    display: flex;
+    justify-content: center;
+    height: 10vw;
+    margin: 1vw 1vw 1vw 1vw;
+ }
+
+  .conference2017_speaker {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:baseline;
+    max-width: 60vw;
+ }
+
+  .conference2017_speaker_img {
+    width: 8vw;
+    height: 10.5vw;
+    border-radius: 5px;
+ }
+
+  .conference2017_speaker_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 49%;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+ }
+
+  .conference2017_speaker_learnMore {
+    padding: 0.5vw 1vw;
+    background-color: #000;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.247);
+    border-radius: 5px;
+    color: #FFF;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1vw;
+ }
+
+  .conference2017_speaker_info_blue {
+    color: #0088FF;
+    margin-bottom: 1vw; 
+ }
+
+  .conference2017_speaker_content {
+    flex: 1 1 auto;
+    padding: 1vw 1vw;
+ }
+ 
+@media only screen and (max-device-width: 970px) {
+    .conference2017_speaker {
+        max-width: 80vw;
+    }
+  }
+  
+@media only screen and (max-device-width: 500px) {
+    .conference2017_speaker {
+        max-width: 80vw;
+    }
+  }
+
+
+  /* APNA Conference 2018 Section 1 */
+
+  .con18-sec1 img {
+    width: 100%;
+    border-radius: 15px;
+
+    /* Responsive Edit */
+    border-radius: 0.75vw;
+ }
+ 
+ .con18-sec1-header h1, .con18-sec1-header h2, .con18-sec1-header p {
+    text-align: center;
+    padding: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    /* Responsive Edit */
+    padding: 0.25vw;
+    margin-top: 1.25vw;
+    margin-bottom: 1.25vw;
+ }
+
+ .con18-sec1-card-cont h2 {
+  text-align: center;
+  padding: 15px;
+
+  /* Responsive Edit */
+  padding: 0.75vw;
+
+ }
+
+  .con18-sec1-orangeheader {
+  background-color: #FF8D24;
+  color: #EEE;
+  width: 99.8%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  /* Responsive Edit */
+  border-top-left-radius: 1vw;
+  border-top-right-radius: 1vw;
+
+ }
+
+ .con18-sec1-card {
+  background-color: white;
+  color: #000;
+  border-style: solid;
+  display: flex;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 440px;
+  width: 1150px;
+  margin-bottom: 30px;
+
+  /* Responsive Edit */
+  border-bottom-right-radius: 1vw;
+  border-bottom-left-radius: 1vw;
+  height: 22vw;
+  width: 59.9vw;
+  margin-bottom: 1.5vw;
+ }
+
+ .con18-sec1-card-desc {
+  text-align: center;
+  display: grid;
+  padding: 15px;
+
+  /* Responsive Edit */
+  padding: 0.75vw;
+
+ }
+
+.con18-sec1-card2 {
+  background-color: white;
+  color: #000;
+  border-style: solid;
+  display: flex;
+  border-radius: 20px;
+  height: 200px;
+  width: 1150px;
+  margin-bottom: 30px;
+
+  /* Responsive Edit */
+  border-radius: 1vw;
+  height: 10.5vw;
+  width: 59.9vw;
+  margin-bottom: 1.5vw;
+
+ }
+
+ .con18-sec1-card2-desc {
+  text-align: center;
+  display: grid;
+  padding: 15px;
+
+  /* Responsive Edit */
+  padding: 0.75vw;
+
+ }
+
+ .con18-sec1 h3, .con18-sec2 h3#red {
+  color: #ff0000;
+  text-align: center;
+  margin-bottom: 25px;
+
+  /* Responsive Edit */
+  margin-bottom: 1.25vw;
+
+ }
+
+ .con18-sec3 h3#red {
+  color: #ff0000;
+  text-align: center;
+  margin-top: 25px;
+
+  /* Responsive Edit */
+  margin-bottom: 1.25vw;  
+
+ }
+
+ @media screen and (max-device-width: 970px){
+
+  .con18-sec1 img {
+    width: 100%;
+    border-radius: 15px;
+
+    /* Responsive Edit */
+    border-radius: 1.5vw;
+  }
+ 
+  .con18-sec1-header h1, .con18-sec1-header h2, .con18-sec1-header p {
+    text-align: center;
+    padding: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    /* Responsive Edit */
+    padding: 0.5vw;
+    margin-top: 2.5vw;
+    margin-bottom: 2.5vw;
+  }
+
+  .con18-sec1-card-cont h2 {
+    text-align: center;
+    padding: 15px;
+
+    /* Responsive Edit */
+    padding: 1.5vw;
+ }
+
+  .con18-sec1-orangeheader {
+    background-color: #FF8D24;
+    color: #EEE;
+    width: 99.8%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    /* Responsive Edit */
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+  }
+ 
+  .con18-sec1-card {
+    background-color: white;
+    color: #000;
+    border-style: solid;
+    display: flex;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 440px;
+    width: 1150px;
+    margin-bottom: 30px;
+
+    /* Responsive Edit */
+    border-bottom-right-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+    height: 44vw;
+    width: 79.8vw;
+    margin-bottom: 3vw;
+  }
+ 
+  .con18-sec1-card-desc {
+    text-align: center;
+    display: grid;
+    padding: 15px;
+
+    /* Responsive Edit */
+    padding: 1.5vw;
+  }
+
+  .con18-sec1-card-desc p {
+    font-size: 16px;
+
+    /* Responsive Edit */
+    font-size: 1.6vw
+  }
+
+  .con18-sec1-card2 {
+    background-color: white;
+    color: #000;
+    border-style: solid;
+    display: flex;
+    border-radius: 20px;
+    height: 200px;
+    width: 1150px;
+    margin-bottom: 30px;
+
+    /* Responsive Edit */
+    border-radius: 2vw;
+    height: 20.5vw;
+    width: 79.8vw;
+    margin-bottom: 3vw;
+  }
+ 
+  .con18-sec1-card2-desc {
+    text-align: center;
+    display: grid;
+    padding: 15px;
+
+    /* Responsive Edit */
+    padding: 1.5vw;
+  }
+
+  .con18-sec1-card2-desc p {
+    font-size: 16px;
+
+    /* Responsive Edit */
+    font-size: 1.6vw
+  }
+
+  .con18-sec1 h3, .con18-sec2 h3#red {
+    color: #ff0000;
+    text-align: center;
+    margin-bottom: 25px;
+
+    /* Responsive Edit */
+    margin-bottom: 1.25vw;
+  }
+
+  .con18-sec3 h3#red {
+    color: #ff0000;
+    text-align: center;
+    margin-top: 25px;
+
+    /* Responsive Edit */
+    margin-bottom: 1.25vw;  
+  }
+
+ }
+
+ @media screen and (max-device-width: 500px){
+
+  .con18-sec1 img {
+    width: 100%;
+    border-radius: 15px;
+
+    /* Responsive Edit */
+    border-radius: 3vw;
+  }
+ 
+  .con18-sec1-header h1, .con18-sec1-header h2, .con18-sec1-header p {
+    text-align: center;
+    padding: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    /* Responsive Edit */
+    padding: 1vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
+
+  .con18-sec1-header h1{
+    font-size: 50px;
+
+    /* Responsive Edit */
+    font-size: 5vw;
+  }
+
+  .con18-sec1-header p {
+    font-size: 32px;
+
+    /* Responsive Edit */
+    font-size: 3.2vw;
+  }
+
+  .con18-sec1-card-cont h2 {
+    text-align: center;
+    padding: 15px;
+
+    /* Responsive Edit */
+    padding: 3vw;
+  }
+
+  .con18-sec1-orangeheader {
+    background-color: #FF8D24;
+    color: #EEE;
+    width: 99.8%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    /* Responsive Edit */
+    border-top-left-radius: 4vw;
+    border-top-right-radius: 4vw;
+  }
+ 
+  .con18-sec1-card {
+    background-color: white;
+    color: #000;
+    border-style: solid;
+    display: flex;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 440px;
+    width: 1150px;
+    margin-bottom: 30px;
+
+    /* Responsive Edit */
+    border-bottom-right-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+    height: 100vw;
+    width: 79.8vw;
+    margin-bottom: 6vw;
+  }
+ 
+  .con18-sec1-card-desc {
+    text-align: center;
+    display: grid;
+    padding: 15px;
+
+    /* Responsive Edit */
+    padding: 1.5vw;
+  }
+
+  .con18-sec1-card-desc p {
+    font-size: 16px;
+
+    /* Responsive Edit */
+    font-size: 3.2vw
+  }
+
+  .con18-sec1-card2 {
+    background-color: white;
+    color: #000;
+    border-style: solid;
+    display: flex;
+    border-radius: 20px;
+    height: 200px;
+    width: 1150px;
+    margin-bottom: 30px;
+
+    /* Responsive Edit */
+    border-radius: 4vw;
+    height: 45vw;
+    width: 79.8vw;
+    margin-bottom: 6vw;
+  }
+ 
+  .con18-sec1-card2-desc {
+    text-align: center;
+    display: grid;
+    padding: 15px;
+
+    /* Responsive Edit */
+    padding: 1.5vw;
+  }
+
+  .con18-sec1-card2-desc p {
+    font-size: 16px;
+
+    /* Responsive Edit */
+    font-size: 3.2vw
+  }
+
+  .con18-sec1 h3, .con18-sec2 h3#red {
+    color: #ff0000;
+    text-align: center;
+    margin-bottom: 25px;
+
+    /* Responsive Edit */
+    margin-bottom: 2vw;
+  }
+
+  .con18-sec3 h3#red {
+    color: #ff0000;
+    text-align: center;
+    margin-top: 25px;
+
+    /* Responsive Edit */
+    margin-bottom: 1.25vw;  
+
+  }
+
+ }
+
+ /* APNA Conference 2018 Section 2 */
+
+ .con18-sec2-header{
+  background-color: #000;
+  color: #EEE;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 50px;
+
+  /* Responsive Edit */
+  border-radius: 0.5vw;
+  margin-bottom: 2.5vw;
+
+ }
+
+ .con18-sec2-speakers {
+  display: grid;
+  justify-content: center;
+
+ }
+
+ .con18-sec2-speakers-cont {
+  display: flex;
+
+ }
+
+ .con18-sec2-speakers-cont img {
+  object-fit: cover;
+  width: 200px;
+  margin-right: 20px;
+
+  /* Responsive Edit */
+  width: 10vw;
+  margin-right: 1vw;
+
+ }
+ 
+ .con18-sec2-divider {
+  margin-right: 100px;
+
+  /* Responsive Edit */
+  margin-right: 6.2vw
+
+}
+
+ .con18-sec2-divider#row2 {
+  margin-right: 50px;
+
+  /* Responsive Edit */
+  margin-right: 2.7vw
+ }
+
+ .con18-sec2-divider#row3 {
+  margin-right: 120px;
+
+  /* Responsive Edit */
+  margin-right: 6.3vw
+ }
+
+ .con18-sec2-divider#row4 {
+  margin-right: 131px;
+
+  /* Responsive Edit */
+  margin-right: 7.2vw
+ }
+
+ .con18-sec2-divider#row5 {
+  margin-right: 95px;
+ 
+  /* Responsive Edit */
+  margin-right: 5.4vw
+ }
+
+ .con18-sec2-divider#row6 {
+  margin-right: 65px;
+
+  /* Responsive Edit */
+  margin-right: 3.9vw
+ }
+
+
+  .con18-sec2-divider2 {
+  margin-bottom: 50px;
+
+  /* Responsive Edit */
+  margin-bottom: 2.7vw
+ }
+
+ .con18-sec2-speakers-desc {
+  display: grid;
+ }
+
+ .con18-sec2-speakers-desc h4 {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  width: 80%;
+
+  /* Responsive Edit */
+  margin-top: 0.25vw;
+  margin-bottom: 0.75vw;
+ }
+
+ .con18-sec2-speakers-desc p {
+  font-size: 14px;
+  margin-bottom: 10px;
+
+  /* Responsive Edit */
+  font-size: 0.7vw;
+  margin-bottom: 0.5vw;
+ }
+
+ .con18-sec2-blue{
+  color: #0000ff;
+ }
+
+ .con18-sec2-button {
+  height: 30px;
+  border-radius: 5px;
+  padding: 5px;
+  outline: none;
+  border-collapse: none;
+  border-color: #000000;
+  margin-top: 15px;
+
+  /* Responsive Edit */
+  font-size: 0.7vw;
+  height: 1.5vw;
+  padding: 0.2vw;
+  border-radius: 0.5vw;
+  border-width: 0.1vw 0.1vw 0.1vw 0.1vw;
+  margin-top: 1.5vw;
+ }
+
+ .con18-sec2-speakers-mobile {
+  display: none;
+ }
+
+ @media screen and (max-device-width: 970px){
+
+  .con18-sec2-header{
+    background-color: #000;
+    color: #EEE;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 50px;
+
+    /* Responsive Edit */
+    border-radius: 1vw;
+    margin-bottom: 5vw;
+
+ }
+
+ .con18-sec2-speakers {
+    display: none;
+ }
+
+ .con18-sec2-speakers-mobile {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    /* Responsive Edit */
+    margin-bottom: 5vw;
+ }
+
+ .con18-sec2-speakers-mobile-cont {
+    display: flex;
+    margin-bottom: 50px;
+
+    /* Responsive Edit */
+    margin-bottom: 5vw;
+ }
+
+ .con18-sec2-speakers-mobile-cont img {
+    object-fit: cover;
+    width: 250px;
+    height: 350px;
+    margin-right: 30px;
+    border-radius: 10px;
+
+    /* Responsive Edit */
+    width: 25.5vw;
+    height: 35.6vw;
+    margin-right: 3vw;
+    border-radius: 1vw;
+   
+ }
+
+ .con18-sec2-speakers-mobile-desc {
+    padding: 25px;
+
+    /* Responsive Edit */
+    padding: 2.5vw;
+ }
+
+ .con18-sec2-speakers-mobile-desc p {
+    font-size: 24px;
+    padding-bottom: 15px;
+
+    /* Responsive Edit */
+    font-size: 2.5;
+ }
+
+ .con18-sec2-speakers-mobile-desc h4 {
+    font-size: 30px;
+    padding-bottom: 15px;
+
+    /* Responsive Edit */
+    font-size: 3.1vw;
+    padding-bottom: 1.5vw;
+ }
+
+ .con18-sec2-mobile-button {
+    border-radius: 5px;
+    outline: none;
+    border-collapse: none;
+    border-color: #000000;
+    margin-top: 10px;
+    
+    /* Responsive Edit */
+    border-radius: 0.5vw;
+    margin-top: 1vw;
+ }
+
+ .con18-sec2-mobile-button a {
+    font-size: 25px;
+    
+    /* Responsive Edit */
+    font-size: 2.5vw;
+ }
+
+ .con18-sec2-mobile-button#image2 {
+    margin-top: 38px;
+    
+    /* Responsive Edit */
+    margin-top: 3.9vw;
+ }
+
+ .con18-sec2-mobile-button#image3 {
+    margin-top: 44px;
+    
+    /* Responsive Edit */
+    margin-top: 4.5vw;
+ }
+
+ .con18-sec2-mobile-button#image4 {
+    margin-top: 53px;
+    
+    /* Responsive Edit */
+    margin-top: 5.4vw;
+ }
+
+ .con18-sec2-mobile-button#image5 {
+    margin-top: 83px;
+    
+    /* Responsive Edit */
+    margin-top: 8.4vw;
+ }
+
+ .con18-sec2-mobile-button#image6 {
+    margin-top: 54px;
+    
+    /* Responsive Edit */
+    margin-top: 5.5vw;
+
+ }
+
+ .con18-sec2-mobile-button#image7 {
+    margin-top: 83px;
+    
+    /* Responsive Edit */
+    margin-top: 8.4vw;
+ }
+
+ .con18-sec2-mobile-button#image8 {
+    margin-top: 83px;
+    
+    /* Responsive Edit */
+ }
+
+ .con18-sec2-mobile-button#image9 {
+    margin-top: 23px;
+    
+    /* Responsive Edit */
+    margin-top: 2.4vw;
+ }
+
+ .con18-sec2-mobile-button#image10 {
+    margin-top: 83px;
+    
+    /* Responsive Edit */
+    margin-top: 8.3vw;
+ }
+
+ .con18-sec2-mobile-button#image11 {
+    margin-top: 115px;
+    
+    /* Responsive Edit */
+    margin-top: 11.5vw;
+ }
+
+ .con18-sec2-mobile-button#image12 {
+    margin-top: 83px;
+    
+    /* Responsive Edit */
+    margin-top: 8.4vw;
+ }
+
+ .con18-sec2-mobile-button {
+    border-radius: 5px;
+    outline: none;
+    border-collapse: none;
+    border-color: #000000;
+    margin-top: 10px;
+    border-width: 100px;
+    
+    /* Responsive Edit */
+    border-radius: 0.5vw;
+    margin-top: 1vw;
+ }
+
+ .con18-sec2-mobile-button a {
+    font-size: 25px;
+    padding: 20px;
+    
+    /* Responsive Edit */
+    font-size: 2.5vw;
+    padding: 2vw;
+ }
+
+ .con18-sec2-mobile-button#image2 {
+    margin-top: 38px;
+    
+    /* Responsive Edit */
+    margin-top: 3.9vw;
+ }
+
+ .con18-sec2-mobile-button#image3 {
+    margin-top: 44px;
+    
+    /* Responsive Edit */
+    margin-top: 4.5vw;
+ }
+
+ .con18-sec2-mobile-button#image4 {
+    margin-top: 53px;
+    
+    /* Responsive Edit */
+    margin-top: 5.4vw;
+ }
+
+ .con18-sec2-mobile-button#image5 {
+    margin-top: 83px;
+    
+    /* Responsive Edit */
+    margin-top: 8.4vw;
+ }
+
+ .con18-sec2-mobile-button#image6 {
+    margin-top: 54px;
+    
+    /* Responsive Edit */
+    margin-top: 5.5vw;
+
+ }
+
+ .con18-sec2-mobile-button#image7 {
+    margin-top: 83px;
+    
+    /* Responsive Edit */
+    margin-top: 8.4vw;
+ }
+
+ .con18-sec2-mobile-button#image8 {
+    margin-top: 83px;
+    
+    /* Responsive Edit */
+ }
+
+ .con18-sec2-mobile-button#image9 {
+    margin-top: 23px;
+    
+    /* Responsive Edit */
+    margin-top: 2.4vw;
+ }
+
+ .con18-sec2-mobile-button#image10 {
+    margin-top: 83px;
+    
+    /* Responsive Edit */
+    margin-top: 8.3vw;
+ }
+
+ .con18-sec2-mobile-button#image11 {
+    margin-top: 115px;
+    
+    /* Responsive Edit */
+    margin-top: 11.5vw;
+ }
+
+ .con18-sec2-mobile-button#image12 {
+    margin-top: 83px;
+    
+    /* Responsive Edit */
+    margin-top: 8.4vw;
+ }
+}
+
+ @media screen and (max-device-width: 500px){
+
+ }
+
+ /* APNA Conference 2018 Section 2.5 */
+
+ .con18-sec2-workshop {
+  display: flex;
+ }
+
+ .con18-sec2-workshop-speaker {
+  text-align: justify;
+  display: grid;
+  text-align: center;
+ }
+
+ .con18-sec2-workshop-speaker p {
+  font-size: 15px;
+  margin-top: 10px;
+
+  /* Responsive Edit */
+  font-size: 0.75vw;
+  margin-bottom: 0.5vw;    
+ }
+
+ .con18-sec2-workshop-speaker img {
+  width: 200px;
+
+  /* Responsive Edit */
+  width: 10.5vw;
+ }
+
+ .con18-sec2-workshop-info {
+  padding: 15px;
+  text-align: center;
+
+  /* Responsive Edit */
+  padding: 0.75vw;
+ }
+
+ .con18-sec2-workshop-info h3 {
+  text-align: center;
+  margin-bottom: 15px;
+
+  /* Responsive Edit */
+  margin-bottom: 0.75vw;
+ }
+
+ .con18-sec2-workshop-info p {
+  text-align: left;
+  font-size: 22px;
+  padding: 5px;
+  margin-bottom: 15px;
+
+  /* Responsive Edit */
+  font-size: 1.1vw;
+  padding: 0.25vw;
+  margin-bottom: 0.75vw;
+ }
+ 
+ .con18-sec2-workshop-button {
+  height: 30px;
+  border-radius: 5px;
+  padding: 5px;
+  outline: none;
+  border-collapse: none;
+  border-color: #000000;
+  margin-top: 15px;
+
+  /* Responsive Edit */
+  font-size: 0.7vw;
+  height: 1.5vw;
+  padding: 0.2vw;
+  border-radius: 0.5vw;
+  border-width: 0.1vw 0.1vw 0.1vw 0.1vw;
+  margin-top: 1.5vw;
+ }
+
+ .con18-sec2-workshop-speaker-mobile {
+  display: none;
+ }
+ 
+ .con18-sec2-workshop-info-mobile {
+ display: none;
+ }
+
+ @media screen and (max-device-width: 970px){
+
+   .con18-sec2-workshop-speaker p {
+    font-size: 15px;
+    margin-top: 10px;
+
+    /* Responsive Edit */
+    font-size: 1.8vw;
+    margin-bottom: 0vw;    
+  }
+
+   .con18-sec2-workshop-speaker img {
+    width: 200px;
+
+    /* Responsive Edit */
+    width: 20vw;
+  }
+
+   .con18-sec2-workshop-info {
+    padding: 15px;
+    text-align: center;
+
+    /* Responsive Edit */
+    padding: 1.5vw;
+  }
+
+   .con18-sec2-workshop-info h3 {
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 15px;
+
+    /* Responsive Edit */
+    font-size: 2.3vw;
+    margin-bottom: 1.5vw;
+  }
+
+   .con18-sec2-workshop-info p {
+    text-align: left;
+    font-size: 22px;
+    padding: 5px;
+    margin-bottom: 15px;
+
+    /* Responsive Edit */
+    font-size: 2vw;
+    padding: 0.5vw;
+    margin-bottom: 0.25vw;
+  }
+
+   .con18-sec2-workshop-button {
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+    border-collapse: none;
+    border-color: #000000;
+    margin-top: 15px;
+    
+    /* Responsive Edit */
+    font-size: 0.7vw;
+    height: 1.5vw;
+    padding: 0.2vw;
+    border-radius: 0.5vw;
+    border-width: 0.1vw 0.1vw 0.1vw 0.1vw;
+    margin-top: 0.1vw;
+  }
+
+   .con18-sec2-workshop-speaker-mobile {
+    display: none;
+  }
+
+   .con18-sec2-workshop-info-mobile {
+    display: none; 
+  }
+
+ }
+
+ @media screen and (max-device-width: 500px){
+
+   .con18-sec2-workshop-speaker {
+    display: none;
+  }
+
+   .con18-sec2-workshop-info {
+    display: none;
+  }
+
+   .con18-sec2-workshop-info-mobile {
+    display: grid;
+  }
+
+   .con18-sec2-workshop-speaker-mobile {
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+   .con18-sec2-workshop-speaker-mobile p {
+    font-size: 35px;
+    margin-top: 10px;
+    padding: 15px;
+
+    /* Responsive Edit */
+    font-size: 3.6vw;
+    margin-bottom: 0vw;    
+  }
+
+   .con18-sec2-workshop-speaker-mobile h3 {
+    font-size: 50px;
+    padding: 15px;
+    margin-bottom: -25px;
+
+    /* Responsive Edit */
+  }
+
+   .con18-sec2-workshop-speaker-mobile img {
+    width: 400px;
+    height: 400px;
+    margin-right: 25px;
+
+    /* Responsive Edit */
+    width: 40vw;
+    height: 40.6vw;
+  }
+
+   .con18-sec2-workshop-info-mobile {
+    padding: 15px;
+    text-align: center;
+
+    /* Responsive Edit */
+    padding: 1.5vw;
+  }
+
+   .con18-sec2-workshop-info-mobile h3 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+
+    /* Responsive Edit */
+    margin-bottom: 5vw;
+  }
+
+   .con18-sec2-workshop-info-mobile p {
+    text-align: center;
+    font-size: 40px;
+    padding: 5px;
+    margin-bottom: 15px;
+
+    /* Responsive Edit */   
+    padding: 0.5vw;
+    margin-bottom: 1.5vw;
+  }
+
+   .con18-sec2-workshop-button-mobile {
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+    border-collapse: none;
+    border-color: #000000;
+    
+    /* Responsive Edit */
+    font-size: 0.7vw;
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+    border-width: 0.1vw 0.1vw 0.1vw 0.1vw;
+    margin-top: 22px;
+  }
+
+   .con18-sec2-workshop-button-mobile a {
+    font-size: 30px;
+    padding: 15px;
+    
+    /* Responsive Edit */
+    font-size: 3vw;
+    padding: 1.5vw;
+  }
+
+ }
+
+ /* APNA Conference 2018 Section 3 */
+
+ .con18-sec3-header{
+  background-color: #000;
+  color: #EEE;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 50px;
+
+  /* Responsive Edit */
+  border-radius: 0.5vw;
+  margin-bottom: 2.5vw;
+ }
+
+ .con18-sec3-card {
+  background-color: white;
+  color: #000;
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  border-radius:  20px;
+  height: 420px;
+  width: 1150px;
+  margin-bottom: 30px;
+
+  /* Responsive Edit */
+  border-radius: 1vw;
+  height: 21vw;
+  width: 59.9vw;
+  margin-bottom: 1.5vw;
+ }
+
+ .con18-sec3-card-desc {
+  text-align: center;
+  display: grid;
+  padding: 15px;
+
+  /* Responsive Edit */
+  padding: 0.75vw;
+ }
+
+ .con18-sec3-card-desc ul {
+  text-align: left;
+  padding-left: 100px;
+
+  /* Responsive Edit */
+  padding-left: 5vw;
+ }
+
+ .con18-sec3-mapouterlayer {
+  position:relative;
+  text-align:right;
+  width: 100%;
+  height: 600px;
+  margin-bottom: 30px;
+
+  /* Responsive Edit */
+  height: 30vw;
+  margin-bottom: 1.5vw;
+ }
+
+ .con18-sec3-mapcanvas {
+  overflow:hidden;
+  background:none!important;
+  width: 100%;
+  height: 600px;
+
+  /* Responsive Edit */
+  height: 30vw;
+ }
+
+ .con18-sec3-mapiframe {
+  height:600px!important;
+  width:100%; 
+
+  /* Responsive Edit */
+  height: 30vw!important; 
+ }
+
+ .con18-sec3_5-card {
+  background-color: white;
+  color: #000;
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  border-radius:  20px;
+  height: 650px;
+  width: 1150px;
+  margin-bottom: 30px;
+
+  /* Responsive Edit */
+  border-radius: 1vw;
+  height: 33.5vw;
+  width: 59.9vw;
+  margin-bottom: 1.5vw;
+ }
+
+ .con18-sec3_5-card-desc {
+  text-align: center;
+  display: grid;
+  padding: 30px;
+
+  /* Responsive Edit */
+  padding: 1.5vw;
+ }
+
+ .con18-sec3_5-card-desc p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  /* Responsive Edit */
+  margin-top: 0.75vw;
+  margin-bottom: 0.75vw;
+ }
+
+ .con18-sec3-endnotes {
+  text-align: center;
+  place-content: center;
+  margin: 15px;
+
+  /* Responsive Edit */
+  margin: 0.75vw;
+ }
+
+ .con18-sec3-endnotes p {
+  margin-bottom: 15px;  
+  font-size: 20px;
+
+  /* Responsive Edit */
+  margin-bottom: 0.75vw;
+  font-size: 1vw;
+ }
+
+ @media screen and (max-device-width: 970px){
+
+   .con18-sec3-header{
+    background-color: #000;
+    color: #EEE;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 50px;
+
+    /* Responsive Edit */
+    border-radius: 0.5vw;
+    margin-bottom: 2.5vw;
+  }
+
+   .con18-sec3-card {
+    background-color: white;
+    color: #000;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    border-radius:  20px;
+    height: 420px;
+    width: 1150px;
+    margin-bottom: 30px;
+
+    /* Responsive Edit */
+    border-radius: 2vw;
+    height: 45vw;
+    width: 79.8vw;
+    margin-bottom: 3vw;
+  }
+ 
+   .con18-sec3-card-desc {
+    text-align: center;
+    display: grid;
+    padding: 15px;
+
+    /* Responsive Edit */
+    padding: 1.5vw;
+  }
+
+   .con18-sec3-card-desc h3 {
+    font-size: 22px;
+
+    /* Responsive Edit */
+    font-size: 2.2vw;
+  }
+ 
+   .con18-sec3-card-desc ul {
+    text-align: left;
+    padding-left: 100px;
+
+    /* Responsive Edit */
+    padding-left: 10vw;
+  }
+
+   .con18-sec3-mapouterlayer {
+    position:relative;
+    text-align:right;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 30px;
+
+    /* Responsive Edit */
+    height: 60vw;
+    margin-bottom: 3vw;
+  }
+
+   .con18-sec3-mapcanvas {
+    overflow:hidden;
+    background:none!important;
+    width: 100%;
+    height: 600px;
+
+    /* Responsive Edit */
+    height: 60vw;
+  }
+
+   .con18-sec3-mapiframe {
+    height: 600px!important;
+    width: 100%; 
+
+    /* Responsive Edit */
+    height: 60vw!important;
+  }
+
+   .con18-sec3_5-card {
+    background-color: white;
+    color: #000;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    border-radius:  20px;
+    height: 650px;
+    width: 1150px;
+    margin-bottom: 30px;
+
+    /* Responsive Edit */
+    border-radius: 2vw;
+    height: 65vw;
+    width: 79.8vw;
+    margin-bottom: 3vw;
+  }
+ 
+   .con18-sec3_5-card-desc {
+    text-align: center;
+    display: grid;
+    padding: 30px;
+
+    /* Responsive Edit */
+    padding: 3vw;
+  }
+
+   .con18-sec3_5-card-desc p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    /* Responsive Edit */
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+  }
+ 
+   .con18-sec3-endnotes {
+    text-align: center;
+    place-content: center;
+    margin: 15px;
+
+    /* Responsive Edit */
+    margin: 1.5vw;
+  }
+
+   .con18-sec3-endnotes p {
+    margin-bottom: 15px;
+    font-size: 20px;
+
+    /* Responsive Edit */
+    margin-bottom: 1.5vw;
+    font-size: 2vw;
+  }
+
+ }
+
+@media screen and (max-device-width: 500px){
+
+.con18-sec3-header{
+    background-color: #000;
+    color: #EEE;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 50px;
+
+    /* Responsive Edit */
+    border-radius: 1vw;
+    margin-bottom: 5vw;
+ }
+
+ .con18-sec3-card {
+    background-color: white;
+    color: #000;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    border-radius:  20px;
+    height: 420px;
+    width: 1150px;
+    margin-bottom: 30px;
+
+    /* Responsive Edit */
+    border-radius: 2vw;
+    height: 90vw;
+    width: 79.8vw;
+    margin-bottom: 3.5vw;
+ }
+ 
+ .con18-sec3-card-desc {
+    text-align: center;
+    display: grid;
+    padding: 15px;
+
+    /* Responsive Edit */
+    padding: 1.5vw;
+ }
+
+ .con18-sec3-card-desc h3 {
+    font-size: 25px;
+
+    /* Responsive Edit */
+    font-size: 2.8vw;
+ }
+ 
+ .con18-sec3-card-desc ul {
+    text-align: left;
+    padding-left: 100px;
+
+    /* Responsive Edit */
+    padding-left: 5vw;
+ }
+
+ .con18-sec3-card-desc p {
+    font-size: 28px;
+
+    /* Responsive Edit */
+    font-size: 2.8vw;
+ }
+
+ .con18-sec3-mapouterlayer {
+    position:relative;
+    text-align:right;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 30px;
+
+    /* Responsive Edit */
+    height: 90vw;
+    margin-bottom: 3vw;
+}
+
+ .con18-sec3-mapcanvas {
+    overflow:hidden;
+    background:none!important;
+    width: 100%;
+    height: 600px;
+
+    /* Responsive Edit */
+    height: 90vw;
+}
+
+ .con18-sec3-mapiframe {
+    height: 600px!important;
+    width: 100%; 
+
+    /* Responsive Edit */
+    height: 90vw!important;
+}
+
+.con18-sec3_5-card {
+    background-color: white;
+    color: #000;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    border-radius:  20px;
+    height: 650px;
+    width: 1150px;
+    margin-bottom: 30px;
+
+    /* Responsive Edit */
+    border-radius: 2vw;
+    height: 150vw;
+    width: 79.8vw;
+    margin-bottom: 3vw;
+ }
+ 
+ .con18-sec3_5-card-desc {
+    text-align: center;
+    display: grid;
+    padding: 30px;
+
+    /* Responsive Edit */
+    padding: 3vw;
+ }
+
+ .con18-sec3_5-card-desc p {
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    /* Responsive Edit */
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+    font-size: 3.2vw;
+ }
+ 
+ .con18-sec3-endnotes {
+    text-align: center;
+    place-content: center;
+    margin: 15px;
+
+    /* Responsive Edit */
+    margin: 1.5vw;
+ }
+
+ .con18-sec3-endnotes p {
+    margin-bottom: 15px;
+    font-size: 20px;
+    padding: 12px;
+
+    /* Responsive Edit */
+    margin-bottom: 1.5vw;
+    font-size: 4vw;
+    padding: 1.2vw;
+ }
+
+}
+
 /* apna conference 2023 section 1 */
 
 .con23-sec1 {
