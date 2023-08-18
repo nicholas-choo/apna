@@ -3902,4 +3902,148 @@ fieldset{
     }
   }
 
+/* publications section */
+
+.publications-sec-cont .publications-mobile {
+    display: none;
+}
+
+.publications-sec-cont {
+    display: grid;
+    place-items: center;
+}
+
+.publications-sec-cont h1, .publications-row-cont {
+    /* legacy setting */
+    margin-bottom: 20px;
+
+    /* responsive setting */
+    margin-bottom: 1vw;
+}
+
+.publications-row-cont {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.publications-issue-cont {
+    display: grid;
+    place-items: center;
+}
+
+.publications-issue-cont img {
+    /* legacy setting */
+    width: 260px;
+    border-radius: 15px;
+
+    /* responsive setting */
+    width: 14vw;
+    border-radius: .75vw;
+}
+
+.publications-issue-cont h3 {
+    /* legacy setting */
+    margin: 10px 0;
+
+    /* responsive setting */
+    margin: .5vw 0;
+}
+
+.publications-issue-cont a {
+    color: #000;
+    font-weight: 600;
+
+    /* legacy setting */
+    font-size: 20px;
+    bottom: 20px;
+
+    /* responsive setting */
+    font-size: 1vw;
+    bottom: 1vw;
+}
+
+@media screen and (max-device-width: 970px) {
+    .publications-sec-cont h1, .publications-row-cont {
+        /* legacy setting */
+        margin-bottom: 20px;
+    
+        /* responsive setting */
+        margin-bottom: 2vw;
+    }
+
+    .publications-issue-cont img {
+        /* legacy setting */
+        width: 180px;
+        border-radius: 15px;
+    
+        /* responsive setting */
+        width: 18vw;
+        border-radius: 1.5vw;
+    }
+    
+    .publications-issue-cont h3 {
+        /* legacy setting */
+        margin: 10px 0;
+    
+        /* responsive setting */
+        margin: 1vw 0;
+    }
+    
+    .publications-issue-cont a {
+        /* legacy setting */
+        font-size: 20px;
+        bottom: 20px;
+    
+        /* responsive setting */
+        font-size: 2vw;
+        bottom: 2vw;
+    }
+}
+
+@media screen and (max-device-width: 500px) {
+    .publications-sec-cont .publications-desktop {
+        display: none;
+    }
+    
+    .publications-sec-cont .publications-mobile {
+        display: flex;
+    }
+
+    .publications-sec-cont h1, .publications-row-cont {
+        /* legacy setting */
+        margin-bottom: 40px;
+    
+        /* responsive setting */
+        margin-bottom: 4vw;
+    }
+
+    .publications-issue-cont img {
+        /* legacy setting */
+        width: 380px;
+        border-radius: 30px;
+    
+        /* responsive setting */
+        width: 38vw;
+        border-radius: 3vw;
+    }
+    
+    .publications-issue-cont h3 {
+        /* legacy setting */
+        margin: 20px 0;
+    
+        /* responsive setting */
+        margin: 2vw 0;
+    }
+    
+    .publications-issue-cont a {
+        /* legacy setting */
+        font-size: 40px;
+        bottom: 40px;
+    
+        /* responsive setting */
+        font-size: 4vw;
+        bottom: 4vw;
+    }
+}
 
