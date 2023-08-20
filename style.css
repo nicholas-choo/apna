@@ -4098,3 +4098,121 @@ fieldset{
     font-size: 1vw;
 }
 
+/* membership section */
+
+.membership-inner-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* legacy setting */
+    margin-top: 20px;
+    
+    /* responsive setting */
+    margin-top: 1vw;
+}
+
+.membership-inner-cont img {
+    object-fit: cover;
+
+    /* legacy setting */
+    width: 400px;
+    height: 280px;
+    border-radius: 20px;
+    margin-right: 40px;
+
+    /* responsive setting */
+    width: 20vw;
+    height: 14vw;
+    border-radius: 1vw;
+    margin-right: 2vw;
+}
+
+.membership-cont h3, .membership-right-cont p {
+    margin-bottom: .5vw;
+}
+
+.membership-right-cont p {
+    text-align: justify;
+}
+
+.membership-learn-more {
+    display: flex;
+    justify-content: left;
+}
+
+@media only screen and (max-device-width: 970px) {
+    .membership-inner-cont {
+        /* legacy setting */
+        margin-top: 20px;
+        
+        /* responsive setting */
+        margin-top: 2vw;
+    }
+
+    .membership-inner-cont {
+        align-items: unset;
+    }
+
+    .membership-inner-cont img {
+        height: unset;
+    }
+
+    .membership-cont h2 {
+        text-align: center;
+    
+        /* legacy setting */
+        margin-bottom: 20px;
+        
+        /* responsive setting */
+        margin-bottom: 1vw;
+    }
+}
+
+@media only screen and (max-device-width: 500px) {
+    .membership-inner-cont {
+        /* legacy setting */
+        margin-top: 40px;
+        
+        /* responsive setting */
+        margin-top: 4vw;
+    }
+
+    .membership-inner-cont {
+        display: grid;
+        justify-content: unset;
+        align-items: unset;
+    }
+    
+    .membership-inner-cont img {
+        width: 100%;
+        height: 50vw;
+        margin-right: 0;
+    
+        /* legacy setting */
+        border-radius: 20px;
+        margin-bottom: 40px;
+    
+        /* responsive setting */
+        border-radius: 2vw;
+        margin-bottom: 4vw
+    }
+}
+
+/*Membership page*/
+.membership-inner-cont-benefitTitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    padding: 0.2vw 5vw;
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+}
+.membership-inner-cont-benefitContent {
+    margin: 0 auto;
+    text-align: justify;
+    display: inline-block;
+}
+
