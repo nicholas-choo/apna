@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-bar-cont">
+            <a href="index.html"><img src="images/APNA logo.png"></a>
+            <form class="nav-bar-search">
+                <input class="search-bar-input" type="text" id="search_bar" name="search_bar" placeholder="Search..."/>
+                <input class="search-bar-submit" type="image" src="images/general_icons/search.png" name="submit" alt="Submit"/>
+            </form>
+        </div>
+        <div class="nav-bar-links">
+            <div class="nav-bar-link-cont">
+                <ul class="highlighted">
+                    <a href="index.html" class="selected">Home</a>
+                </ul>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="about_apna.html" class="dropdown">About APNA</a>
+                </ul>
+                <div class="submenu">
+                    <ul>
+                        <a href="#">The APNA Story</a>
+                        <a href="#">Board & Committee</a>
+                        <a href="#">Foreword by President of APNA</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="#" class="dropdown">Membership</a>
+                </ul>
+                <div class="submenu">
+                    <ul>
+                        <a href="#">Membership List</a>
+                        <a href="#">Membership Fee</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="certification.html">Certification</a>
+                </ul>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="#">Research Institutes</a>
+                </ul>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="publications.html">Publications</a>
+                </ul>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="visitor_info.html">Visitor Info</a>
+                </ul>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="#">Contact Us</a>
+                </ul>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="conference.html" class="dropdown">Conference</a>
+                </ul>
+                <div class="submenu">
+                    <ul>
+                        <a href="#">2015 Neurofeedback Conference</a>
+                        <a href="#">2016 Neurofeedback Conference</a>
+                        <a href="#">2017 Neurofeedback Conference</a>
+                        <a href="apna_con_2023.html">2023 Neurofeedback Conference</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="nav-bar-minimized">
+        <div class="nav-bar-min-cont">
+            <a href="index.html"><img src="images/APNA logo.png"></a>
+            <button onclick="openBurgerCont()">&#x2630;</button>
+        </div>
+        <div class="nav-burger-cont-cont" id="burger-cont">
+            <div class="nav-burger-cont">
+                <div class="nav-burger-close-cont">
+                    <button onclick="closeBurgerCont()">&#x2716;</button>
+                </div>
+                <div class="nav-burger-menu">
+                    <form class="nav-bar-min-search">
+                        <input class="min-search-bar-input" type="text" id="search_bar" name="search_bar" placeholder="Search..."/>
+                        <input class="min-search-bar-submit" type="image" src="images/general_icons/search.png" name="submit" alt="Submit"/>
+                    </form>
+                    <div class="nav-bar-min-links-cont">
+                        <ul>
+                            <a href="index.html">Home</a>
+                        </ul>
+                        <ul>
+                            <div class="nav-bar-min-links">
+                                <button>
+                                    <span id="dd1-plus" onclick="openDropdown('about_apna')">+</span>
+                                    <span id="dd1-minus" style="display: none;" onclick="closeDropdown('about_apna')">-</span>
+                                </button>
+                                <a href="about_apna.html">About APNA</a>
+                            </div>
+                        </ul>
+                        <ul class="nav-bar-min-dropdown-cont" id="about_apna">
+                            <div class="nav-bar-min-dropdown">
+                                <a href="#">The APNA Story</a>
+                                <a href="#">Board & Committee</a>
+                                <a href="#">Foreword by President of APNA</a>
+                            </div>
+                        </ul>
+                        <ul>
+                            <div class="nav-bar-min-links">
+                                <button>
+                                    <span id="dd2-plus" onclick="openDropdown('membership')">+</span>
+                                    <span id="dd2-minus" style="display: none;" onclick="closeDropdown('membership')">-</span>
+                                </button>
+                                <a href="#">Membership</a>
+                            </div>
+                        </ul>
+                        <ul class="nav-bar-min-dropdown-cont" id="membership">
+                            <div class="nav-bar-min-dropdown">
+                                <a href="#">Membership List</a>
+                                <a href="#">Membership Fee</a>
+                            </div>
+                        </ul>
+                        <ul>
+                            <a href="certification.html">Certification</a>
+                        </ul>
+                        <ul>
+                            <a href="#">Research Institute</a>
+                        </ul>
+                        <ul>
+                            <a href="#">Publications</a>
+                        </ul>
+                        <ul>
+                            <a href="visitor_info.html">Visitor Info</a>
+                        </ul>
+                        <ul>
+                            <a href="#">Contact Us</a>
+                        </ul>
+                        <ul>
+                            <div class="nav-bar-min-links">
+                                <button>
+                                    <span id="dd3-plus" onclick="openDropdown('conference')">+</span>
+                                    <span id="dd3-minus" style="display: none;" onclick="closeDropdown('conference')">-</span>
+                                </button>
+                                <a href="#">Conference</a>
+                            </div>
+                        </ul>
+                        <ul class="nav-bar-min-dropdown-cont" id="conference">
+                            <div class="nav-bar-min-dropdown">
+                                <a href="#">2015 Neurofeedback Conference</a>
+                                <a href="#">2016 Neurofeedback Conference</a>
+                                <a href="#">2017 Neurofeedback Conference</a>
+                                <a href="apna_con_2023.html">2023 Neurofeedback Conference</a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="filler"></section>
+    <div class="contact">
+        <img src="/images/contact/contact us header image 1.png" alt="banner">
+        <div class="form-block">
+            <center><h2>Contact Us</h2></center>
+            <div class="form-block2">
+                <div class="block">
+                    <h4>ASIA PACIFIC NEURO-BIOFEEDBACK <br>ASSOCIATION HEADQUARTERS</h4>
+                    <br>
+                    <h4>Singapore:</h4>
+                    <br>
+                    <p>36 Purvis Street <br>Talib Centre <br>#02-11 <br>Singapore 188613</p>
+                    <br>
+                    <h4>Operating Hours:</h4>
+                    <br>
+                    <p>Tuesdays-Saturdays <br>09:00 AM-06:00 PM <br>(By appointment only) <br>Tel : +65 68349476 <br>Fax : +65 6830 8459</p>
+                    <br>
+                    <h4>Operating Hours:</h4>
+                    <p>279, Jalan Pekeliling 11700 Pulau Pinang</p>
+                </div>
+                <form>
+                    <center><h3>Enquiry </h3></center>
+                    <br>
+                    <input type="text" placeholder="First name">
+                    <input type="text" placeholder="Last name">
+                    <input type="text" placeholder="Email address">
+                    <textarea placeholder="Message"></textarea>
+                    <br>
+                    <center><button>Submit</button></center>
+                </form>
+            </div>
+        </div>
+        <br><br><br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.796970799773!2d103.85233887477852!3d1.2964552617455496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19a5730bd999%3A0x2af97fe860d583f1!2s36%20Purvis%20St%2C%20Singapore%20188613!5e0!3m2!1sen!2smy!4v1692722163727!5m2!1sen!2smy" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="location-text">
+            <div class="loc">
+                <h4>Public Transport Directions:</h4>
+                <br>
+                <p>From Bugis MRT Station, take Exit C. Exit from Bugis Junction Fountain side and walk along North Bridge Road towards the direction of National Library. Look out for Maybank opposite National Library. Cross the road to Maybank. Purvis Street will be on the left.
+                    Our office is located in one of those red-framed windows shop houses. The lobby entrance to our office is 2 units away from Kiliney coffee shop. Enter the lobby and go to second floor.</p>
+            </div>
+            <div class="loc">
+                <h4>Parking Options:</h4>
+                <br>
+                <ul>
+                    <li>Purvis Street Carpark - Along Purvis Street.</li>
+                    <li>Beach Centre Carpark - 15 Beach Road, S189677. When you first turn into Purvis Street, make another left turn and the carpark entrance is on the left.</li>
+                    <li>North Bridge Centre Carpark - 420 North Bridge Road, S188727. Driving along Purvis Street, make a right turn (just before Maybank), the carpark entrance is on your left.</li>
+                    <li>National Library Carpark - 100 Victoria Street, S188064.</li>
+                </ul>
+            </div>
+            <div class="loc">
+                <h4>Driving Directions:</h4>
+                <br>
+                <p>Purvis street is opposite the National Library and Bras Basah Complex. As it is a one way street, drivers will have to enter via Beach Road and make a left turn into Purvis street.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-cont">
+            <div class="footer-inner-cont1">
+                <div class="footer-page-links">
+                    <a href="#">Website Terms and Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Site-map</a>
+                </div>
+                <div class="footer-social-links">
+                    <a onclick="window.open('http://www.facebook.com/sharer.php?u=http://www.apna.asia/index.html', '_blank')" class="social-icon-44 social-white-bg"><img src="images/general_icons/facebook.png"></a>
+                    <a onclick="window.open('https://twitter.com/share?url=http://www.apna.asia/index.html', '_blank')" class="social-icon-32 social-twitter-bg"><img src="images/general_icons/twitter.png"></a>
+                    <a onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url=http://www.apna.asia/index.html', '_blank')" class="social-icon-44 social-white-bg"><img src="images/general_icons/linkedin.png"></a>
+                    <a onclick="window.open('mailto:?body=http://www.apna.asia/index.html', '_blank')" class="social-icon-32 social-white-bg"><img src="images/general_icons/mail.png"></a>
+                </div>
+            </div>
+            <div class="footer-inner-cont2">
+                <h6 class="footer-address">36 Purvis Street, #02-11, Talib Centre, S(188613) SINGAPORE</h6>
+                <div class="footer-contact-info">
+                    <h6>Tel: +65-6834-9476</h6>
+                    <h6>Email: APNA@apna.asia</h6>
+                </div>
+            </div>
+            <h6>© 2016 Asia Pacific Neuro-biofeedback Association<br>All Rights Reserved | Singapore</h6>
+        </div>
+    </footer>
+</body>
+</html>
