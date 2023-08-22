@@ -3484,46 +3484,74 @@
 
 /* APJNT Page*/
 
-.apjnt_header_img {
-    width: 20vw;
-    display: flex;
-    margin: 0 auto;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
+.apjnt_content {
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 20px 20px 20px 20px;
+
+    /* Responsive Edit*/
+    margin: 1vw 1vw 1vw 1vw;
 }
+
+.apjnt_header_img {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 400px;
+
+    /* Responsive Edit*/
+    margin-top: 1.25vw;
+    margin-bottom: 1.25vw;
+    width: 20.2vw;
+}
+
 .apjnt_big_title {
     color: #000;
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    /* Responsive Edit*/
     margin-top: 1vw;
     margin-bottom: 1vw;
 }
-.apjnt_content {
-    border: 1px solid #000;
-    border-radius: 5px;
-    margin: 1vw 1vw 1vw 1vw;
-}
+
 .apjnt_content_description {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
     text-align: center;
-    margin: 1vw 1vw 1vw 1vw;
+    font-size: 20px;
+    width: 500px;
+
+
+    /* Responsive Edit*/
     font-size: 1vw;
     width: 30vw;
-    display: flex;
-    margin: 0 auto;
 }
+
 .apjnt_optionbtn_box{
     display: flex;
     justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    /* Responsive Edit*/
     margin-top: 1vw;
     margin-bottom: 1vw;
 }
+
 .apjnt_optionbtn_go {
     display: flex;
     justify-content: center;
-    margin-top: 1vw;
-    padding: 0.5vw 5vw;
+    margin-top: 20px;
+    padding: 10px 100px;
     background-color: #FF8D24;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.247);
     border-radius: 5px;
@@ -3531,7 +3559,187 @@
     border: none;
     text-align: center;
     text-decoration: none;
+    font-size: 20px;
+
+    /* Responsive Edit*/
     font-size: 1vw;
+    margin-top: 1vw;
+    padding: 0.5vw 5vw;
+}
+
+@media screen and (max-device-width: 970px){
+    .apjnt_content {
+        border: 1px solid #000;
+        border-radius: 5px;
+        margin: 20px 20px 20px 20px;
+    
+        /* Responsive Edit*/
+        margin: 2vw 2vw 2vw 2vw;
+    }
+    
+    .apjnt_header_img {
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: 400px;
+        height: 150px;
+    
+        /* Responsive Edit*/
+        margin-top: 2.5vw;
+        margin-bottom: 2.5w;
+        width: 40vw;
+        height: 15vw;
+    }
+    
+    .apjnt_big_title {
+        color: #000;
+        display: flex;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    
+        /* Responsive Edit*/
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+    
+    .apjnt_content_description {
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        font-size: 25px;
+        width: 500px;
+    
+    
+        /* Responsive Edit*/
+        font-size: 2.5vw;
+        width: 50vw;
+    }
+    
+    .apjnt_optionbtn_box{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    
+        /* Responsive Edit*/
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+    
+    .apjnt_optionbtn_go {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        padding: 10px 100px;
+        background-color: #FF8D24;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.247);
+        border-radius: 5px;
+        color: #FFF;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+    
+        /* Responsive Edit*/
+        font-size: 3vw;
+        margin-top: 2vw;
+        padding: 1vw 10vw;
+    }
+}
+
+
+@media screen and (max-device-width: 500px){
+    .apjnt_content {
+        border: 1px solid #000;
+        border-radius: 5px;
+        margin: 20px 20px 20px 20px;
+    
+        /* Responsive Edit*/
+        margin: 2vw 2vw 2vw 2vw;
+    }
+    
+    .apjnt_header_img {
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: 500px;
+        height: 200px;
+    
+        /* Responsive Edit*/
+        margin-top: 2.5vw;
+        margin-bottom: 2.5w;
+        width: 50vw;
+        height: 20vw;
+    }
+    
+    .apjnt_big_title {
+        color: #000;
+        display: flex;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    
+        /* Responsive Edit*/
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+    
+    .apjnt_content_description {
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        font-size: 30px;
+        width: 750px;
+    
+    
+        /* Responsive Edit*/
+        font-size: 3vw;
+        width: 75vw;
+    }
+    
+    .apjnt_optionbtn_box{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    
+        /* Responsive Edit*/
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+    
+    .apjnt_optionbtn_go {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        padding: 10px 100px;
+        background-color: #FF8D24;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.247);
+        border-radius: 5px;
+        color: #FFF;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+    
+        /* Responsive Edit*/
+        font-size: 3vw;
+        margin-top: 2vw;
+        padding: 1vw 10vw;
+    }
 }
 
 /* visitor info section 1 */
