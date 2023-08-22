@@ -37,8 +37,8 @@
                 <div class="submenu">
                     <ul>
                         <a href="apna_story.html">The APNA Story</a>
-                        <a href="board_and_committee_2017.html">Board & Committee</a>
-                        <a href="foreword.html">Foreword by President of APNA</a>
+                        <a href="board_and_committee_2021.html">Board & Committee</a>
+                        <a href="foreword.html">Foreword by Founder President of APNA</a>
                     </ul>
                 </div>
             </div>
@@ -64,9 +64,14 @@
                 </ul>
             </div>
             <div class="nav-bar-link-cont">
-                <ul>
-                    <a href="publications.html">Publications</a>
+                <ul class="highlighted">
+                    <a href="publications.html" class="dropdown">Publications</a>
                 </ul>
+                <div class="submenu">
+                    <ul>
+                        <a href="apjnt.html" class="selected">Asia Pacific Journal of Neurotherapy (APJNT)</a>
+                    </ul>
+                </div>
             </div>
             <div class="nav-bar-link-cont">
                 <ul>
@@ -125,8 +130,8 @@
                         <ul class="nav-bar-min-dropdown-cont" id="about_apna">
                             <div class="nav-bar-min-dropdown">
                                 <a href="apna_story.html">The APNA Story</a>
-                                <a href="board_and_committee_2017.html">Board & Committee</a>
-                                <a href="foreword.html">Foreword by President of APNA</a>
+                                <a href="board_and_committee_2021.html">Board & Committee</a>
+                                <a href="foreword.html">Foreword by Founder President of APNA</a>
                             </div>
                         </ul>
                         <ul>
@@ -151,7 +156,19 @@
                             <a href="research_institutes.html">Research Institute</a>
                         </ul>
                         <ul>
-                            <a href="publications.html">Publications</a>
+                            <div class="nav-bar-min-links">
+                                <button>
+                                    <span id="dd2-plus" onclick="openDropdown('publications')">+</span>
+                                    <span id="dd2-minus" style="display: none;" onclick="closeDropdown('publications')">-</span>
+                                </button>
+                                <a href="publications.html">Publications</a>
+                            </div>
+                        </ul>
+                        <ul class="nav-bar-min-dropdown-cont" id="publications">
+                            <div class="nav-bar-min-dropdown">
+                                    <a href="publications.html">NeuroEastern Newsletter</a>
+                                    <a href="apjnt.html">Asia Pacific Journal of Neurotherapy (APJNT)</a>
+                            </div>
                         </ul>
                         <ul>
                             <a href="visitor_info.html">Visitor Info</a>
