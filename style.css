@@ -6854,6 +6854,108 @@
     }
 }
 
+ /* APNA Conference Gallery 2017 Section 1 */
+
+ .gallery17-sec {
+    display: block;
+    text-align: center;
+    padding: 15px;
+
+    /* Responsive Edit */
+    padding: 0.75vw;
+}
+
+.gallery17-sec h2, .gallery17-sec h3 {
+    display: block;
+    text-align: center;
+    margin-bottom: 25px;
+
+    /* Responsive Edit */
+    margin-bottom: 1.25vw;
+}
+
+.gallery17-sec-cont video {
+    width: 1000px;
+    height: 570px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+
+    /* Responsive Edit */
+    width: 50vw;
+    height: 28.5vw;
+    margin-bottom: 1.25vw;
+
+    
+}
+
+.gallery17-sec-cont a {
+    background-color: #FF8D24;
+    font-size: 25px;
+    font-weight: 700;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 60px;
+    border-radius: 10px;
+    
+    /* Responsive Edit */
+    font-size: 1.25vw;
+    padding: .5vw 3vw;
+    border-radius: .5vw;
+}
+
+@media screen and (max-device-width: 970px){
+    .gallery17-sec {
+        display: block;
+        text-align: center;
+        padding: 15px;
+    
+        /* Responsive Edit */
+        padding: 1.5vw;
+    }
+    
+    .gallery17-sec h2, .gallery17-sec h3 {
+        display: block;
+        text-align: center;
+        margin-bottom: 25px;
+    
+        /* Responsive Edit */
+        margin-bottom: 2.5vw;
+    }
+    
+    .gallery17-sec-cont video {
+        width: 1000px;
+        height: 570px;
+        margin-bottom: 25px;
+    
+        /* Responsive Edit */
+        width: 60vw;
+        height: 42vw;
+        margin-bottom: 2.5vw;
+    
+        
+    }
+    
+    .gallery17-sec-cont a {
+        background-color: #FF8D24;
+        font-size: 25px;
+        font-weight: 700;
+        color: #FFF;
+        text-decoration: none;
+        text-align: center;
+        padding: 10px 60px;
+        border-radius: 10px;
+        
+        /* Responsive Edit */
+        font-size: 2.5vw;
+        padding: 1vw 6vw;
+        border-radius: 1vw;
+    }
+
+}
+
 /* carousel */
 
 .con23-carousel-cont {
