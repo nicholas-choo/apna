@@ -5173,6 +5173,307 @@
 
 }
 
+  /* APNA Conference 2017 Schedule */
+
+  .schedule-banner {
+    position: relative;
+    text-align: center;
+}
+
+.schedule-banner img {
+    width: 850px;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    border-radius: 1px 1px 1px 1px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    /* Responsive Edit */
+    width: 43vw;
+
+}
+
+.schedule-banner h3 {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.schedule-sec {
+    padding: 50px 50px;
+
+    /* Responsive Edit */
+    padding: 2.5vw 2.5vw;
+}
+
+.schedule-sec h2 {
+    text-align: center;
+    margin-bottom: 30px;
+
+    /* Responsive Edit */
+    margin-bottom: 1.50vw;
+}
+
+.schedule-sec h3 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    /* Responsive Edit */
+    margin-bottom: 1.50vw;
+    margin-top: 1.50vw;
+}
+
+.schedule-border {
+    border-bottom: 1px #000 solid;
+    margin-bottom: 25px;
+
+    /* Responsive Edit */
+    margin-bottom: 0.75vw;
+}
+
+.schedule-sec-table table {
+    width: 100%;
+    border: solid 1px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    /* Responsive Edit */
+    border: solid 0.1vw;
+    border-radius: 0.4vw;
+    border-bottom-left-radius: 0.8vw;
+    border-bottom-right-radius: 0.8vw;
+
+}
+
+.schedule-sec-table th{
+  font-size: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #FFA500;
+
+  /* Responsive Edit */
+  font-size: 1vw;
+  padding-top: 0.7vw;
+  padding-bottom: 0.7vw;
+}
+
+.schedule-sec-table th#th2{
+    background-color: #6CD0DC;
+}
+
+.schedule-sec-table th#th3{
+    background-color: #F64FB6;
+}
+
+
+.schedule-sec-table th#th4{
+    background-color: #000;
+    color: #FFFFFF;
+}
+
+.schedule-sec-table td#alignleft {
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+    /* Responsive Edit */
+    padding-top: 0.5vw;
+    padding-left: 0.5vw;
+    padding-bottom: 0.5vw;
+}
+
+.schedule-sec-table td {
+    width: 230.4px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    padding: 3px;
+    font-size: 20;
+    font-weight: 700;
+    text-align: center;
+    background: #FFFFFF;    
+    border-width: 0.5px 0.5px 0px 0.5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.5);
+
+    /* Responsive Edit */
+    font-size: 1vw;
+    width: 12vw;
+    height: 3.3vw;
+    padding: 0.15vw;
+
+}
+
+.schedule-sec-table table tr:last-child th:first-child {
+    border: 0.5px solid;
+    overflow: none; 
+    background-color: #000;
+    border-color: #000;
+    border-bottom-left-radius: 15px;
+    height: 40px;
+
+    /* Responsive Edit */
+    height: 2.2vw;
+    border-bottom-left-radius: 0.8vw;
+}
+    
+.schedule-sec-table table tr:last-child th:last-child {
+    border: 0.5px solid;
+    overflow: none;
+    background-color: #000;
+    border-color: #000;
+    border-bottom-right-radius: 15px;
+    height: 40px;
+
+    /* Responsive Edit */
+    height: 2.2vw;
+    border-bottom-right-radius: 0.8vw;
+    
+}
+
+@media screen and (max-device-width: 970px){
+    
+    .schedule-banner img {
+        width: 850px;
+        filter: blur(4px);
+        -webkit-filter: blur(4px);
+        border-radius: 1px 1px 1px 1px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+        /* Responsive Edit */
+        width: 85vw;
+    
+    }
+
+    .schedule-sec {
+        padding: 50px 50px;
+    
+        /* Responsive Edit */
+        padding: 5vw 5vw;
+    }
+    
+    .schedule-sec h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    
+        /* Responsive Edit */
+        margin-bottom: 3vw;
+    }
+    
+    .schedule-sec h3 {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    
+        /* Responsive Edit */
+        margin-bottom: 3vw;
+        margin-top: 3vw;
+    }
+    
+    .schedule-border {
+        border-bottom: 2px #000 solid;
+        margin-bottom: 25px;
+    
+        /* Responsive Edit */
+        margin-bottom: 2.5vw;
+    }
+    
+    .schedule-sec-table table {
+        width: 100%;
+        border: solid 1px;
+        border-collapse: separate;
+        border-spacing: 0;
+        border-radius: 8px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    
+        /* Responsive Edit */
+        border: solid 0.1vw;
+        border-radius: 0.4vw;
+        border-bottom-left-radius: 0.8vw;
+        border-bottom-right-radius: 0.8vw;
+    
+    }
+    
+    .schedule-sec-table th{
+      font-size: 20px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      background-color: #FFA500;
+    
+      /* Responsive Edit */
+      font-size: 2vw;
+      padding-top: 1.2vw;
+      padding-bottom: 1.2vw;
+    }
+    
+    .schedule-sec-table td#alignleft {
+        text-align: left;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    
+        /* Responsive Edit */
+        padding-top: 1vw;
+        padding-left: 1vw;
+        padding-bottom: 1vw;
+    }
+    
+    .schedule-sec-table td {
+        width: 230.4px;
+        height: 60px;
+        left: 0px;
+        top: 0px;
+        padding: 3px;
+        font-size: 20;
+        font-weight: 700;
+        text-align: center;
+        background: #FFFFFF;    
+        border-width: 0.5px 0.5px 0px 0.5px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.5);
+    
+        /* Responsive Edit */
+        font-size: 2vw;
+        width: 23vw;
+        height: 6vw;
+        padding: 0.3vw;
+    
+    }
+    
+    .schedule-sec-table table tr:last-child th:first-child {
+        border: 0.5px solid;
+        overflow: none; 
+        background-color: #000;
+        border-color: #000;
+        border-bottom-left-radius: 15px;
+        height: 40px;
+    
+        /* Responsive Edit */
+        height: 4vw;
+        border-bottom-left-radius: 1.5vw;
+    }
+        
+    .schedule-sec-table table tr:last-child th:last-child {
+        border: 0.5px solid;
+        overflow: none;
+        background-color: #000;
+        border-color: #000;
+        border-bottom-right-radius: 15px;
+        height: 40px;
+    
+        /* Responsive Edit */
+        height: 4vw;
+        border-bottom-right-radius: 1.5vw;
+        
+    }
+}
+
   /* APNA Conference 2018 Section 1 */
 
   .con18-sec1 img {
