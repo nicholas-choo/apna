@@ -187,6 +187,7 @@
     <section class="filler"></section>
 <section class="sec flex-center">
             <div class="membershipapp-sec width60vw">
+                <form id="membership_application_form" action="membership_app_submitForm.php" method="post" onsubmit="return validateForm()">
                 <h2>Membership Application Form</h2>
                 <div class="membershipapp-sec1-cont1">
                     <h3> Personal Information </h3>
@@ -195,19 +196,25 @@
                         <div id="FirstGap">
                         <label class="membershipapp-sec1-title" for="title">Title :</label>
                         <div class="membershipapp-sec1-input">
-                        <input type="text" name="title" id="FirstColumn" class="membershipapp-sec1-input"/>
+                        <select name="title" id="FirstColumn" class="membershipapp-sec1-input" required>
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Miss">Miss</option>
+                            <option value="Mdm">Mdm</option>
+                            <option value="Dr">Dr</option>
+                        </select>
                         </div></div>
 
                         <div id="SecondGap">
                         <label class="membershipapp-sec1-title" for="FirstName">First Name :</label>
                         <div class="membershipapp-sec1-input">
-                        <input type="text" name="FirstName" id="SecondColumn" class="membershipapp-sec1-input"/>
+                        <input type="text" maxlength="32" name="FirstName" id="SecondColumn" class="membershipapp-sec1-input" required/>
                         </div></div>
 
                         <div id="ThirdGap">
                         <label class="membershipapp-sec1-title" for="LastName">Last Name :</label>
                         <div class="membershipapp-sec1-input">
-                        <input type="text" name="LastName" id="ThirdColumn" class="membershipapp-sec1-input"/>
+                        <input type="text" maxlength="32" name="LastName" id="ThirdColumn" class="membershipapp-sec1-input" required/>
                         </div></div>
                 </div>
                 <div class="membershipapp-sec1-forms">
@@ -215,19 +222,19 @@
                     <div id="FirstGap">
                     <label class="membershipapp-sec1-title" for="DoB">Date of Birth :</label>
                     <div class="membershipapp-sec1-input">
-                    <input type="text" name="DoB" id="FirstColumn" class="membershipapp-sec1-input"/>
+                    <input type="date" name="DoB" id="FirstColumn" class="membershipapp-sec1-input" required/>
                     </div></div>
 
                     <div id="SecondGap">
                     <label class="membershipapp-sec1-title" for="Nationality">Nationality :</label>
                     <div class="membershipapp-sec1-input">
-                    <input type="text" name="Nationality" id="SecondColumn" class="membershipapp-sec1-input"/>
+                    <input type="text" maxlength="32" name="Nationality" id="SecondColumn" class="membershipapp-sec1-input" required/>
                     </div></div>
 
                     <div id="ThirdGap">
                     <label class="membershipapp-sec1-title" for="MobilePhone">Mobile Phone :</label>
                     <div class="membershipapp-sec1-input">
-                    <input type="text" name="MobilePhone" id="ThirdColumn" class="membershipapp-sec1-input"/>
+                    <input type="text" maxlength="32" name="MobilePhone" id="ThirdColumn" class="membershipapp-sec1-input" required/>
                     </div></div>
             </div>
             <div class="membershipapp-sec1-forms">
@@ -235,13 +242,13 @@
                 <div id="FourthGap">
                 <label class="membershipapp-sec1-title" for="Email">Email :</label>
                 <div class="membershipapp-sec1-input">
-                <input type="text" name="Email" id="FourthColumn" class="membershipapp-sec1-input"/>
+                <input type="text" maxlength="32" name="Email" id="FourthColumn" class="membershipapp-sec1-input" required/>
                 </div></div>
 
                 <div id="ThirdGap">
                 <label class="membershipapp-sec1-title" for="WorkPhone">Work Phone :</label>
                 <div class="membershipapp-sec1-input">
-                <input type="text" name="WorkPhone" id="ThirdColumn" class="membershipapp-sec1-input"/>
+                <input type="text" maxlength="32" name="WorkPhone" id="ThirdColumn" class="membershipapp-sec1-input" required/>
                 </div></div>
             </div>
 
@@ -250,39 +257,39 @@
                 <div id="FifthGap">
                 <label class="membershipapp-sec1-title" for="HomeAddress1">Home Address 1 :</label>
                 <div class="membershipapp-sec1-input">
-                <input type="text" name="HomeAddress1" id="FifthColumn" class="membershipapp-sec1-input"/>
+                <input type="text" maxlength="32" name="HomeAddress1" id="FifthColumn" class="membershipapp-sec1-input" required/>
                 </div></div>
 
                 <div id="SixthGap">
                 <label class="membershipapp-sec1-title" for="HomeAddress2">Home Address 2 :</label>
                 <div class="membershipapp-sec1-input">
-                <input type="text" name="HomeAddress2" id="SixthColumn" class="membershipapp-sec1-input"/>
+                <input type="text" maxlength="32" name="HomeAddress2" id="SixthColumn" class="membershipapp-sec1-input" required/>
                 </div></div>
             </div>
 
             <div class="membershipapp-sec1-forms" id="SmallColumns">
               <div id="SmallGap1">
-              <label class="membershipapp-sec1-smalltitle" for="City">City :</label>
+              <label class="membershipapp-sec1-smalltitle" for="HomeCity1">City :</label>
               <div class="membershipapp-sec1-input">
-              <input type="text" name="City" id="SmallColumn1" class="membershipapp-sec1-input"/>
+              <input type="text" maxlength="32" name="HomeCity1" id="SmallColumn1" class="membershipapp-sec1-input"/>
             </div></div>
 
              <div id="SmallGap2">
-            <label class="membershipapp-sec1-smalltitle" id="StateTitle" for="State">State :</label>
+            <label class="membershipapp-sec1-smalltitle" id="StateTitle" for="HomeState1">State :</label>
             <div class="membershipapp-sec1-input">
-            <input type="text" name="State" id="SmallColumn2" class="membershipapp-sec1-input"/>
+            <input type="text" maxlength="32" name="HomeState1" id="SmallColumn2" class="membershipapp-sec1-input"/>
             </div></div>
 
             <div id="SmallGap3">
-                <label class="membershipapp-sec1-smalltitle" for="PostalCode">Postal Code :</label>
+                <label class="membershipapp-sec1-smalltitle" for="HomePostalCode1">Postal Code :</label>
                 <div class="membershipapp-sec1-input">
-                <input type="text" name="PostalCode" id="SmallColumn3" class="membershipapp-sec1-input"/>
+                <input type="text" maxlength="32" name="HomePostalCode1" id="SmallColumn3" class="membershipapp-sec1-input"/>
               </div></div>
   
                <div id="SmallGap4">
-              <label class="membershipapp-sec1-smalltitle" id="CountryTitle" for="Country">Country :</label>
+              <label class="membershipapp-sec1-smalltitle" id="CountryTitle" for="HomeCountry1">Country :</label>
               <div class="membershipapp-sec1-input">
-              <input type="text" name="Country" id="SmallColumn4" class="membershipapp-sec1-input"/>
+              <input type="text" maxlength="32" name="HomeCountry1" id="SmallColumn4" class="membershipapp-sec1-input"/>
               </div></div>
             </div>
 
@@ -290,29 +297,29 @@
 
             <div class="membershipapp-sec1-forms" id="SmallColumnsMobile">
                 <div id="SmallGap1">
-                <label class="membershipapp-sec1-smalltitle" for="City">City :</label>
+                <label class="membershipapp-sec1-smalltitle" for="HomeCity2">City :</label>
                 <div class="membershipapp-sec1-input">
-                <input type="text" name="City" id="SmallColumn1" class="membershipapp-sec1-input"/>
+                <input type="text" name="HomeCity2" id="SmallColumn1" class="membershipapp-sec1-input"/>
               </div></div>
   
                <div id="SmallGap2">
-              <label class="membershipapp-sec1-smalltitle" id="StateTitle" for="State">State :</label>
+              <label class="membershipapp-sec1-smalltitle" id="StateTitle" for="HomeState2">State :</label>
               <div class="membershipapp-sec1-input">
-              <input type="text" name="State" id="SmallColumn2" class="membershipapp-sec1-input"/>
+              <input type="text" name="HomeState2" id="SmallColumn2" class="membershipapp-sec1-input"/>
               </div></div>
             </div>
 
             <div class="membershipapp-sec1-forms" id="SmallColumnsMobile">
               <div id="SmallGap3">
-                  <label class="membershipapp-sec1-smalltitle" for="PostalCode">Postal Code :</label>
+                  <label class="membershipapp-sec1-smalltitle" for="HomePostalCode2">Postal Code :</label>
                   <div class="membershipapp-sec1-input">
-                  <input type="text" name="PostalCode" id="SmallColumn3" class="membershipapp-sec1-input"/>
+                  <input type="text" name="HomePostalCode2" id="SmallColumn3" class="membershipapp-sec1-input"/>
                 </div></div>
     
                  <div id="SmallGap4">
-                <label class="membershipapp-sec1-smalltitle" id="CountryTitle" for="Country">Country :</label>
+                <label class="membershipapp-sec1-smalltitle" id="CountryTitle" for="HomeCountry2">Country :</label>
                 <div class="membershipapp-sec1-input">
-                <input type="text" name="Country" id="SmallColumn4" class="membershipapp-sec1-input"/>
+                <input type="text" name="HomeCountry2" id="SmallColumn4" class="membershipapp-sec1-input"/>
                 </div></div>
               </div>
 
@@ -322,7 +329,7 @@
                 <div id="BigGap">
                 <label class="membershipapp-sec1-title" for="QaCList">Qualification and Certification List :</label>
                 <div class="membershipapp-sec1-input">
-                <textarea name="QaCList" id="BigColumn" class="membershipapp-sec1-textarea"></textarea>
+                <textarea name="QaCList" id="BigColumn" class="membershipapp-sec1-textarea" required></textarea>
                 </div></div>
             </div>
 
@@ -331,53 +338,53 @@
                 <div id="FifthGap">
                 <label class="membershipapp-sec1-title" for="CompanyName">Company Name :</label>
                 <div class="membershipapp-sec1-input">
-                <input type="text" name="CompanyName" id="FifthColumn" class="membershipapp-sec1-input"/>
+                <input type="text" name="CompanyName" id="FifthColumn" class="membershipapp-sec1-input" required/>
                 </div></div>
 
                 <div id="SixthGap">
                 <label class="membershipapp-sec1-title" for="Occupation">Occupation :</label>
                 <div class="membershipapp-sec1-input">
-                <input type="text" name="Occupation" id="SixthColumn" class="membershipapp-sec1-input"/>
+                <input type="text" name="Occupation" id="SixthColumn" class="membershipapp-sec1-input" required/>
                 </div></div>
             </div>
 
             <div class="membershipapp-sec1-forms">
                 <div id="FifthGap">
-                <label class="membershipapp-sec1-title" for="HomeAddress3">Home Address 1 :</label>
+                <label class="membershipapp-sec1-title" for="WorkAddress3">Work Address 1 :</label>
                 <div class="membershipapp-sec1-input">
-                <input type="text" name="HomeAddress3" id="FifthColumn" class="membershipapp-sec1-input"/>
+                <input type="text" name="WorkAddress3" id="FifthColumn" class="membershipapp-sec1-input" required/>
                 </div></div>
 
                 <div id="SixthGap">
-                <label class="membershipapp-sec1-title" for="HomeAddress4">Home Address 2 :</label>
+                <label class="membershipapp-sec1-title" for="WorkAddress4">Work Address 2 :</label>
                 <div class="membershipapp-sec1-input">
-                <input type="text" name="HomeAddress4" id="SixthColumn" class="membershipapp-sec1-input"/>
+                <input type="text" name="WorkAddress4" id="SixthColumn" class="membershipapp-sec1-input" required/>
                 </div></div>
             </div>
 
             <div class="membershipapp-sec1-forms" id="SmallColumns">
                 <div id="SmallGap1">
-                <label class="membershipapp-sec1-title" id="CityTitle" for="City">City :</label>
+                <label class="membershipapp-sec1-title" id="CityTitle" for="WorkCity1">City :</label>
                 <div class="membershipapp-sec1-input">
-                <input type="text" name="City" id="SmallColumn1" class="membershipapp-sec1-input"/>
+                <input type="text" name="WorkCity1" id="SmallColumn1" class="membershipapp-sec1-input"/>
               </div></div>
   
                <div id="SmallGap2">
-              <label class="membershipapp-sec1-title" id="StateTitle" for="State">State :</label>
+              <label class="membershipapp-sec1-title" id="StateTitle" for="WorkState1">State :</label>
               <div class="membershipapp-sec1-input">
-              <input type="text" name="State" id="SmallColumn2" class="membershipapp-sec1-input"/>
+              <input type="text" name="WorkState1" id="SmallColumn2" class="membershipapp-sec1-input"/>
               </div></div>
   
               <div id="SmallGap3">
-                  <label class="membershipapp-sec1-title" id="PostalCode" for="PostalCode">Postal Code :</label>
+                  <label class="membershipapp-sec1-title" id="PostalCode" for="WorkPostalCode1">Postal Code :</label>
                   <div class="membershipapp-sec1-input">
-                  <input type="text" name="PostalCode" id="SmallColumn3" class="membershipapp-sec1-input"/>
+                  <input type="text" name="WorkPostalCode1" id="SmallColumn3" class="membershipapp-sec1-input"/>
                 </div></div>
     
                  <div id="SmallGap4">
-                <label class="membershipapp-sec1-title" id="CountryTitle" for="Country">Country :</label>
+                <label class="membershipapp-sec1-title" id="CountryTitle" for="WorkCountry1">Country :</label>
                 <div class="membershipapp-sec1-input">
-                <input type="text" name="Country" id="SmallColumn4" class="membershipapp-sec1-input"/>
+                <input type="text" name="WorkCountry1" id="SmallColumn4" class="membershipapp-sec1-input"/>
                 </div></div>
               </div>
 
@@ -385,29 +392,29 @@
 
             <div class="membershipapp-sec1-forms" id="SmallColumnsMobile">
                 <div id="SmallGap1">
-                <label class="membershipapp-sec1-smalltitle" for="City">City :</label>
+                <label class="membershipapp-sec1-smalltitle" for="WorkCity2">City :</label>
                 <div class="membershipapp-sec1-input">
-                <input type="text" name="City" id="SmallColumn1" class="membershipapp-sec1-input"/>
+                <input type="text" name="WorkCity2" id="SmallColumn1" class="membershipapp-sec1-input"/>
               </div></div>
   
                <div id="SmallGap2">
-              <label class="membershipapp-sec1-smalltitle" id="StateTitle" for="State">State :</label>
+              <label class="membershipapp-sec1-smalltitle" id="StateTitle" for="WorkState2">State :</label>
               <div class="membershipapp-sec1-input">
-              <input type="text" name="State" id="SmallColumn2" class="membershipapp-sec1-input"/>
+              <input type="text" name="WorkState2" id="SmallColumn2" class="membershipapp-sec1-input"/>
               </div></div>
             </div>
 
             <div class="membershipapp-sec1-forms" id="SmallColumnsMobile">
               <div id="SmallGap3">
-                  <label class="membershipapp-sec1-smalltitle" for="PostalCode">Postal Code :</label>
+                  <label class="membershipapp-sec1-smalltitle" for="WorkPostalCode2">Postal Code :</label>
                   <div class="membershipapp-sec1-input">
-                  <input type="text" name="PostalCode" id="SmallColumn3" class="membershipapp-sec1-input"/>
+                  <input type="text" name="WorkPostalCode2" id="SmallColumn3" class="membershipapp-sec1-input"/>
                 </div></div>
     
                  <div id="SmallGap4">
-                <label class="membershipapp-sec1-smalltitle" id="CountryTitle" for="Country">Country :</label>
+                <label class="membershipapp-sec1-smalltitle" id="CountryTitle" for="WorkCountry2">Country :</label>
                 <div class="membershipapp-sec1-input">
-                <input type="text" name="Country" id="SmallColumn4" class="membershipapp-sec1-input"/>
+                <input type="text" name="WorkCountry2" id="SmallColumn4" class="membershipapp-sec1-input"/>
                 </div></div>
               </div>
 
@@ -417,11 +424,12 @@
                 <div id="SmallGap5">
                 <label class="membershipapp-sec1-title2" for="Experience">Years of Experience in Neurofeedback/Biofeedback :</label>
                 <div class="membershipapp-sec1-input">
-                <input type="text" name="Experience" id="SmallColumn1" class="membershipapp-sec1-input"/>
+                <input type="text" name="Experience" id="SmallColumn1" class="membershipapp-sec1-input" required/>
               </div></div>
             </div>
                 <input type="submit" value="Submit">
             </div>
+        </form>
         </div>
 </section>
 <footer class="footer">
@@ -520,6 +528,31 @@
               "correctly. Please consider using a standards-compliant" + 
               "browser instead. \n\n" +
               "We recommend Firefox, Microsoft Edge, or Google Chrome.");
+    }
+</script>
+<script>
+    function validateForm() {
+        if (isFormFilled()) {
+            // 验证成功，返回 true，允许表单提交
+            return true;
+        } else {
+            // 验证失败，弹出提示信息，并返回 false，阻止表单提交
+            alert("Please fill in all required fields.");
+            return false;
+        }
+    }
+    
+    function isFormFilled() {
+        const form = document.getElementById('membership_application_form');
+        const inputs = form.querySelectorAll('input, select, textarea');
+        
+        for (const input of inputs) {
+            if (input.required && !input.value.trim()) {
+                return false;
+            }
+        }
+        
+        return true;
     }
 </script>
 </body>
