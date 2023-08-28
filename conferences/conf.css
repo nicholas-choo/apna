@@ -1,0 +1,63 @@
+.conference {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px;
+}
+
+.conf-banner {
+    display: flex;
+    max-width: 1000px;
+}
+
+.conf-banner img {
+    width: 100%;
+}
+
+.link-mem a {
+    color: grey;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 0px 10px;
+}
+
+.member {
+    display: flex;
+    gap: 50px;
+    max-width: 1000px;
+}
+
+.member-photo {
+    max-width: 200px;
+}
+
+.member-banner img {
+    width: 100%;
+}
+
+@media(max-width: 1000px) {
+    .member {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .member-banner {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .conference {
+        padding: 100px 40px;
+    }
+
+    .member-photo {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+    }
+}
+
