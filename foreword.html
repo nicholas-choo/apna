@@ -39,8 +39,8 @@
                 <div class="submenu">
                     <ul class="highlighted">
                         <a href="apna_story.html">The APNA Story</a>
-                        <a href="board_and_committee_2017.html">Board & Committee</a>
-                        <a href="foreword.html" class="selected">Foreword by Past President of APNA</a>
+                        <a href="board_and_committee_2021.html">Board & Committee</a>
+                        <a href="foreword.html" class="selected">Foreword by Founder President of APNA</a>
                     </ul>
                 </div>
             </div>
@@ -66,9 +66,14 @@
                 </ul>
             </div>
             <div class="nav-bar-link-cont">
-                <ul>
-                    <a href="publications.html">Publications</a>
+                <ul class="highlighted">
+                    <a href="publications.html" class="dropdown">Publications</a>
                 </ul>
+                <div class="submenu">
+                    <ul>
+                        <a href="apjnt.html" class="selected">Asia Pacific Journal of Neurotherapy (APJNT)</a>
+                    </ul>
+                </div>
             </div>
             <div class="nav-bar-link-cont">
                 <ul>
@@ -127,8 +132,8 @@
                         <ul class="nav-bar-min-dropdown-cont" id="about_apna">
                             <div class="nav-bar-min-dropdown">
                                 <a href="apna_story.html">The APNA Story</a>
-                                <a href="board_and_committee_2017.html">Board & Committee</a>
-                                <a href="foreword.html">Foreword by Past President of APNA</a>
+                                <a href="board_and_committee_2021.html">Board & Committee</a>
+                                <a href="foreword.html">Foreword by Founder President of APNA</a>
                             </div>
                         </ul>
                         <ul>
@@ -153,7 +158,19 @@
                             <a href="research_institutes.html">Research Institutes</a>
                         </ul>
                         <ul>
-                            <a href="publications.html">Publications</a>
+                            <div class="nav-bar-min-links">
+                                <button>
+                                    <span id="dd2-plus" onclick="openDropdown('publications')">+</span>
+                                    <span id="dd2-minus" style="display: none;" onclick="closeDropdown('publications')">-</span>
+                                </button>
+                                <a href="publications.html">Publications</a>
+                            </div>
+                        </ul>
+                        <ul class="nav-bar-min-dropdown-cont" id="publications">
+                            <div class="nav-bar-min-dropdown">
+                                    <a href="publications.html">NeuroEastern Newsletter</a>
+                                    <a href="apjnt.html">Asia Pacific Journal of Neurotherapy (APJNT)</a>
+                            </div>
                         </ul>
                         <ul>
                             <a href="visitor_info.html">Visitor Info</a>
@@ -186,12 +203,13 @@
     </nav>
     <section class="filler"></section>
     <section class="sec flex-center">
-        <div class="foreword-sec-cont width60vw">
-            <h1>Foreword by Past President of APNA</h1>
+        <div class="foreword-sec width60vw">
+            <div class="foreword-sec-cont">
+            <h1>Foreword by Founder President of APNA</h1>
             <div class="foreword-inner-cont">
                 <img src="images/board_and_committee/Dr Kenneth Kang.png">
                 <div>
-                    <h3>Dr. Kenneth Kang</h3>
+                    <h3>Dr. Kenneth Kang (2015-2016)</h3>
                     <h4>Spectrum Learning Pte Ltd</h4>
                     <p>It is my sincere pleasure to welcome you to this website.</p>
                     <p>APNA is established to provide an oversight of the field of neurofeedback and biofeedback so as to promote and expand it as well as to safeguard consumer interests.</p>
@@ -199,6 +217,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </section>
     <footer class="footer">
         <div class="footer-cont">
