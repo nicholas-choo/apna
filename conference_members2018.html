@@ -1,0 +1,572 @@
+<!doctype html>
+<html>
+<head>
+    <title>Template</title>
+    <meta name="description" content="Just a page template.">
+    <meta name="keywords" content="Just a page template.">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/APNA logo circle.png" type="image/icon type">
+    <script type="text/javascript" async="" src="./javascript/plusone.js.下载" gapi_processed="true"></script><script type="text/javascript" src="./javascript/jquery.js.下载"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $("a.ActiveButton").bind({ mousedown:function(){if ( $(this).attr('disabled') === undefined ) $(this).addClass('Activated');}, mouseleave:function(){ if ( $(this).attr('disabled') === undefined ) $(this).removeClass('Activated');}, mouseup:function(){ if ( $(this).attr('disabled') === undefined ) $(this).removeClass('Activated');}});
+      $('#search_bar').keypress(function(event) { if ( event.keyCode == 13 ) window.location.href = 'search_result.html?site_search_results_2='+document.getElementById('search_bar').value+'&depth=0&swr=false'; });
+      $('#search_btn').click(function(event) { window.location.href = 'search_result.html?site_search_results_2='+document.getElementById('search_bar').value+'&depth=0&swr=false'; });
+      });
+    </script>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-bar-cont">
+            <a href="index.html"><img src="images/APNA logo.png"></a>
+            <div class="nav-bar-search">
+                <input class="search-bar-input" type="text" id="search_bar" name="search_bar" placeholder="Search..."/>
+                <input class="search-bar-submit" type="image" id="search_btn" src="images/general_icons/search.png" name="submit" alt="Submit"/>
+            </div>
+        </div>
+        <div class="nav-bar-links">
+            <div class="nav-bar-link-cont">
+                <ul class="highlighted">
+                    <a href="index.html" class="selected">Home</a>
+                </ul>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="about_apna.html" class="dropdown">About APNA</a>
+                </ul>
+                <div class="submenu">
+                    <ul>
+                        <a href="apna_story.html">The APNA Story</a>
+                        <a href="board_and_committee_2021.html">Board & Committee</a>
+                        <a href="foreword.html">Foreword by Founder President of APNA</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="membership.html" class="dropdown">Membership</a>
+                </ul>
+                <div class="submenu">
+                    <ul>
+                        <a href="membership_list.html">Membership List</a>
+                        <a href="membership_fee.html">Membership Fee</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="certification.html">Certification</a>
+                </ul>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="research_institutes.html">Research Institutes</a>
+                </ul>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="publications.html" class="dropdown">Publications</a>
+                </ul>
+                <div class="submenu">
+                    <ul>
+                        <a href="apjnt.html" class="selected">Asia Pacific Journal of Neurotherapy (APJNT)</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="visitor_info.html">Visitor Info</a>
+                </ul>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="contact_us.html">Contact Us</a>
+                </ul>
+            </div>
+            <div class="nav-bar-link-cont">
+                <ul>
+                    <a href="conference.html" class="dropdown">Conference</a>
+                </ul>
+                <div class="submenu">
+                    <ul>
+                        <a href="#">2015 Neurofeedback Conference</a>
+                        <a href="#">2016 Neurofeedback conference</a>
+                        <a href="apna_con_2017.html">2017 Neurofeedback Conference</a>
+                        <a href="apna_con_2018.html">2018 Neurofeedback Conference</a>
+                        <a href="apna_con_2023.html">2023 Neurofeedback Conference</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="nav-bar-minimized">
+        <div class="nav-bar-min-cont">
+            <a href="index.html"><img src="images/APNA logo.png"></a>
+            <button onclick="openBurgerCont()">&#x2630;</button>
+        </div>
+        <div class="nav-burger-cont-cont" id="burger-cont">
+            <div class="nav-burger-cont">
+                <div class="nav-burger-close-cont">
+                    <button onclick="closeBurgerCont()">&#x2716;</button>
+                </div>
+                <div class="nav-burger-menu">
+                    <form class="nav-bar-min-search">
+                        <input class="min-search-bar-input" type="text" id="search_bar" name="search_bar" placeholder="Search..."/>
+                        <input class="min-search-bar-submit" type="image" src="images/general_icons/search.png" name="submit" alt="Submit"/>
+                    </form>
+                    <div class="nav-bar-min-links-cont">
+                        <ul>
+                            <a href="index.html">Home</a>
+                        </ul>
+                        <ul>
+                            <div class="nav-bar-min-links">
+                                <button>
+                                    <span id="dd1-plus" onclick="openDropdown('about_apna')">+</span>
+                                    <span id="dd1-minus" style="display: none;" onclick="closeDropdown('about_apna')">-</span>
+                                </button>
+                                <a href="about_apna.html">About APNA</a>
+                            </div>
+                        </ul>
+                        <ul class="nav-bar-min-dropdown-cont" id="about_apna">
+                            <div class="nav-bar-min-dropdown">
+                                <a href="apna_story.html">The APNA Story</a>
+                                <a href="board_and_committee_2021.html">Board & Committee</a>
+                                <a href="foreword.html">Foreword by Founder President of APNA</a>
+                            </div>
+                        </ul>
+                        <ul>
+                            <div class="nav-bar-min-links">
+                                <button>
+                                    <span id="dd2-plus" onclick="openDropdown('membership')">+</span>
+                                    <span id="dd2-minus" style="display: none;" onclick="closeDropdown('membership')">-</span>
+                                </button>
+                                <a href="membership.html">Membership</a>
+                            </div>
+                        </ul>
+                        <ul class="nav-bar-min-dropdown-cont" id="membership">
+                            <div class="nav-bar-min-dropdown">
+                                <a href="membership_list.html">Membership List</a>
+                                <a href="membership_fee.html">Membership Fee</a>
+                            </div>
+                        </ul>
+                        <ul>
+                            <a href="certification.html">Certification</a>
+                        </ul>
+                        <ul>
+                            <a href="research_institutes.html">Research Institutes</a>
+                        </ul>
+                        <ul>
+                            <div class="nav-bar-min-links">
+                                <button>
+                                    <span id="dd2-plus" onclick="openDropdown('publications')">+</span>
+                                    <span id="dd2-minus" style="display: none;" onclick="closeDropdown('publications')">-</span>
+                                </button>
+                                <a href="publications.html">Publications</a>
+                            </div>
+                        </ul>
+                        <ul class="nav-bar-min-dropdown-cont" id="publications">
+                            <div class="nav-bar-min-dropdown">
+                                    <a href="publications.html">NeuroEastern Newsletter</a>
+                                    <a href="apjnt.html">Asia Pacific Journal of Neurotherapy (APJNT)</a>
+                            </div>
+                        </ul>
+                        <ul>
+                            <a href="visitor_info.html">Visitor Info</a>
+                        </ul>
+                        <ul>
+                            <a href="contact_us.html">Contact Us</a>
+                        </ul>
+                        <ul>
+                            <div class="nav-bar-min-links">
+                                <button>
+                                    <span id="dd3-plus" onclick="openDropdown('conference')">+</span>
+                                    <span id="dd3-minus" style="display: none;" onclick="closeDropdown('conference')">-</span>
+                                </button>
+                                <a href="conference.html">Conference</a>
+                            </div>
+                        </ul>
+                        <ul class="nav-bar-min-dropdown-cont" id="conference">
+                            <div class="nav-bar-min-dropdown">
+                                <a href="#">2015 Neurofeedback Conference</a>
+                                <a href="#">2016 Neurofeedback Conference</a>
+                                <a href="apna_con_2017.html">2017 Neurofeedback Conference</a>
+                                <a href="apna_con_2018.html">2018 Neurofeedback Conference</a>
+                                <a href="apna_con_2023.html">2023 Neurofeedback Conference</a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="filler"></section>
+    <section class="sec flex-center">
+    <div class="confmember18 width60vw">
+        <div class="conf-banner">
+            <img src="images/con_2018/Human-brain-in-synthetic-body-free-space 1.png" alt="conf-banner">
+            <h3>Asia Pacific Neurofeedback/Bio-feedback Conference Chiangmai, <br> Thailand 2018 Research and Practice
+        </div>
+    <div class="confmember18-banner-cont">
+        <h2>Conference Speakers and Topics</h2>
+        <div class="confmember18-banner-cont-link-mem">
+            <a class="selected" href="Conference_Members2018.html">Conference 2018 Members</a>
+            <a href="#">Conference 2017 Members</a>
+        </div>
+    </div>
+        <br><br>
+        <div class="confmember18-sec">
+            <div class="confmember18-sec-cont">
+                <div class="confmember18-sec-cont-banner">
+                    <div class="confmember18-sec-cont-photo">
+                        <img src="images/con_2018/Prof Dato Dr See 1.png" alt="Prof Dato Dr See">
+                    </div>
+                    <p id="FirstName">Prof Dato Dr See</p>
+                    <p>Universiti Sains Malaysia Loh Guan Lye Specialist Centre Principal at Lions REACh, Penang.</p>
+                </div>
+                <div class="confmember18-sec-cont-topic">
+                    <p style="color: dodgerblue; font-size: 25px;">Keynote Speaker</p>
+                    <br>
+                    <p style="color: red; font-size: 20px;">Best Practices in Clinical Neurofeedback</p>
+                    <br>
+                    <p>Prof Dato Dr See retired as a Professor from USM in 2016 and is an honorary and adjunct professor in various universities. She held the post of Vice-President in USM from 2012-2016. She is a Consultant Educational and Counseling Psychologist inLoh Guan Lye Specialist Centre in Penang. She is also a volunteer principal at the Lions REACh Centre.</p>
+                    <p style="margin-top: 15px;">She provides counselling services and has incorporated neurofeedback and HRV biofeedback into her practice.</p>
+                    <p style="margin-top: 15px;">Topic: <br>There are many studies that support the relevance and effectiveness of neurofeedback in helping individuals with mental disorders and learning difficulties, yet there are still individuals and professionals in the community who do not understand the efficacy and effectiveness of neurofeedback.</p>
+                    <p style="margin-top: 15px;">Efficacy trials determine whether an intervention produce the expected outcome under the ideal circumstances. Effectiveness trials measure the degree of beneficial effect in the clinical setting. There are many efficacy and effectiveness studies that support neurofeedback as a treatment. This presentation provides an overview of the efficacy and effectiveness studies on neurofeedback and its best practices in clinical setting.</p>
+                </div>
+            </div>
+            <br><br>
+            <div class="confmember18-sec-cont">
+                <div class="confmember18-sec-cont-banner">
+                    <div class="confmember18-sec-cont-photo">
+                        <img src="images/con_2018/Tim 1.png" alt="">
+                    </div>
+                    <p id="FirstName">Dr. Tim Hill</p>
+                    <p>Psychologist and Certified Neurofeedback Practitioner</p>
+                </div>
+                <div class="confmember18-sec-cont-topic">
+                    <p style="color: dodgerblue; font-size: 25px;">Keynote Speaker</p>
+                    <br>
+                    <p style="color: red; font-size: 20px;">QEEG Guided Neurofeedback for Autism: Way Forward</p>
+                    <br>
+                    <p>Tim is a psychologist and Certified Neurofeedback Practitioner. Tim is also certified at the Diplomate level by the International QEEG Certification Board. Tim has extensive therapeutic experience, working in private practice for more than 25 years. For the past 17 years this has included a special interest in neurotherapy.
+                        Tim has been an active member of the neurofeedback community in Australia for many years. He is an elected Fellow of the Applied Neuroscience Society of Australasia and was a past president of this organization. Tim was instrumental in the establishment of certification standards for neurofeedback therapy in Australia and was the Inaugural Chair of Biofeedback Certification International Alliance-Australia.
+                        Tim is experienced in a range of therapeutic approaches including cognitive behavioural therapy, narrative therapy, EMDR and hypnotherapy. While in private practice he has worked with clients suffering from a range of disorders including ADHD, depression, anxiety, traumatic brain injury and posttraumatic stress.
+                        Tim has also had a long interest in the assessment and treatment of people with learning disorders and attentional difficulties as well as those with developmental disabilities such as autism.
+                        Prior to working in private practice Tim worked as a lecturer in psychology and human development at the University of South Australia for 15 years. He completed his bachelors’ degree at the University of Adelaide and his PhD from the University of Illinois.</p>
+                    <p style="margin-top: 15px;">Topic: <br>Coben, Linden and Myers (2010) described eight different subtypes of autism based upon analysis of EEG and QEEG. This presentation provides a description of these different endophenotypes and the typical characteristics associated with each QEEG pattern. Clients with autism often present two or three of these QEEG patterns.</p>
+                    <p style="margin-top: 15px;">This presentation provides examples of EEG and QEEG patterns of clients who have been diagnosed with autism. Implications for neurofeedback training will be discussed.</p>
+                </div>
+            </div>
+            <br><br>
+            <div class="confmember18-sec-cont">
+                <div class="confmember18-sec-cont-banner">
+                    <div class="confmember18-sec-cont-photo">
+                        <img src="images/con_2018/Dr. K 1.png" alt="">
+                    </div>
+                    <p id="FirstName">Assoc. Prof. Jayansankara Reddy</p>
+                    <p style="margin-top: 20px;">Department of Psychology Christ University Bangalore</p>
+                </div>
+                <div class="confmember18-sec-cont-topic">
+                    <p style="color: dodgerblue; font-size: 25px;">Keynote Speaker</p>
+                    <br>
+                    <p style="color: red; font-size: 20px;">EEG Neurofeedback Brain Training for Epilepsy to Reduce the Seizures</p>
+                    <br>
+                    <p>Dr. K. Jayasankar Reddy completed his M. Sc in Psychology and Ph. D in Psychology in the area of Neuro Psychology from Sri Venkateshwara University, Tirupathi, India. He also did his postgraduate program in Clinical Neurophysiology (EEG, EP, ERP, EMG & Brain Mapping) from the faculty of Medicine, Department of Neuro Sciences, Sri Venkateshwara Institute of Medical Sciences University, Tirupathi, India.</p>
+                    <p style="margin-top: 15px;">Presently working as a Professor of Psychology (Cognitive Neuroscience and Neuro-Psychology), Christ University, Bangalore, India. He is guiding a team of research scholars for the award of M.Phil, Ph.D. degree and Post-Doctoral fellowships in the area of Cognitive Neuroscience and Neuro-Psychology. He has the span of 18 years of experience in academic, research and consulting in Neuropsychology and in Cognitive Neuroscience. He has contributed more than 50 research articles, published in various Journals and conference proceedings.</p>
+                    <p style="margin-top: 15px;">He has presented many research papers in various National and International conferences. He has received three times Best Research Paper Award in the area of Neuro Psychology in various National and International conferences. He has delivered the keynote address, panel discussions and invited talks in various International/ National Seminars/Conferences and acted as a Resource Person for Refresher Courses in different colleges and conferences in the area of Neurofeedback/ Biofeedback/ EEG & Brain Mapping, Epilepsy & Neuro electrophysiology.</p>
+                    <p style="margin-top: 15px;">Recently he is honored by Indian School Psychology Association with the P K Subaraja Trust Best Performance Award - 2018 for valuable services and contributions to the promotion of school psychology in India. Also received Research Award-2017 by International Stress Management Association.</p>
+                    <p style="margin-top: 15px;">Topic: <br>Epilepsy is a group of neurological disorder characterized by sudden recurrent episodes of sensory disturbance, loss of consciousness, or convulsions, associated with abnormal electrical activity in the brain. Nearly one-third of patients with epilepsy do not benefit from medical treatment. Electroencephalography neurofeedback therapies have been recognized as one of the promising treatment for the different types of epilepsy patients. Through EEG neurofeedback training, it is possible to train the brain to de-emphasize brain electrical activity that leads to generation and propagation of seizure and emphasize rhythms that make seizures less likely to occur. This presentation focuses the current practice and experience on the effect of EEG neurofeedback to reduce seizure frequency and duration. It is clear that EEG neurofeedback training has a positive impact on most of the recent studies reviewed. These findings are limited due to multiple confounding factors in their techniques and protocols. Despite these limitations, the promising role of neurofeedback as a treatment to reduce the seizures is well recognized.</p>
+                </div>
+            </div>
+            <br><br>
+            <div class="confmember18-sec-cont">
+                <div class="confmember18-sec-cont-banner">
+                    <div class="confmember18-sec-cont-photo">
+                        <img src="images/con_2018/Professor MOK Wahedi 1.png" alt="">
+                    </div>
+                    <p id="FirstName">Prof. Dr. M O K Wahedi</p>
+                    <p>Depart. Of Paediatrics Medical College for Women and Hospital</p>
+                </div>
+                <div class="confmember18-sec-cont-topic">
+                    <p style="color: dodgerblue; font-size: 25px;">Keynote Speaker</p>
+                    <br>
+                    <p style="color: red; font-size: 20px;">Neurofeedback and Brains Anatomical and Functional Correlation to its Therapeutic Outcome</p>
+                    <br>
+                    <p>Professor MOK Wahedi presently working as the Head of the department of Pediatrics and Neonatology in Medical College for Women & Hospital in Bangladesh and has a teaching experience of more than 25 years in different positions. After Graduation from Chittagong Medical college in Bangladesh in 1982 started carrier as a general Physician and worked both in hospital and primary care level. He completed MRCP (UK) in pediatrics from Royal College of Physicians of UK in 1998 and subsequently obtained MRCPCH from Royal College of pediatrics and Child Health, UK in 1999 and became a fellow of Royal college of Physicians of Edinburgh in 2008. He also completed MSc in Early Childhood development form BRAC University in 2010, Bangladesh and got involved in the early child development and care of children of Bangladesh. He also works for children with Neurodisability and street children of Bangladesh and runs a centre for Children with Special Needs (CCSN). He has Special interest in Child Neurology, development and Disability.</p>
+                    <p style="margin-top: 15px;">In 2011 Prof. Wahedi completed Neurofeedback Intermediate and Advanced course in Neurofeedback from SBCIA, Singapore and became a certified Neurofeedback specialist and started Neurofeedback practice in Bangladesh in 2012 and was the first to introduce Neurofeedback in Bangladesh. He presented two papers on Neurofeedback in Bangladesh Association of Child and adolescent Mental Health (BACAMH) International Conference held in Bangabandhu Sheikh Mujib Medical University (BSSMMU), Dhaka and paper on “Neurofeedback Experiences in Bangladesh” in Asia’s first Neurofeedback conference held in Singapore in 2014.</p>
+                    <p style="margin-top: 15px;">During his long carrier he has served he has served at different hospitals in different position both home and abroad. Prof MOK Wahedi has 21research article published in different Journals of Bangladesh and abroad. Professionally he is life member of Bangladesh Medical Association (BMA), Bangladesh Paediatric association (BPA), Bangladesh Private Medical Practitioners Association (BPMPA), and Bangladesh Society of Child Neurology, Development and Disability (BSCNDD). He is a Life member of Asia pacific Neuro-Biofeedback Association (APNA), Singapore.</p>
+                    <p style="margin-top: 15px;">Recently he is honored by Indian School Psychology Association with the P K Subaraja Trust Best Performance Award - 2018 for valuable services and contributions to the promotion of school psychology in India. Also received Research Award-2017 by International Stress Management Association.</p>
+                    <p style="margin-top: 15px;">Topic: <br>Neurofeedback, also known as EEG biofeedback or EEG operant conditioning, is a way of training the brain to use more productive patterns of brainwaves. It is a non-invasive treatment, which teaches the brain to self-regulate, strengthening neural pathways while increasing mental endurance and flexibility. In Neurofeedback training, the EEG placement typically includes a few electrodes at target sites according to the International 10–20 system and the basis of treatment protocol is to address an identified deficit or excess of a particular frequency band relative to a set of bands observed in the subject or patient at initial intake.</p>
+                    <p style="margin-top: 15px;">The therapeutic outcome of Neurofeedback and its clinical effect crucially depend on electroencephalography (EEG), which measures cortical activity from the scalp without precise knowledge of the recorded cerebral structures. An accurate and reliable mapping between external anatomical landmarks and internal cerebral structures is therefore fundamental to localize brain sources in a non-invasive way. EEG waves are the result of the summation of the EPSPs and IPSPs across the membranes of many neurons. Any voltage change which appears as an EEG wave is the result of the more or less synchronized activity of a large number of neurons occupying an area of about 6 cm. As it is known from tomography different brain areas may be related to different functions of the brain and each scalp electrode is located near certain brain areas. German anatomist Korbinian Brodmann published maps of cortical areas in 1909 assuming that different structures served different functions, the most widely known and frequently cited cytoarchitectural organization of the human cortex. An understanding between the 10/20 electrode positions and their corresponding closest Brodmann are described in this discussion.</p>
+                    <p style="margin-top: 15px;">Besides the socio-behavioral and cognitive outcomes, recent studies have also shown that Neurofeedback is found to increase gray matter volume in the selected brain areas. Accurate feedback also increases white matter volume, strengthening connections between brain areas. There are evidences of dopaminergic changes due to Neurofeedback protocols using positron emission topography (PET). Training Neurofeedback frequencies may also modulate dopamine as well or other neurotransmitter systems such as serotonin and GABA.</p>
+                    <p style="margin-top: 15px;">The aim in this paper is to study the evidences from Neurofeedback literature to find the anatomical and physiological correlation of EEG based operant conditioning that might highlight the therapeutic effect of Neurofeedback and its influence on changing brains structure and function. The knowledge of brain anatomy and physiology and the electrochemical understanding remains essential for effective Neurofeedback therapy.</p>
+                    <p style="margin-top: 15px;">Come and meet Dr. Wahedi to learn more about his experience.</p>
+                </div>
+            </div>
+            <br><br>
+            <div class="confmember18-sec-cont">
+                <div class="confmember18-sec-cont-banner">
+                    <div class="confmember18-sec-cont-photo">
+                        <img src="images/con_2018/Nidal Kamel.jpg" alt="">
+                    </div>
+                    <p id="FirstName">Assoc. Prof. Nidal Kamel</p>
+                    <p style="margin-top: 20px;">Centre for Intelligent Signal and Imaging Research (CISIR) Electrical & Electronic Engineering Universiti Teknologi PETRONAS</p>
+                </div>
+                <div class="confmember18-sec-cont-topic">
+                    <p style="color: dodgerblue; font-size: 25px;">Keynote Speaker</p>
+                    <br>
+                    <p style="color: red; font-size: 20px;">Microstate Analysis to Represent Levels of Stress</p>
+                    <br>
+                    <p>Nidal Kamel received the M.Sc and PhD degree (Hons) from the Technical University of Gdansk, Poland, in 1993. His PhD work was focused on subspace-based array signal processing for direction of-arrival estimation. Since 1993 he has been involved in research projects related to estimation theory, noise reduction, optimal filtering, and pattern recognition. He developed SNR estimator for antenna diversity combining, single-trial subspace-based technique for EEG extraction form brain background noise, and introduced a subspace-based data glove system for online signature verification. His present research interest is in brain signal processing, image enhancement, and pattern recognition. Currently, he is Associate Professor at the PETRONAS University of Technology. He is IEEE senior member.</p>
+                    <p style="margin-top: 15px;">Topic: <br>Stress is generally known as a situation of too much expectation under sheer pressure that is hardly controlled. Psychological and social stress exist in daily life, which affects emotional behavior, job performance, mental and physical health and ultimately quality of life. Psychosocial stress is a principal cause of numerous psychophysiological disorders. For example, it rises the chances of depression, stroke, heart attack and cardiac arrest. The treatment of stress needs it to be quantized into levels first. Clinical evaluation of stress relies on questionnaires and interviews, which are subjective methods. On the other hand, objective indicators of stress rely on stress-related physiological changes.</p>
+                    <p style="margin-top: 15px;">Modern neuroscience acknowledges that human brain is the main object of mental stress because perception of human brain defines a situation threatening and stressful. The information exchange in the brain regions is through action potential, that is small electrical discharges in brain cells. These actions potentials can be noninvasively measurable at the surface of the scalp using electroencephalography (EEG). As stress initiates in the brain, the EEG signals become a good measure to analyze stress. EEG is an important method of assessing the real-time information of the large-scale brain networks with high temporal resolution. Conventionally, EEG analysis relies mainly on the power distribution in different frequency bands at EEG channels. However, these observations come at the expense of temporal accuracy due to time-frequency uncertainty principle. The description of transient variations of neuronal activity requires the time-domain analysis that account for such temporary changes. Microstate analysis is one such time-domain analysis in which topography of the scalp electric potential is evaluated. The topography remains unchanged for about 80-120 millisecond. These are quasi-stable periods and called the microstates of EEG. Microstates can describe the qualitative aspects of spontaneous thinking. This suggests that they indicate various types of mental processes. Surprisingly, the rest condition consistently produces only four microstates which reproduce across subjects for entire lifespan, indicating they might be mediated by predetermined anatomical connections. Variations of microstates have been reported in schizophrenia, depression, alzheimer’s and as a function of drug administration and hypnosis.</p>
+                    <p style="margin-top: 15px;">To this end we have investigated whether the sequence of four microstates reveals scale-free dynamics of psychosocial stress levels. Workplace stress was assessed using the depression, anxiety and stress (DASS) questionnaire and the workplace stress scale (WSS). Electroencephalogram (EEG) signals were recorded in eyes closed condition for five minutes. The analysis produced four microstates that correlated well the original EEG data in different levels of stress. The correlation coefficients were above 0.5 among microstate maps and EEG data in every level of stress, indicating that the microstate maps were strong representatives of the maps of original EEG data. Although the results indicated that microstates have positive outcome in stress research, yet the methodology requires further improvement and thorough analysis including the relationship with other factors as well as the transition among the microstate maps.</p>
+                </div>
+            </div>
+            <br><br>
+            <div class="confmember18-sec-cont">
+                <div class="confmember18-sec-cont-banner">
+                    <div class="confmember18-sec-cont-photo">
+                        <img src="images/con_2018/Banerji Subhasis.jpg" alt="">
+                    </div>
+                    <p id="FirstName">Dr. Banerji Subhasis</p>
+                    <p>SynPhNe Ptd Ltd</p>
+                </div>
+                <div class="confmember18-sec-cont-topic">
+                    <p style="color: dodgerblue; font-size: 25px;">Keynote Speaker</p>
+                    <br>
+                    <p style="color: red; font-size: 20px;">Unlocking the Potential of Neuro & Physio Feedback: Adoption in Mainstream Healthcare and Home</p>
+                    <br>
+                    <p>Dr. Subhasis has over 20 years of experience in developing cutting-edge technology, 5 years of practicing therapy and 10 years in clinical research. His diverse background led him to invent and commercialize the world's first fully wearable and connected brain plasticity training tool that trains Brain and Body as parts of ONE system. SynPhNe is the outcome of his PhD (Biomechatronics) study. He is involved in research in biomechanics, neuroplasticity, movement analysis, learning mechanisms and ageing. He has been a yoga and martial arts practitioner for the past 25 years.</p>
+                    <p style="margin-top: 15px;">Topic: <br>Thousands of patients have benefited in various ways thanks to practitioners who use neuro and bio-feedback. However, these modalities still remain poorly adopted by mainstream healthcare and also at patients' homes. With the increasing attention in research and practice to the human brain and neuroplasticity, the opportunities for adoption in mainstream healthcare and homes is real and enormous. What is required is a co-ordinated effort between clinicians, practitioners, engineers and design professionals to leverage this unique opportunity for the benefit of patients, care-givers and practitioners. This presentation shares the story of how SynPhNe found commercial adoption in mainstream hospitals just four years after starting its journey, walking the edge between med-tech and consumer electronics, and balancing regulatory requirements with patient expectations.</p>
+                </div>
+            </div>
+            <br><br>
+            <div class="confmember18-sec-cont">
+                <div class="confmember18-sec-cont-banner">
+                    <div class="confmember18-sec-cont-photo">
+                        <img src="images/con_2018/Ms Low Ting.png" alt="Ms Low Ting Min">
+                    </div>
+                    <p id="FirstName">Ms Low Ting Min</p>
+                    <p>Senior Neurofeedback Consultant Spectrum Learning Pte Ltd</p>
+                </div>
+                <div class="confmember18-sec-cont-topic">
+                    <p style="color: dodgerblue; font-size: 25px;">Keynote Speaker</p>
+                    <br>
+                    <p style="color: red; font-size: 20px;">Neurofeedback for Mild Intellectual Disability: Case studies</p>
+                    <br>
+                    <p>Ting Min is a psychology graduate from the National University of Singapore. She is a certified neurofeedback therapist (SBCIA) and is a consultant at Spectrum Learning Pte Ltd, Singapore. She has worked as a Neurofeedback therapist since 2005 at Spectrum Learning.</p>
+                    <p style="margin-top: 15px;">She has successfully helped many clients with neurofeedback therapy. Her clientele base is very varied from young children to elderly adults, and across different disorders, from cognitive, emotional, epilepsy, migraines and etc.</p>
+                    <p style="margin-top: 15px;">Topic: <br>The case studies will discuss how neurofeedback helped two clients with their learning challenges. One of the client was diagnosed with GDD at the age of 5, while the other with mild intellectual impairment at the age of 8. In today’s competitive learning environment, coupled with their learning difficulties, which often lead to low self-confidence, self-esteem and isolation behaviour, these clients struggle in the school system. With neurofeedback, improvements were observed in terms of their learning ability as well as emotional well-being.
+                        qEEG brain mapping was used to assess the brain functioning of the clients prior to the start of neurofeedback training. Findings from qEEG of each client will also be discussed. Based on these findings, together with primary objectives to be achieved, neurofeedback training protocols were determined and outcome seen.</p>
+                </div>
+            </div>
+            <br><br>
+            <div class="confmember18-sec-cont">
+                <div class="confmember18-sec-cont-banner">
+                    <div class="confmember18-sec-cont-photo">
+                        <img src="images/con_2018/Ms Kelli Law.jpg" alt="">
+                    </div>
+                    <p id="FirstName">Ms Kelli Law</p>
+                    <p>Neurofeedback Therapist Loh Guan Lye Specialist Hospital</p>
+                </div>
+                <div class="confmember18-sec-cont-topic">
+                    <p style="color: dodgerblue; font-size: 25px;">Keynote Speaker</p>
+                    <br>
+                    <p style="color: red; font-size: 20px;">Case Study: Neurofeedback For Addiction</p>
+                    <br>
+                    <p>Kelli is a neurofeedback therapist at Loh Guan Lye Specialist Hospital, Penang, Malaysia.</p>
+                    <p style="margin-top: 15px;">Topic: <br>Neurofeedback is a form of non-invasive therapy that helps to reduce symptoms of various disorders such as anxiety, depression, insomnia, obsessions, as well as addiction. There were numerous studies that focus on using neurofeedback to help addiction patients, and different protocols were applied.</p>
+                    <p style="margin-top: 15px;">In this case study, a 36 year old female came with an addiction to stilnox. She said that she has been taking 10-20 stilnox per night for the past five years. She is seeing a psychiatrist for medication such as remeron 60 mg, quetiapin 10 mg and 2 tablets of stilnox. Her additional stilnox are given by a private clinic. She has seen a clinical psychologist for a year but her addiction and sleeping problem still persist.</p>
+                    <p style="margin-top: 15px;">She is at present seeing a counselling psychologist and was referred for neurofeedback to complement the counselling goals. Several protocols are used to help her cope with her addiction and sleeping problem. The outcome of neurofeedback is positive so far in helping addiction patient.</p>
+                </div>
+            </div>
+            <br><br>
+            <div class="confmember18-sec-cont">
+                <div class="confmember18-sec-cont-banner">
+                    <div class="confmember18-sec-cont-photo">
+                        <img src="images/con_2018/Mr Hiro Koo.jpg" alt="">
+                    </div>
+                    <p id="FirstName">Mr Hiro Koo</p>
+                    <p>Clnical Hypnotherapist Hypnosis Integrative Hub</p>
+                </div>
+                <div class="confmember18-sec-cont-topic">
+                    <p style="color: dodgerblue; font-size: 25px;">Keynote Speaker</p>
+                    <br>
+                    <p style="color: red; font-size: 20px;">Trauma-Informed Brain Mapping Method: An Overview of Traumatic Effect on Children’s Focus and Attention</p>
+                    <br>
+                    <p>Hiro Koo is a certified Clinical Hypnotherapist and certified Neurofeedback Therapist (SBCIA). In addition, a PhD candidate (Specialized in Subconscious Modalities), master’s degree inPsychology, degree in psychology and diploma in clinical hypnosis. He started practicing clinical neurofeedback in 2013. He has combined clinical neurofeedback with his hypnotherapy and pioneered Neuro-hypnotherapy. The combination of neurofeedback and hypnotherapy increases the efficacy of his treatment.</p>
+                    <p style="margin-top: 15px;">Topic: <br>Trauma can be caused by various different circumstances. These circumstances can be grief, sexual abuse, physical abuse, domestic violence, or even verbal abuse. When a person goes through a traumatized event, he or she might encounter assorted mental and physical discomfort. Multiple studies found that trauma itself could lead to a dissociative state on the victim. A dissociative state is a trance-like state, which is commonly experienced by individuals who suffer from dissociative disorder, panic attack, and etc. An individual who is in the state of dissociation may show certain unique brain arousal patterns which could be studied via brain mapping method. The common symptoms of dissociative state that are associated with brainwaves pattern are a lack of concentration, facing complication in verbalizing their feelings, suffering from psychosomatic pain, anxiety and depression, as well as learning difficulties. The case studies will discuss how to relate specific brainwave patterns via QEEG brain mapping method and unique trauma-informed treatment plan to deal with the dissociative state caused by the traumatic incidents.</p>
+                </div>
+            </div>
+            <br><br>
+            <div class="confmember18-sec-cont">
+                <div class="confmember18-sec-cont-banner">
+                    <div class="confmember18-sec-cont-photo">
+                        <img src="images/con_2018/Ms Sudarawee Matsuyama.jpg" alt="">
+                    </div>
+                    <p style="margin-top: 10px; font-size: 20px;">Ms Sudarawee Matsuyama</p>
+                    <p style="margin-top: 20px;">Neurofeedback Practitioner Brain Trainer Bangkok</p>
+                </div>
+                <div class="confmember18-sec-cont-topic">
+                    <p style="color: dodgerblue; font-size: 25px;">Keynote Speaker</p>
+                    <br>
+                    <p style="color: red; font-size: 20px;">Neurofeedback with Risperdal and Ritalin</p>
+                    <br>
+                    <p>Sudarawee Matsuyama is a certified neurofeedback practitioner. She has been practicing neurofeedback for special need children for 2 years.</p>
+                    <p style="margin-top: 15px;">In August 2016, she has been certified by Dr. Kenneth Kang from Spectrum Learning, Singapore. She then focuses more on autistic children under the mentorship of Dr. Sharrie Hanley, a neurofeedback practitioner from America.</p>
+                    <p style="margin-top: 15px;">She specializes in training autistic children and has had more than 1500 hour training experiences. She also has some experiences training depressed or anxious adults or clients with panic attack disorder.</p>
+                    <p style="margin-top: 15px;">Up until now, she has been training neurofeedback in Bangkok, Thailand.</p>
+                    <p style="margin-top: 15px;">Topic: <br>This is a case study of a 10 year old who was on medication for years. With neurofeedback training and the advice from his psychiatrist, he is now medication free.</p>
+                    <p style="margin-top: 15px;">The boy was born on December 23rd, 2007. He is now 10 years old. Since he was 3 years old, his parents took him to the doctor. His first diagnosis was ASD. But after years of follow-up, he was confirmed to have ADHD too. He has restless sleep and is sensitive to smell. He is a difficult eater. Until the age of 6, he ate only boiled eggs and white rice. Now he eats omelet and white rice. His mom gave him some supplements as he does not eat anything else. He was prescribed Ritalin and Risperdal. He is fearful of insects. He has mood swings and sometimes he would not listen and comply even though he is on medication. His mother wants him to change his eating habit and titrate medicine. She wants him to have more stable emotions. So he came into neurofeedback treatment. The results of the neurofeedback will be presented.</p>
+                </div>
+            </div>
+            <br><br>
+            <div class="confmember18-sec-cont">
+                <div class="confmember18-sec-cont-banner">
+                    <div class="confmember18-sec-cont-photo">
+                        <img src="images/con_2018/Dr Gan Jianwen.jpg" alt="">
+                    </div>
+                    <p id="FirstName">Dr. Gan Jianwen</p>
+                    <p>Zhongshan ECG Electronic Technology Co. Ltd</p>
+                </div>
+                <div class="confmember18-sec-cont-topic">
+                    <p style="color: dodgerblue; font-size: 25px;">Keynote Speaker</p>
+                    <br>
+                    <p style="color: red; font-size: 20px;">A Prototype to Manage Stress</p>
+                    <br>
+                    <p>To do network security for society has always been Dr. Gan Jianwen’s dream. His parents raised four children hard. He has three younger sisters and he is the oldest one. Although his parents can only afford him to finish technical secondary school, he insisted on finishing collage, university and graduate school in his free time.</p>
+                    <p style="margin-top: 15px;">He love radio and anti-gravity. He hope to research more in these area in the future.</p>
+                    <p style="margin-top: 15px;">Aftter 1998, he had started to program Enterprise Customs Declaration Management System. He used PowerBuilder platform, and SQL anywhere database.</p>
+                    <p style="margin-top: 15px;">After 2000, he started to program ERP system. He used PHP platform, and MYSQL database. At that time, he liked to find vulnerabilities in the web interface, and also XSS attack.</p>
+                    <p style="margin-top: 15px;">After 2002, he started to research string overflow vulnerability in his free time.</p>
+                    <p style="margin-top: 15px;">After 2008, he started to crack WIFI password. He sniffed wireless network with promiscuous mode, and injected many packets into the router. It was easy to analysis the WEP password. For WPA password, he captured the handshake packets and used his own password dictionary which he collected in another way to attack it. That was what science and technology second prize of public security ministry he got in 2011.</p>
+                    <p style="margin-top: 15px;">After 2017, he started to study Nurofeedback and Biofeedback, and engage to research emotional bracelet.</p>
+                    <p style="margin-top: 15px;">Topic: <br>There are a number of professional equipment in the market that used brain waves to regulate emotional stress. This presentation is on a bracelet product that can detect human emotional stress.</p>
+                    <p style="margin-top: 15px;">There are various bracelets supporting HRV data output. We can calculate HRV data completely to measure human emotional stress. This paper aims to explain the design on a set of infrasonic horns to help ease the emotional stress of humans.</p>
+                </div>
+            </div>
+            <br><br>
+            <div class="confmember18-sec-cont">
+                <div class="confmember18-sec-cont-banner">
+                    <div class="confmember18-sec-cont-photo">
+                        <img src="images/con_2018/Mr Alex Ng.jpg" alt="">
+                    </div>
+                    <p id="FirstName">Mr Alex Ng Wei Song</p>
+                    <p>Clinical Psychologist and Counselor
+                        Sime Darby Healthcare</p>
+                </div>
+                <div class="confmember18-sec-cont-topic">
+                    <p style="color: dodgerblue; font-size: 25px;">Keynote Speaker</p>
+                    <br>
+                    <p style="color: red; font-size: 20px;">Neurofeedback in Depression: Group Case Studies</p>
+                    <br>
+                    <p>Alex is a clinical psychologist and counsellor and he has a full time private practice at Ramsay Sime Darby Subang Jaya Medical Centre (Selongor).
+                        He has been a regular columnist in the local mass media and is the author and co-author of more than 10 scientific publications, module and books. He spent several years in private practice and lecturing in local universities and colleges. He has conducted seminar and workshops for directors, managers, executives, professionals, and all level of customers. His participants are from corporate companies, government agencies, colleges, schools, societies and NGO(s). His talk is interactive, fun, dynamic and full of memorable value.</p>
+                    <p style="margin-top: 15px;">Topic: <br>Electroencephalographic (EEG) findings on depressive patients indicate theta and alpha activity higher than in normal controls. Extensive literature reports on the effectiveness of neurofeedback techniques in the treatment of cognitive and behavioral disorders by training the patients to modulate their brain activities, as reflected in their electroencephalogram. Neurofeedback (NFB) training presented promising, non-pharmaceutical intervention strategies for depression. Methods: 30 adults (average age 34.7) with symptoms of depression underwent 20 sessions of NFB training. Along with the pre- and post-treatment Depression Rating Scales assessment – Back Depression Inventory (II) BDI-II, and qualitative interviewing respond. Results: After NFB training, symptoms of depression (p < .001, dz = 4.34) were reduced in those depression individual. The majority of individuals with pre-treatment symptoms of depression (89.1%) experienced improvements of clinical importance. There were also significant changes in EEG. Conclusion: From the evidence, NFB provides an effective, non-pharmaceutical intervention to reduce symptoms of depressive individuals. Additionally, NFB also improve their brain EEG. Along with remission of the clinical symptoms of depression, significant decrease of theta power over frontal and central areas was observed in all patients under the test conditions compared with the control group sample. Four samples of these qEEG dynamics show correlate of NF-related recovery to the appropriate level in the frontal cortical activation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-cont">
+        <div class="footer-inner-cont1">
+            <div class="footer-page-links">
+                <a href="terms_and_conditions.html">Website Terms and Conditions</a>
+                <a href="privacy_policy.html">Privacy Policy</a>
+            </div>
+            <div class="footer-social-links">
+                <a onclick="window.open('http://www.facebook.com/sharer.php?u=http://www.apna.asia/index.html', '_blank')" class="social-icon-44 social-white-bg"><img src="images/general_icons/facebook.png"></a>
+                <a onclick="window.open('https://twitter.com/share?url=http://www.apna.asia/index.html', '_blank')" class="social-icon-32 social-twitter-bg"><img src="images/general_icons/twitter.png"></a>
+                <a onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url=http://www.apna.asia/index.html', '_blank')" class="social-icon-44 social-white-bg"><img src="images/general_icons/linkedin.png"></a>
+                <a onclick="window.open('mailto:?body=http://www.apna.asia/index.html', '_blank')" class="social-icon-32 social-white-bg"><img src="images/general_icons/mail.png"></a>
+            </div>
+        </div>
+        <div class="footer-inner-cont2">
+            <h6 class="footer-address">36 Purvis Street, #02-11, Talib Centre, S(188613) SINGAPORE</h6>
+            <div class="footer-contact-info">
+                <h6>Tel: +65-6834-9476</h6>
+                <h6>Email: APNA@apna.asia</h6>
+            </div>
+        </div>
+        <h6>© 2016 Asia Pacific Neuro-biofeedback Association<br>All Rights Reserved | Singapore</h6>
+    </div>
+</footer>
+<script>
+    // navigation bar button functions
+
+    function openBurgerCont() {
+        var x = document.getElementById("burger-cont");
+        var bodyElement = document.querySelector('body');
+        if (x.style.display != "block") {
+            x.style.display = "block";
+            bodyElement.style.overflow = "hidden";
+        }
+    }
+
+    function closeBurgerCont() {
+        var x = document.getElementById("burger-cont");
+        var bodyElement = document.querySelector('body');
+        if (x.style.display != "none") {
+            x.style.display = "none";
+            bodyElement.style.overflow = "auto";
+        }
+    }
+
+    function openDropdown(y) {
+        var x = document.getElementById(y);
+
+        if (y == "about_apna") {
+            var plus = document.getElementById("dd1-plus");
+            var minus = document.getElementById("dd1-minus");
+        } else if (y == "membership") {
+            var plus = document.getElementById("dd2-plus");
+            var minus = document.getElementById("dd2-minus");
+        } else if (y == "conference") {
+            var plus = document.getElementById("dd3-plus");
+            var minus = document.getElementById("dd3-minus");
+        }
+
+        if (x.style.display != "block") {
+            x.style.display = "block";
+            plus.style.display = "none";
+            minus.style.display = "block";
+        }
+    }
+
+    function closeDropdown(y) {
+        var x = document.getElementById(y);
+
+        if (y == "about_apna") {
+            var plus = document.getElementById("dd1-plus");
+            var minus = document.getElementById("dd1-minus");
+        } else if (y == "membership") {
+            var plus = document.getElementById("dd2-plus");
+            var minus = document.getElementById("dd2-minus");
+        } else if (y == "conference") {
+            var plus = document.getElementById("dd3-plus");
+            var minus = document.getElementById("dd3-minus");
+        }
+
+        if (x.style.display != "none") {
+            x.style.display = "none";
+            plus.style.display = "block";
+            minus.style.display = "none";
+        }
+    }
+</script>
+<script>
+    // damn you samsung internet browser
+
+    if (navigator.userAgent.match(/samsung/i)) {
+        alert("Your browser (Samsung Internet) may not show this website" + 
+              "correctly. Please consider using a standards-compliant" + 
+              "browser instead. \n\n" +
+              "We recommend Firefox, Microsoft Edge, or Google Chrome.");
+    }
+</script>
+</body>
+</html>
