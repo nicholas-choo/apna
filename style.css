@@ -6967,6 +6967,9 @@
     padding: 1.2vw;
  }
 
+
+ /* APNA Conference 2018 Members Page */
+
 }
 
 .confmember18 {
@@ -7922,6 +7925,356 @@
         border-radius: 1vw;
     }
 
+}
+
+/* APNA Conference 2017 Members */
+
+.member2017-banner {
+    position: relative;
+    text-align: center;
+}
+
+.member2017-banner img {
+    width: 850px;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    border-radius: 1px 1px 1px 1px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    /* Responsive Edit */
+    width: 43vw;
+}
+
+.member2017-banner h3 {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.member2017-banner-cont {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 5px;
+
+    /* Responsive Edit */
+    margin-top: 1.25vw;
+    margin-bottom: 1.25vw;
+    padding: 0.25vw;
+}
+
+.member2017-banner-cont h2 {
+    margin-bottom: 10px;
+
+    /* Responsive Edit */
+    margin-bottom: 0.5vw;
+}
+
+.member2017-banner-cont-link-mem {
+    border-top: solid 1px;
+    text-align: center;     
+    padding-top: 10px;
+    margin-bottom: 25px;
+
+    /* Responsive Edit */
+    padding-top: 0.5vw;
+    margin-bottom: 1.25vw;
+
+
+}
+
+.member2017-banner-cont-link-mem a {
+    color: grey;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0px 10px;
+
+    /* Responsive Edit */
+    font-size: 0.9vw;
+    margin: 0vw 0.5vw;
+}
+
+.member2017-speaker-cont {
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+    /* Responsive Edit */
+    margin-bottom: 2.5vw;
+    margin-top: 2.5vw;
+}
+
+.member2017-speakers-profile {
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    place-content: center;
+    margin-right: 50px;
+
+    /* Responsive Edit */
+    width: 25vw;
+    margin-right: 2.5vw;
+}
+
+.member2017-speakers-profile img {
+    width: 225px;
+    height: 250px;
+
+    /* Responsive Edit */
+    width: 11.25vw;
+    height: 12.5vw;
+}
+
+.member2017-speakers-profile p {
+    text-align: center; 
+}
+
+.member2017-speakers-profile p#FirstName {
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 10px;
+
+    /* Responsive Edit */
+    font-size: 1vw;
+    padding-bottom: 0.5vw;
+}
+
+.member2017-speaker-desc p#Keynote {
+    font-size: 22px;
+    padding-bottom: 10px;
+    
+    /* Responsive Edit */
+    font-size: 1.1vw;
+    padding-bottom: 0.5vw;
+}
+
+.member2017-speaker-desc {
+    text-align: justify;
+    margin-left: 25px;
+
+    /* Responsive Edit */
+    margin-left: 1.25vw;
+}
+
+.member2017-speaker-desc p{
+    font-size: 18px;
+    padding: 5px;
+
+    /* Responsive Edit */
+    font-size: 0.9vw;
+    padding: 0.25vw;
+}
+
+@media screen and (max-device-width: 970px){
+    
+    .member2017-banner img {
+        width: 850px;
+        filter: blur(4px);
+        -webkit-filter: blur(4px);
+        border-radius: 1px 1px 1px 1px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+        /* Responsive Edit */
+        width: 80vw;
+    }
+    
+    .member2017-banner h3 {
+        width: 70%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .member2017-speaker-cont {
+        display: grid;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    
+        /* Responsive Edit */
+        margin-bottom: 5vw;
+        margin-top: 5vw;
+    }
+    
+    .member2017-speakers-profile {
+        display: column;
+        width: 500px;
+        margin-bottom: 50px;
+    
+        /* Responsive Edit */
+        width: 50vw;
+        margin-bottom: 5vw;
+    }
+    
+    .member2017-speakers-profile img {
+        width: 250px;
+        height: 275px;
+    
+        /* Responsive Edit */
+        width: 25vw;
+        height: 27.5vw;
+    }
+    
+    .member2017-speakers-profile p {
+        text-align: center;
+        width: 50%;
+        margin-right: auto;
+    }
+    
+    .member2017-speakers-profile p#FirstName {
+        text-align: center;
+        font-size: 20px;
+        padding-bottom: 10px;
+    
+        /* Responsive Edit */
+        font-size: 2vw;
+        padding-bottom: 1vw;
+    }
+    
+    .member2017-speaker-desc p#Keynote {
+        font-size: 22px;
+        padding-bottom: 10px;
+        
+        /* Responsive Edit */
+        font-size: 2.2vw;
+        padding-bottom: 1vw;
+    }
+    
+    .member2017-speaker-desc {
+        text-align: justify;
+        margin-left: 25px;
+    
+        /* Responsive Edit */
+        margin-left: 2.5vw;
+    }
+    
+    .member2017-speaker-desc p{
+        font-size: 18px;
+        padding: 5px;
+    
+        /* Responsive Edit */
+        font-size: 1.8vw;
+        padding: 0.5vw;
+    }
+}
+
+@media screen and (max-device-width: 970px){
+    
+    .member2017-banner img {
+        width: 850px;
+        filter: blur(4px);
+        -webkit-filter: blur(4px);
+        border-radius: 1px 1px 1px 1px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+        /* Responsive Edit */
+        width: 80vw;
+    }
+    
+    .member2017-banner h3 {
+        width: 70%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .member-sec {
+        padding: 50px 50px;
+    
+        /* Responsive Edit */
+        padding: 5vw 5vw;
+    }
+    
+    .member-sec h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    
+        /* Responsive Edit */
+        margin-bottom: 3vw;
+    }
+    
+    .member-sec h3 {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    
+        /* Responsive Edit */
+        margin-bottom: 3vw;
+        margin-top: 3vw;
+    }
+    
+    .member2017-speaker-cont {
+        display: grid;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    
+        /* Responsive Edit */
+        margin-bottom: 5vw;
+        margin-top: 5vw;
+    }
+    
+    .member2017-speakers-profile {
+        display: column;
+        width: 500px;
+        margin-bottom: 50px;
+    
+        /* Responsive Edit */
+        width: 50vw;
+        margin-bottom: 5vw;
+    }
+    
+    .member2017-speakers-profile img {
+        width: 250px;
+        height: 275px;
+    
+        /* Responsive Edit */
+        width: 25vw;
+        height: 27.5vw;
+    }
+    
+    .member2017-speakers-profile p {
+        text-align: center;
+        width: 50%;
+        margin-right: auto;
+    }
+    
+    .member2017-speakers-profile p#FirstName {
+        text-align: center;
+        font-size: 35px;
+        padding-bottom: 10px;
+    
+        /* Responsive Edit */
+        font-size: 3.5vw;
+        padding-bottom: 1vw;
+    }
+    
+    .member2017-speaker-desc p#Keynote {
+        font-size: 32px;
+        padding-bottom: 10px;
+        
+        /* Responsive Edit */
+        font-size: 3.2vw;
+        padding-bottom: 1vw;
+    }
+    
+    .member2017-speaker-desc {
+        text-align: justify;
+        margin-left: 25px;
+    
+        /* Responsive Edit */
+        margin-left: 2.5vw;
+    }
+    
+    .member2017-speaker-desc p{
+        font-size: 3px;
+        padding: 5px;
+    
+        /* Responsive Edit */
+        font-size: 3vw;
+        padding: 0.5vw;
+    }
 }
 
 /* carousel */
