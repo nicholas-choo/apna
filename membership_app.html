@@ -237,11 +237,11 @@
                         </tr>
                         <tr>
                             <th> <label for="EmailAddress1">Email Address 1:</label> </th>
-                            <td colspan="3"> <input type="text" name="EmailAdd1" required/></td>
+                            <td colspan="3"> <input type="text" name="EmailAddress1" required/></td>
                         </tr>
                         <tr>
                             <th> <label for="EmailAddress2">Email Address 2:</label> </th>
-                            <td colspan="3"> <input type="text" name="EmailAdd2"/></td>
+                            <td colspan="3"> <input type="text" name="EmailAddress2" required/></td>
                         </tr>
                         <tr>
                             <th> <label for="HomeAddress">Home Address:</label> </th>
@@ -284,7 +284,7 @@
                     <p>• APNA Secretariat will liaise with Applicant via email regarding mode of payment. </p>
                     <p>• Please note that membership application is considered successful only upon receipt of membership fee in full.</p>
                 </div>
-                <input type="submit" onclick="sendEmail()" value="Submit">
+                <input type="submit" value="Submit">
     </div>
 </section>
 <footer class="footer">
@@ -408,63 +408,6 @@
         }
         
         return true;
-    }
-</script>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js">
-    function sendEmail(){
-        var Title = $("Title");
-        var FirstName = $("FirstName");
-        var LastName = $("LastName");
-        var CompanyName = $("CompanyName");
-        var Occupation = $("Occupation");
-        var DateOfBirth = $("DateOfBirth");
-        var Nationality = $("Nationality");
-
-        var Telephone = $("Telephone");
-        var MobilePhone = $("MobilePhone");
-        var EmailAddress1 = $("EmailAddress1");
-        var EmailAddress2 = $("EmailAddress2");
-        var HomeAddress = $("HomeAddress");
-        var State = $("State");
-        var Country = $("Country");
-        var OfficeAddress = $("OfficeAddress");
-        var Qualifications = $("Qualifications");
-        var PracticeYears = $("PracticeYears");
-        var WhatsAppOption = $("WhatsAppOption");
-        var DateJoined = $("DateJoined");
-
-        if(isNotEmpty(Title) && isNotEmpty(FirstName) && isNotEmpty(LastName) && isNotEmpty(CompanyName) && isNotEmpty(Occupation) && isNotEmpty(DateOfBirth) && isNotEmpty(Nationality) && isNotEmpty(Telephone) && isNotEmpty(MobilePhone) && isNotEmpty(EmailAddress1) && isNotEmpty(EmailAddress2) && isNotEmpty(HomeAddress) && isNotEmpty(State) && isNotEmpty(Country) && isNotEmpty(OfficeAddress) && isNotEmpty(Qualifications) && isNotEmpty(PracticeYears) && isNotEmpty(WhatsAppOption) && isNotEmpty(DateJoined)){
-            $.ajax({
-                url: 'membership_app_submitForm.php',
-                method: 'POST',
-                dataType: 'json',
-                data:{
-                    Title: Title.val(),
-                    FirstName: FirstName.val(),
-                    LastName: LastName.val(),
-                    CompanyName: CompanyName.val(),
-                    Occupation: Occupation.val(),
-                    DateOfBirth: DateOfBirth.val(),
-                    Nationality: Nationality.val(),
-
-                    Telephone: Telephone.val(),
-                    MobilePhone: MobilePhone.val(),
-                    EmailAddress1: EmailAddress1.val(),
-                    EmailAddress2: EmailAddress2.val(),
-                    HomeAddress: HomeAddress.val(),
-                    State: State.val(),
-                    Country: Country.val(),
-                    OfficeAddress: OfficeAddress.val(),
-                    Qualifications: Qualifications.val(),
-                    PracticeYears: PracticeYears.val(),
-                    WhatsAppOption: WhatsAppOption.val(),
-                    DateJoined: DateJoined.val()
-                }, success: function(response){
-                    $('membership_application_form')[0].reset();
-                    $('.sent-nofication').text("Message Sent Successfully.");
-                }
-            });
-        }
     }
 </script>
 </body>
