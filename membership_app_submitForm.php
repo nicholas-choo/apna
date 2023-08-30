@@ -21,7 +21,7 @@ try {
     $mail->Port = 465;                     
 
     $mail->setFrom('no-reply@apna.asia', 'APNA');  
-    $mail->addAddress('Apna@apna.asia', 'APNA');  #Apna@apna.asia
+    $mail->addAddress('tryme3604@gmail.com', 'APNA');  #Apna@apna.asia
 
     $Title = $_POST["Title"];
     $FirstName = $_POST["FirstName"];
@@ -79,7 +79,7 @@ try {
         </tr>
         <tr>
             <td>Date of Birth</td>
-            <td>: $DoB</td>
+            <td>: $DateOfBirth</td>
         </tr>
         <tr>
             <td>Nationality</td>
