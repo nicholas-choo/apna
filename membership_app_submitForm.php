@@ -11,38 +11,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
 try {
     $mail->CharSet ="UTF-8";         
-    $mail->SMTPDebug = 0;                       
+    $mail->SMTPDebug = 2;                       
     $mail->isSMTP();                            
     $mail->Host = 'smtp.ipage.com';               
     $mail->SMTPAuth = true;                     
     $mail->Username = 'no-reply@apna.asia';         
     $mail->Password = 'Apna.ipage.2016';          
-    $mail->SMTPSecure = 'ssl';                  
-    $mail->Port = 465;                     
+    $mail->SMTPSecure = 'TLS';                  #
+    $mail->Port = 587;                     #
 
     $mail->setFrom('no-reply@apna.asia', 'APNA');  
     $mail->addAddress('Apna@apna.asia', 'APNA');  #Apna@apna.asia
 
-    $Title = $_POST["Title"];
-    $FirstName = $_POST["FirstName"];
-    $LastName = $_POST["LastName"];
-    $CompanyName = $_POST["CompanyName"];
-    $Occupation = $_POST["Occupation"];
-    $DateOfBirth = $_POST["DateOfBirth"];
-    $Nationality = $_POST["Nationality"];
+    $Title = filter_var($_POST["Title"], FILTER_SANITIZE_STRING);
+    $FirstName = filter_var($_POST["FirstName"], FILTER_SANITIZE_STRING);
+    $LastName = filter_var($_POST["LastName"], FILTER_SANITIZE_STRING);
+    $CompanyName = filter_var($_POST["CompanyName"], FILTER_SANITIZE_STRING);
+    $Occupation = filter_var($_POST["Occupation"], FILTER_SANITIZE_STRING);
+    $DateOfBirth = filter_var($_POST["DateOfBirth"], FILTER_SANITIZE_STRING);
+    $Nationality = filter_var($_POST["Nationality"], FILTER_SANITIZE_STRING);
 
-    $Telephone = $_POST["Telephone"];
-    $MobilePhone = $_POST["MobilePhone"];
-    $EmailAddress1 = $_POST["EmailAddress1"];
-    $EmailAddress2 = $_POST["EmailAddress2"];
-    $HomeAddress = $_POST["HomeAddress"];
-    $State = $_POST["State"];
-    $Country = $_POST["Country"];
-    $OfficeAddress = $_POST["OfficeAddress"];
-    $Qualifications = $_POST["Qualifications"];
-    $PracticeYears = $_POST["PracticeYears"];
-    $WhatsAppOption = $_POST["WhatsAppOption"];
-    $DateJoined= $_POST["DateJoined"];
+    $Telephone = filter_var($_POST["Telephone"], FILTER_SANITIZE_STRING);
+    $MobilePhone = filter_var($_POST["MobilePhone"], FILTER_SANITIZE_STRING);
+    $EmailAddress1 = filter_var($_POST["EmailAddress1"], FILTER_SANITIZE_EMAIL);
+    $EmailAddress2 = filter_var($_POST["EmailAddress2"], FILTER_SANITIZE_EMAIL);
+    $HomeAddress = filter_var($_POST["HomeAddress"], FILTER_SANITIZE_STRING);
+    $State = filter_var($_POST["State"], FILTER_SANITIZE_STRING);
+    $Country = filter_var($_POST["Country"], FILTER_SANITIZE_STRING);
+    $OfficeAddress = filter_var($_POST["OfficeAddress"], FILTER_SANITIZE_STRING);
+    $Qualifications = filter_var($_POST["Qualifications"], FILTER_SANITIZE_STRING);
+    $PracticeYears = filter_var($_POST["PracticeYears"], FILTER_SANITIZE_STRING);
+    $WhatsAppOption = filter_var($_POST["WhatsAppOption"], FILTER_SANITIZE_STRING);
+    $DateJoined = filter_var($_POST["DateJoined"], FILTER_SANITIZE_STRING);
 
     // Build email content
     $tableStyle = "border: 1px solid black; border-collapse: collapse; width: 50vw;";
