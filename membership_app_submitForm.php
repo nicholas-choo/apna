@@ -21,49 +21,37 @@ try {
     $mail->Port = 465;                     
 
     $mail->setFrom('no-reply@apna.asia', 'APNA');  
-    $mail->addAddress('Apna@apna.asia', 'APNA');  
+    $mail->addAddress('tryme3604@gmail.com', 'APNA');  #Apna@apna.asia
 
-    $title = $_POST["title"];
-    $firstName = $_POST["FirstName"];
-    $lastName = $_POST["LastName"];
-    $dob = $_POST["DoB"];
-    $nationality = $_POST["Nationality"];
-    $mobilePhone = $_POST["MobilePhone"];
-    $email = $_POST["Email"];
-    $workPhone = $_POST["WorkPhone"];
-    $homeAddress1 = $_POST["HomeAddress1"];
-    $homeAddress2 = $_POST["HomeAddress2"];
-    $homecity1 = $_POST["HomeCity1"];
-    $homecity2 = $_POST["HomeCity2"];
-    $homestate1 = $_POST["HomeState1"];
-    $homestate2 = $_POST["HomeState2"];
-    $homepostalCode1 = $_POST["HomePostalCode1"];
-    $homepostalCode2 = $_POST["HomePostalCode2"];
-    $homecountry1 = $_POST["HomeCountry1"];
-    $homecountry2 = $_POST["HomeCountry2"];
-    $workcity1 = $_POST["WorkCity1"];
-    $workcity2 = $_POST["WorkCity2"];
-    $workstate1 = $_POST["WorkState1"];
-    $workstate2 = $_POST["WorkState2"];
-    $workpostalCode1 = $_POST["WorkPostalCode1"];
-    $workpostalCode2 = $_POST["WorkPostalCode2"];
-    $workcountry1 = $_POST["WorkCountry1"];
-    $workcountry2 = $_POST["WorkCountry2"];
-    $qaCList = $_POST["QaCList"];
-    $companyName = $_POST["CompanyName"];
-    $occupation = $_POST["Occupation"];
-    $workAddress3 = $_POST["WorkAddress3"];
-    $workAddress4 = $_POST["WorkAddress4"];
-    $yearsExperience = $_POST["Experience"];
+    $Title = $_POST["Title"];
+    $FirstName = $_POST["FirstName"];
+    $LastName = $_POST["LastName"];
+    $CompanyName = $_POST["CompanyName"];
+    $Occupation = $_POST["Occupation"];
+    $DateOfBirth = $_POST["DateOfBirth"];
+    $Nationality = $_POST["Nationality"];
+
+    $Telephone = $_POST["Telephone"];
+    $MobilePhone = $_POST["MobilePhone"];
+    $EmailAddress1 = $_POST["EmailAddress1"];
+    $EmailAddress2 = $_POST["EmailAddress2"];
+    $HomeAddress = $_POST["HomeAddress"];
+    $State = $_POST["State"];
+    $Country = $_POST["Country"];
+    $OfficeAddress = $_POST["OfficeAddress"];
+    $Qualifications = $_POST["Qualifications"];
+    $PracticeYears = $_POST["PracticeYears"];
+    $WhatsAppOption = $_POST["WhatsAppOption"];
+    $DateJoined= $_POST["DateJoined"];
 
     // Build email content
     $tableStyle = "border: 1px solid black; border-collapse: collapse; width: 50vw;";
     $rowStyle = "border-bottom: 1px solid black; border-top: 1px solid black;";
     $emailContent = "<h1>Membership Application Form</h1>
-    <p>The following are the application materials to be filled out by new member <b>$title. $firstName $lastName</b>.</p>
+    <p>The following are the application materials to be filled out by new member <b>$Title. $FirstName $LastName</b>.</p>
     <table style='$tableStyle'>
         <tr style='$rowStyle'>
-            <td><strong>Personal Information</strong></td>
+            <td><strong>Personal Particulars</strong></td>
         </tr>
         <tr style='$rowStyle'>
             <th>Data Name</th>
@@ -71,120 +59,92 @@ try {
         </tr>
         <tr>
             <td>Title</td>
-            <td>: $title</td>
+            <td>: $Title</td>
         </tr>
         <tr>
             <td>First Name</td>
-            <td>: $firstName</td>
+            <td>: $FirstName</td>
         </tr>
         <tr>
             <td>Last Name</td>
-            <td>: $lastName</td>
-        </tr>
-        <tr>
-            <td>Date of Birth</td>
-            <td>: $dob</td>
-        </tr>
-        <tr>
-            <td>Nationality</td>
-            <td>: $nationality</td>
-        </tr>
-        <tr>
-            <td>Mobile Phone</td>
-            <td>: $mobilePhone</td>
-        </tr>
-        <tr>
-            <td>Work Phone</td>
-            <td>: $workPhone</td>
-        </tr>
-        <tr>
-            <td>Email</td>
-            <td>: $email</td>
-        </tr>
-        <tr style='$rowStyle'>
-            <td><strong>Home Information</strong></td>
-        </tr>
-        <tr style='$rowStyle'>
-            <th>Data Name</th>
-            <th>Value</th>
-        </tr>
-        <tr>
-            <td>Home Address 1</td>
-            <td>: $homeAddress1</td>
-        </tr>
-        <tr>
-            <td>Home Address 2</td>
-            <td>: $homeAddress2</td>
-        </tr>
-        <tr>
-            <td>City</td>
-            <td>: $homecity1 $homecity2</td>
-        </tr>
-        <tr>
-            <td>State</td>
-            <td>: $homestate1 $homestate2</td>
-        </tr>
-        <tr>
-            <td>Postal Code</td>
-            <td>: $homepostalCode1 $homepostalCode2</td>
-        </tr>
-        <tr>
-            <td>Country</td>
-            <td>: $homecountry1 $homecountry2</td>
-        </tr>
-        <tr>
-            <td>Qualification and Certification List</td>
-            <td>: $qaCList</td>
-        </tr>
-        <tr style='$rowStyle'>
-            <td><strong>Work Information</strong></td>
-        </tr>
-        <tr style='$rowStyle'>
-            <th>Data Name</th>
-            <th>Value</th>
+            <td>: $LastName</td>
         </tr>
         <tr>
             <td>Company Name</td>
-            <td>: $companyName</td>
+            <td>: $CompanyName</td>
         </tr>
         <tr>
             <td>Occupation</td>
-            <td>: $occupation</td>
+            <td>: $Occupation</td>
         </tr>
         <tr>
-            <td>Work Address 1</td>
-            <td>: $workAddress3</td>
+            <td>Date of Birth</td>
+            <td>: $DateOfBirth</td>
         </tr>
         <tr>
-            <td>Work Address 2</td>
-            <td>: $workAddress4</td>
+            <td>Nationality</td>
+            <td>: $Nationality</td>
+        </tr>
+        <tr style='$rowStyle'>
+            <td><strong>Contact Details</strong></td>
+        </tr>
+        <tr style='$rowStyle'>
+            <th>Data Name</th>
+            <th>Value</th>
         </tr>
         <tr>
-            <td>City</td>
-            <td>: $workcity1 $workcity2</td>
+            <td>TelePhone</td>
+            <td>: $Telephone</td>
+        </tr>
+        <tr>
+            <td>Mobile Phone</td>
+            <td>: $MobilePhone</td>
+        </tr>
+        <tr>
+            <td>Email Address 1</td>
+            <td>: $EmailAddress1</td>
+        </tr>
+        <tr>
+            <td>Email Address 2</td>
+            <td>: $EmailAddress2</td>
+        </tr>
+        <tr>
+            <td>Home Address</td>
+            <td>: $HomeAddress</td>
         </tr>
         <tr>
             <td>State</td>
-            <td>: $workstate1 $workstate2</td>
-        </tr>
-        <tr>
-            <td>Postal Code</td>
-            <td>: $workpostalCode1 $workpostalCode2</td>
+            <td>: $State</td>
         </tr>
         <tr>
             <td>Country</td>
-            <td>: $workcountry1 $workcountry2</td>
+            <td>: $Country</td>
         </tr>
         <tr>
-            <td>Years of Experience in Neurofeedback/Biofeedback</td>
-            <td>: $yearsExperience</td>
+            <td>Office Address</td>
+            <td>: $OfficeAddress</td>
+        </tr>
+        <tr>
+            <td>Qualification(s)</td>
+            <td>: $Qualifications</td>
+        </tr>
+        <tr>
+            <td>Number of years of practice in Neurofeedback:</td>
+            <td>: $PracticeYears</td>
+        </tr>
+        <tr>
+           <td>Wanting to join the WhatsApp Group</td>
+           <td>: $WhatsAppOption</td>
+        <tr>
+            <td>Date Joined</td>
+            <td>: $DateJoined</td>
         </tr>
     </table>
     <p>Do not reply to this automated message.</p>
     ";
 
     $mail->isHTML(true);
-    $mail->Subject = 'New Membership Application Form : ' . $firstName . ' ' . $lastName;
+    $mail->Subject = 'New Membership Registration Form : ' . $FirstName . ' ' . $LastName;
     $mail->Body = $emailContent;
 
     $mail->send();
