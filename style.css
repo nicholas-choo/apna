@@ -4063,6 +4063,7 @@
     border-radius: 5px;
     text-align: center;
     display: table-cell;
+    width: 60vw;
  }
 
   .conference2017_information_content {
@@ -4149,11 +4150,17 @@
     .conference2017_speaker {
         max-width: 80vw;
     }
+    .conference2017_information {
+        width: 80vw;
+    }
   }
   
 @media only screen and (max-device-width: 500px) {
     .conference2017_speaker {
         max-width: 80vw;
+    }
+    .conference2017_information {
+        width: 80vw;
     }
   }
 
