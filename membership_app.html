@@ -190,6 +190,7 @@
                 <form id="membership_application_form" action="membership_app_submitForm.php" method="post" onsubmit="return validateForm()">
                 <h2>ASIA PACIFIC NEURO-BIOFEEDBACK ASSOCIATION (APNA)</h2>
                 <h3 class=".sent-nofication">Membership Registration Form</h3>
+                <input type="text" id="jobTitleInput" name="JobTitle" hidden>
                 <div class="membershipapp-sec-cont">
                     <h3>Personal Particulars</h3>
                     <table>
@@ -409,6 +410,26 @@
         
         return true;
     }
+</script>
+<script type="text/javascript">
+function getQueryParameterValue(variable) {
+    var query = window.location.hash.substring(1); 
+    var queryParams = query.split('?');
+    for (var i = 0; i < queryParams.length; i++) {
+        var pair = queryParams[i].split('=');
+        if (decodeURIComponent(pair[0]) === variable) {
+            return decodeURIComponent(pair[1]);
+        }
+    }
+    return null;
+}
+
+var jobTitle = getQueryParameterValue("jobtitle");
+
+var jobTitleInput = document.getElementById("jobTitleInput");
+if (jobTitleInput && jobTitle) {
+    jobTitleInput.value = jobTitle;
+}
 </script>
 </body>
 </html>

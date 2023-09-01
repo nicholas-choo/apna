@@ -21,9 +21,10 @@ try {
     $mail->Port = 465;                     
 
     $mail->setFrom('no-reply@apna.asia', 'APNA');  
-    $mail->addAddress('tryme3604@gmail.com', 'APNA');  #Apna@apna.asia
+    $mail->addAddress('chenghan515@gmail.com', 'APNA');  #Apna@apna.asia
 
     $Title = $_POST["Title"];
+    $JobTitle = $_POST["JobTitle"];
     $FirstName = $_POST["FirstName"];
     $LastName = $_POST["LastName"];
     $CompanyName = $_POST["CompanyName"];
@@ -56,6 +57,10 @@ try {
         <tr style='$rowStyle'>
             <th>Data Name</th>
             <th>Value</th>
+        </tr>
+        <tr>
+            <td>Applied Position</td>
+            <td>: $JobTitle</td>
         </tr>
         <tr>
             <td>Title</td>
