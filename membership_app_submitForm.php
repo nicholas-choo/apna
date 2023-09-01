@@ -21,7 +21,7 @@ try {
     $mail->Port = 465;                     
 
     $mail->setFrom('no-reply@apna.asia', 'APNA');  
-    $mail->addAddress('tryme3604@gmail.com', 'APNA');  #Apna@apna.asia
+    $mail->addAddress('Apna@apna.asia', 'APNA');  #Apna@apna.asia
 
     $Title = $_POST["Title"];
     $FirstName = $_POST["FirstName"];
