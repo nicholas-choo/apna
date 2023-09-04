@@ -8,22 +8,27 @@ require 'PHPMailer/src/SMTP.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail = new PHPMailer();
-    
+
+if ($JobTitle == null){
+    header("Location:'membership.html");
+}
+
 try {
     $mail->CharSet ="UTF-8";         
-    $mail->SMTPDebug = 2;                       
+    $mail->SMTPDebug = 0;                       
     $mail->isSMTP();                            
     $mail->Host = 'smtp.ipage.com';               
     $mail->SMTPAuth = true;                     
     $mail->Username = 'no-reply@apna.asia';         
     $mail->Password = 'Apna.ipage.2016';          
-    $mail->SMTPSecure = 'TLS';                  #
-    $mail->Port = 587;                     #
+    $mail->SMTPSecure = 'ssl';                  
+    $mail->Port = 465;                     
 
     $mail->setFrom('no-reply@apna.asia', 'APNA');  
     $mail->addAddress('Apna@apna.asia', 'APNA');  #Apna@apna.asia
 
     $Title = filter_var($_POST["Title"], FILTER_SANITIZE_STRING);
+    $JobTitle = filter_var($_POST["JobTitle"], FILTER_SANITIZE_STRING);
     $FirstName = filter_var($_POST["FirstName"], FILTER_SANITIZE_STRING);
     $LastName = filter_var($_POST["LastName"], FILTER_SANITIZE_STRING);
     $CompanyName = filter_var($_POST["CompanyName"], FILTER_SANITIZE_STRING);
@@ -33,16 +38,16 @@ try {
 
     $Telephone = filter_var($_POST["Telephone"], FILTER_SANITIZE_STRING);
     $MobilePhone = filter_var($_POST["MobilePhone"], FILTER_SANITIZE_STRING);
-    $EmailAddress1 = filter_var($_POST["EmailAddress1"], FILTER_SANITIZE_EMAIL);
-    $EmailAddress2 = filter_var($_POST["EmailAddress2"], FILTER_SANITIZE_EMAIL);
-    $HomeAddress = filter_var($_POST["HomeAddress"], FILTER_SANITIZE_STRING);
+    $EmailAddress1 = filter_var($_POST["EmailAddress1"], FILTER_SANITIZE_STRING);
+    $EmailAddress2 = filter_var($_POST["EmailAddress2"], FILTER_SANITIZE_STRING);
+    $HomeAddress = filter_var( $_POST["HomeAddress"], FILTER_SANITIZE_STRING);
     $State = filter_var($_POST["State"], FILTER_SANITIZE_STRING);
     $Country = filter_var($_POST["Country"], FILTER_SANITIZE_STRING);
     $OfficeAddress = filter_var($_POST["OfficeAddress"], FILTER_SANITIZE_STRING);
     $Qualifications = filter_var($_POST["Qualifications"], FILTER_SANITIZE_STRING);
     $PracticeYears = filter_var($_POST["PracticeYears"], FILTER_SANITIZE_STRING);
     $WhatsAppOption = filter_var($_POST["WhatsAppOption"], FILTER_SANITIZE_STRING);
-    $DateJoined = filter_var($_POST["DateJoined"], FILTER_SANITIZE_STRING);
+    $DateJoined= filter_var($_POST["DateJoined"], FILTER_SANITIZE_STRING);
 
     // Build email content
     $tableStyle = "border: 1px solid black; border-collapse: collapse; width: 50vw;";
@@ -56,6 +61,10 @@ try {
         <tr style='$rowStyle'>
             <th>Data Name</th>
             <th>Value</th>
+        </tr>
+        <tr>
+            <td>Applied Position</td>
+            <td>: $JobTitle</td>
         </tr>
         <tr>
             <td>Title</td>
@@ -149,7 +158,7 @@ try {
 
     $mail->send();
     echo '<script>alert("Successfully submitted the application, please wait for the confirmation of the administrative staff. Thank you.");</script>';
-    echo '<script>window.location.href="membership.html";</script>';
+    echo '<script>window.location.href="http://apnaasia.ipage.com/membership.html";</script>';
 } catch (Exception $e) {
     echo '<script>alert("Submission failed, please check the network connection status, or contact the administrator to solve. Thank you.");</script>';
     echo '<script>window.history.back();</script>';
