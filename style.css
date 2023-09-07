@@ -3802,6 +3802,10 @@
     background-color: #7EDE0E;
 }
 
+.before.c5 {
+    background-color: #C3B1E1;
+}
+
 .conf-links {
     display: flex;
     flex-direction: column;
