@@ -40,7 +40,7 @@
                 <div class="submenu">
                     <ul>
                         <a href="apna_story.html">The APNA Story</a>
-                        <a href="board_and_committee_2017.html">Board & Committee</a>
+                        <a href="board_and_committee_2021.html">Board & Committee</a>
                         <a href="foreword.html">Foreword by Past President of APNA</a>
                     </ul>
                 </div>
@@ -128,7 +128,7 @@
                         <ul class="nav-bar-min-dropdown-cont" id="about_apna">
                             <div class="nav-bar-min-dropdown">
                                 <a href="apna_story.html">The APNA Story</a>
-                                <a href="board_and_committee_2017.html">Board & Committee</a>
+                                <a href="board_and_committee_2021.html">Board & Committee</a>
                                 <a href="foreword.html">Foreword by Past President of APNA</a>
                             </div>
                         </ul>
