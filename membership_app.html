@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 <head>
@@ -8,7 +9,7 @@
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/APNA logo circle.png" type="image/icon type">
-    <script type="text/javascript" async="" src="./javascript/plusone.js.下载" gapi_processed="true"></script><script type="text/javascript" src="./javascript/jquery.js.下载"></script>
+    <script type="text/javascript" async="" src="./javascript/plusone.js.download" gapi_processed="true"></script><script type="text/javascript" src="./javascript/jquery.js.download"></script>
     <script type="text/javascript">
       $(document).ready(function() {
       $("a.ActiveButton").bind({ mousedown:function(){if ( $(this).attr('disabled') === undefined ) $(this).addClass('Activated');}, mouseleave:function(){ if ( $(this).attr('disabled') === undefined ) $(this).removeClass('Activated');}, mouseup:function(){ if ( $(this).attr('disabled') === undefined ) $(this).removeClass('Activated');}});
@@ -39,18 +40,18 @@
                 <div class="submenu">
                     <ul>
                         <a href="apna_story.html">The APNA Story</a>
-                        <a href="board_and_committee_2017.html">Board & Committee</a>
+                        <a href="board_and_committee_2021.html">Board & Committee</a>
                         <a href="foreword.html">Foreword by Past President of APNA</a>
                     </ul>
                 </div>
             </div>
             <div class="nav-bar-link-cont">
-                <ul class="highlighted">
-                    <a href="membership.html" class="dropdown selected">Membership</a>
+                <ul>
+                    <a href="membership.html">Membership</a>
                 </ul>
                 <div class="submenu">
-                    <ul>
-                        <a href="membership_list.html">Membership List</a>
+                    <ul class="highlighted">
+                        <a href="membership_app.html" class="selected">Membership Application Form</a>
                         <a href="membership_fee.html">Membership Fee</a>
                     </ul>
                 </div>
@@ -127,7 +128,7 @@
                         <ul class="nav-bar-min-dropdown-cont" id="about_apna">
                             <div class="nav-bar-min-dropdown">
                                 <a href="apna_story.html">The APNA Story</a>
-                                <a href="board_and_committee_2017.html">Board & Committee</a>
+                                <a href="board_and_committee_2021.html">Board & Committee</a>
                                 <a href="foreword.html">Foreword by Past President of APNA</a>
                             </div>
                         </ul>
@@ -142,7 +143,7 @@
                         </ul>
                         <ul class="nav-bar-min-dropdown-cont" id="membership">
                             <div class="nav-bar-min-dropdown">
-                                <a href="membership_list.html">Membership List</a>
+                                <a href="membership_app.html" class="selected">Membership Application Form</a>
                                 <a href="membership_fee.html">Membership Fee</a>
                             </div>
                         </ul>
@@ -190,6 +191,7 @@
                 <form id="membership_application_form" action="membership_app_submitForm.php" method="post" onsubmit="return validateForm()">
                 <h2>ASIA PACIFIC NEURO-BIOFEEDBACK ASSOCIATION (APNA)</h2>
                 <h3 class=".sent-nofication">Membership Registration Form</h3>
+                <input type="text" id="jobTitleInput" name="JobTitle" hidden>
                 <div class="membershipapp-sec-cont">
                     <h3>Personal Particulars</h3>
                     <table>
@@ -278,11 +280,11 @@
                 <div class="membershipapp-sec-cont-canvas">
                 </div>
                 <div class="membershipapp-sec-cont-endnotes">
-                    <p>• Please email the completed form to : 
+                    <p>- Please email the completed form to : 
                     <br> APNA Secretariat at: <a href = "mailto: APNA@apna.asia">APNA@apna.asia</a>
                     <br> Cc to: <a href = "mailto: admin@spectrumlearning.com.sg">admin@spectrumlearning.com.sg</a> </p>
-                    <p>• APNA Secretariat will liaise with Applicant via email regarding mode of payment. </p>
-                    <p>• Please note that membership application is considered successful only upon receipt of membership fee in full.</p>
+                    <p>- APNA Secretariat will liaise with Applicant via email regarding mode of payment. </p>
+                    <p>- Please note that membership application is considered successful only upon receipt of membership fee in full.</p>
                 </div>
                 <input type="submit" value="Submit">
     </div>
@@ -303,7 +305,7 @@
             </div>
         </div>
         <div class="footer-inner-cont2">
-            <h6 class="footer-address">36 Purvis Street, #02-11, Talib Centre, S(188613) SINGAPORE</h6>
+            <h6 class="footer-address">20 Collyer Quay #23-01 Singapore 049319</h6>
             <div class="footer-contact-info">
                 <h6>Tel: +65-6834-9476</h6>
                 <h6>Email: APNA@apna.asia</h6>
@@ -409,6 +411,27 @@
         
         return true;
     }
+</script>
+<script type="text/javascript">
+function getQueryParameterValue(variable) {
+    var query = window.location.hash.substring(1); 
+    var queryParams = query.split('?');
+    for (var i = 0; i < queryParams.length; i++) {
+        var pair = queryParams[i].split('=');
+        if (decodeURIComponent(pair[0]) === variable) {
+            return decodeURIComponent(pair[1]);
+        }
+    }
+    return null;
+}
+
+var jobTitle = getQueryParameterValue("jobtitle");
+
+var jobTitleInput = document.getElementById("jobTitleInput");
+if (jobTitleInput && jobTitle) {
+    jobTitleInput.value = jobTitle;
+}
+
 </script>
 </body>
 </html>
