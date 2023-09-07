@@ -1,4 +1,6 @@
 <?php
+ob_start();
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -9,13 +11,9 @@ require 'PHPMailer/src/SMTP.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail = new PHPMailer();
 
-if ($JobTitle == null){
-    header("Location:'membership.html");
-}
-
 try {
     $mail->CharSet ="UTF-8";         
-    $mail->SMTPDebug = 0;                       
+    $mail->SMTPDebug = 2;                       
     $mail->isSMTP();                            
     $mail->Host = 'smtp.ipage.com';               
     $mail->SMTPAuth = true;                     
@@ -25,7 +23,7 @@ try {
     $mail->Port = 465;                     
 
     $mail->setFrom('no-reply@apna.asia', 'APNA');  
-    $mail->addAddress('Apna@apna.asia', 'APNA');  #Apna@apna.asia
+    $mail->addAddress('apna@apna.asia', 'APNA');  #Apna@apna.asia
 
     $Title = filter_var($_POST["Title"], FILTER_SANITIZE_STRING);
     $JobTitle = filter_var($_POST["JobTitle"], FILTER_SANITIZE_STRING);
@@ -157,11 +155,13 @@ try {
     $mail->Body = $emailContent;
 
     $mail->send();
-    echo '<script>alert("Successfully submitted the application, please wait for the confirmation of the administrative staff. Thank you.");</script>';
-    echo '<script>window.location.href="http://apnaasia.ipage.com/membership.html";</script>';
+    sleep(2);
+    header("location:membership.html");
+    echo "<script> alert('Successfully submitted the application, please wait for the confirmation of the administrative staff. Thank you.')</script>";
+    exit;
 } catch (Exception $e) {
-    echo '<script>alert("Submission failed, please check the network connection status, or contact the administrator to solve. Thank you.");</script>';
-    echo '<script>window.history.back();</script>';
+    echo "<script> alert('Submission failed, please check the network connection status, or contact the administrator to solve. Thank you.')</script>";
 }
 }
+ob_end_flush();
 ?>

@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 <head>
@@ -279,11 +280,11 @@
                 <div class="membershipapp-sec-cont-canvas">
                 </div>
                 <div class="membershipapp-sec-cont-endnotes">
-                    <p>• Please email the completed form to : 
+                    <p>- Please email the completed form to : 
                     <br> APNA Secretariat at: <a href = "mailto: APNA@apna.asia">APNA@apna.asia</a>
                     <br> Cc to: <a href = "mailto: admin@spectrumlearning.com.sg">admin@spectrumlearning.com.sg</a> </p>
-                    <p>• APNA Secretariat will liaise with Applicant via email regarding mode of payment. </p>
-                    <p>• Please note that membership application is considered successful only upon receipt of membership fee in full.</p>
+                    <p>- APNA Secretariat will liaise with Applicant via email regarding mode of payment. </p>
+                    <p>- Please note that membership application is considered successful only upon receipt of membership fee in full.</p>
                 </div>
                 <input type="submit" value="Submit">
     </div>
@@ -304,7 +305,7 @@
             </div>
         </div>
         <div class="footer-inner-cont2">
-            <h6 class="footer-address">36 Purvis Street, #02-11, Talib Centre, S(188613) SINGAPORE</h6>
+            <h6 class="footer-address">20 Collyer Q,, #02-11, Talib Centre, S(188613) SINGAPORE</h6>
             <div class="footer-contact-info">
                 <h6>Tel: +65-6834-9476</h6>
                 <h6>Email: APNA@apna.asia</h6>
